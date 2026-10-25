@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VDST KTSA Silber</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="manifest" href="manifest.json">
+	<meta name="theme-color" content="#1a73e8">
+</head>
+<body>
+
+    <!-- Fixierte Navigation auf der linken Seite mit Hamburger-Menü -->
+    <nav>
+        <div class="nav-header">
+            <div class="nav-header-title">
+                <h1 style="color: #C0C0C0;">VDST KTSA Silber</h1>
+            </div>
+            <!-- Hamburger Button für mobile Geräte -->
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menü öffnen" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="nav-content" id="navContent">
+            <a href="#cover" class="cover-link" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Start</a>
+            
+            <details id="details-kap1">
+                <summary>
+                    <a href="#kap1" class="chapter-link" onclick="openChapterAndScroll(event, 'kap1')">Kapitel 1: Grundsätze der Physik</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap1')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap1-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist eigentlich Druck?</a></li>
+                    <li><a href="#kap1-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was haben wir in der Flasche?</a></li>
+                    <li><a href="#kap1-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Licht & Farben unter Wasser</a></li>
+                    <li><a href="#kap1-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Sehen unter Wasser</a></li>
+                    <li><a href="#kap1-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Hören unter Wasser</a></li>
+                    <li><a href="#kap1-6" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Auftrieb & Tarierung</a></li>
+                    <li><a href="#quiz-kap1" onclick="jumpToQuiz('kap1'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 1</a></li>
+                </ul>
+            </details>
+
+            <details id="details-kap2">
+                <summary>
+                    <a href="#kap2" class="chapter-link" onclick="openChapterAndScroll(event, 'kap2')">Kapitel 2: Unser Körper</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap2')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap2-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Anatomie des Ohrs</a></li>
+                    <li><a href="#kap2-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Hohlräume im Körper</a></li>
+                    <li><a href="#kap2-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Druckausgleich</a></li>
+                    <li><a href="#kap2-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Lunge & Druck</a></li>
+					<li><a href="#kap2-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist Apnoe?</a></li>
+                    <li><a href="#quiz-kap2" onclick="jumpToQuiz('kap2'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 2</a></li>
+                </ul>
+            </details>
+
+            <details id="details-kap3">
+                <summary>
+                    <a href="#kap3" class="chapter-link" onclick="openChapterAndScroll(event, 'kap3')">Kapitel 3: Ausrüstung</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap3')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap3-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Grundausrüstung</a></li>
+                    <li><a href="#kap3-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Tauchausrüstung</a></li>
+                    <li><a href="#kap3-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Tauchanzüge</a></li>
+                    <li><a href="#kap3-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Richtiger Umgang & Pflege</a></li>
+                    <li><a href="#quiz-kap3" onclick="jumpToQuiz('kap3'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 3</a></li>
+                </ul>
+            </details>
+
+            <details id="details-kap4">
+                <summary>
+                    <a href="#kap4" class="chapter-link" onclick="openChapterAndScroll(event, 'kap4')">Kapitel 4: Vorbereitung</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap4')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap4-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Fitness, Hitze & Wohlbefinden</a></li>
+                    <li><a href="#kap4-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Das Tauch-Briefing</a></li>
+                    <li><a href="#kap4-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Kommunikation unter Wasser</a></li>
+                    <li><a href="#kap4-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Der Buddy-Check</a></li>
+                    <li><a href="#quiz-kap4" onclick="jumpToQuiz('kap4'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 4</a></li>
+                </ul>
+            </details>
+
+            <details id="details-kap5">
+                <summary>
+                    <a href="#kap5" class="chapter-link" onclick="openChapterAndScroll(event, 'kap5')">Kapitel 5: Im Wasser</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap5')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap5-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Der Weg nach unten</a></li>
+                    <li><a href="#kap5-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Der Unterwasser-Ehrenkodex</a></li>
+                    <li><a href="#kap5-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Unterwasser-Welt</a></li>
+                    <li><a href="#kap5-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Abbruch des Tauchgangs</a></li>
+					<li><a href="#kap5-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist ein Essoufflement?</a></li>
+                    <li><a href="#quiz-kap5" onclick="jumpToQuiz('kap5'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 5</a></li>
+                </ul>
+            </details>
+
+            <details id="details-kap6">
+                <summary>
+                    <a href="#kap6" class="chapter-link" onclick="openChapterAndScroll(event, 'kap6')">Kapitel 6: Aufstieg & Notfall</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap6')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap6-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Ende des Tauchgangs</a></li>
+                    <li><a href="#kap6-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Rettungskette</a></li>
+                    <li><a href="#quiz-kap6" onclick="jumpToQuiz('kap6'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 6</a></li>
+                </ul>
+            </details>
+			<details id="details-kap7">
+                <summary>
+                    <a href="#kap7" class="chapter-link" onclick="openChapterAndScroll(event, 'kap7')">Kapitel 7: Die Praxis</a>
+                    <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap7')"></span>
+                </summary>
+                <ul class="sub-links">
+                    <li><a href="#kap7-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Bad-Übungen</a></li>
+                    <li><a href="#kap7-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Freiwasser-Übungen</a></li>
+                </ul>
+            </details>
+        </div>
+    </nav>
+
+    <!-- Zentraler Inhaltsbereich -->
+    <main>
+        <div class="content-container" id="contentContainer">
+            <!-- Inhalte werden hier per JavaScript eingefügt -->
+        </div>
+    </main>
+	
+	<!-- Modal-Container für die Bildvergrößerung -->
+    <div id="imageModal" class="modal" onclick="closeImageModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImg" alt="Vergrößertes Bild">
+    </div>
+
+    <!-- Externe Skripte einbinden -->
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
