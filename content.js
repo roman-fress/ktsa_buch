@@ -193,24 +193,9 @@ const bookData = {
                         correct: 2
                     },
                     {
-                        question: "Warum ist der Luftdruck hoch oben im Flugzeug so niedrig?",
-                        options: ["Weil es dort kalt ist", "Weil die Luft dort dünn ist und wenige Teilchen hat", "Weil das Flugzeug schnell fliegt", "Weil die Sonne dort stärker scheint", "Weil es dort keine Luft gibt"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was passiert mit Bergsteigern in großer Höhe?",
-                        options: ["Sie können besser atmen", "Der Druck steigt", "Das Atmen fällt schwerer", "Sie brauchen weniger Sauerstoff", "Sie werden schneller müde"],
-                        correct: 2
-                    },
-                    {
                         question: "Warum spüren wir den Luftdruck am Meeresspiegel nicht?",
                         options: ["Weil er zu schwach ist", "Weil er von allen Seiten gleichmäßig kommt", "Weil wir daran gewöhnt sind", "Weil er nur nachts da ist", "Weil er nur unter Wasser wirkt"],
                         correct: 1
-                    },
-                    {
-                        question: "Wie viel Druck herrscht in 5.000 Metern Tiefe im Meer?",
-                        options: ["1 bar", "50 bar", "501 bar", "5 bar", "100 bar"],
-                        correct: 2
                     },
                     {
                         question: "Welche Aussagen über den Luftdruck sind richtig? (Mehrere Antworten möglich)",
@@ -256,11 +241,6 @@ const bookData = {
                         question: "Welche Aussagen über Wasserdruck sind richtig? (Mehrere Antworten möglich)",
                         options: ["Wasser ist dichter als Luft", "Alle 10 Meter kommt 1 bar dazu", "Wasserdruck ist immer gleich", "In 30 Metern Tiefe herrschen 4 bar", "Wasser lässt sich leicht zusammendrücken"],
                         correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Warum können wir unter Wasser nicht einfach so atmen?",
-                        options: ["Weil Wasser zu kalt ist", "Weil Wasser zu dicht ist und schwer auf uns lastet", "Weil es keinen Sauerstoff im Wasser gibt", "Weil wir keine Kiemen haben", "Weil der Druck zu hoch ist"],
-                        correct: 1
                     },
                     {
                         question: "Was machen Atemregler?",
@@ -403,29 +383,9 @@ const bookData = {
                         correct: 1
                     },
                     {
-                        question: "Wenn ein Fisch scheinbar 4 Meter entfernt ist, wie weit ist er wirklich?",
-                        options: ["3 m", "4 m", "5 m", "6 m", "8 m"],
-                        correct: 2
-                    },
-                    {
-                        question: "Warum müssen Taucher beim Zielen „daneben“ zielen?",
-                        options: ["Weil sie schlecht sehen", "Weil Gegenstände näher und größer erscheinen", "Weil das Wasser sie ablenkt", "Weil die Maske verrutscht", "Weil sie keine Übung haben"],
-                        correct: 1
-                    },
-                    {
                         question: "Welche Aussagen über das Sehen unter Wasser sind richtig? (Mehrere Antworten möglich)",
                         options: ["Die Maske schafft ein Luftpolster", "Alles erscheint 33 % größer", "Alles erscheint 25 % näher", "Wasser bricht das Licht anders als Luft", "Ohne Maske sehen wir scharf"],
                         correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist der „Brechungsindex“?",
-                        options: ["Ein Werkzeug", "Ein optischer Effekt an der Glasscheibe", "Ein Teil der Maske", "Ein Messgerät", "Eine Farbe"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie groß ist ein Fisch wirklich, der scheinbar 15 cm groß ist?",
-                        options: ["5 cm", "10 cm", "15 cm", "20 cm", "30 cm"],
-                        correct: 1
                     },
                     {
                         question: "Warum brauchen Taucher die Maske?",
@@ -448,24 +408,9 @@ const bookData = {
                         correct: 0
                     },
                     {
-                        question: "Warum ist „Niemals Schall als Signal zum Auftauchen“ so wichtig?",
-                        options: ["Weil Schall zu leise ist", "Weil Geräusche irreführend sein können", "Weil Schall zu langsam ist", "Weil man ihn nicht hört", "Weil er zu laut ist"],
-                        correct: 1
-                    },
-                    {
                         question: "Welche Tiere nutzen die schnelle Schallausbreitung? (Mehrere Antworten möglich)",
                         options: ["Fische", "Wale", "Hunde", "Katzen", "Vögel"],
                         correct: [0, 1]
-                    },
-                    {
-                        question: "Was sind Seitenlinienorgane?",
-                        options: ["Augen von Fischen", "Sinnesorgane an der Seite von Fischen", "Flossen", "Kiemen", "Schuppen"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie weit können sich Walgesänge ausbreiten?",
-                        options: ["10 Meter", "100 Meter", "1 Kilometer", "Hunderte bis Tausende Kilometer", "Nur 1 Meter"],
-                        correct: 3
                     },
                     {
                         question: "Welche Aussagen über das Hören unter Wasser sind richtig? (Mehrere Antworten möglich)",
@@ -676,11 +621,6 @@ const bookData = {
             quiz: {
                 questionPool: [
                     {
-                        question: "Aus wie vielen Bereichen besteht das Ohr?",
-                        options: ["2", "3", "4", "5", "1"],
-                        correct: 1
-                    },
-                    {
                         question: "Was ist das Außenohr?",
                         options: ["Die Ohrmuschel", "Das Trommelfell", "Die Hörschnecke", "Das Gleichgewichtsorgan", "Die Eustachische Röhre"],
                         correct: 0
@@ -711,11 +651,6 @@ const bookData = {
                         correct: 0
                     },
                     {
-                        question: "Welche Aussagen über das Ohr sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Es gibt drei Bereiche", "Das Trommelfell trennt außen und mittel", "Die Hörschnecke ist mit Flüssigkeit gefüllt", "Das Gleichgewichtsorgan ist im Außenohr", "Die Gehörknöchelchen heißen Hammer, Amboss und Steigbügel"],
-                        correct: [0, 1, 2, 4]
-                    },
-                    {
                         question: "Warum knackt es beim Tauchen?",
                         options: ["Weil die Eustachische Röhre geöffnet wird", "Weil das Trommelfell platzt", "Weil Wasser ins Ohr läuft", "Weil die Hörschnecke schwingt", "Weil der Druck zu hoch ist"],
                         correct: 0
@@ -729,11 +664,6 @@ const bookData = {
                         question: "Welche Hohlräume sitzen im Schädel? (Mehrere Antworten möglich)",
                         options: ["Stirnhöhle", "Nasennebenhöhlen", "Lunge", "Luftröhre", "Tauchmaske"],
                         correct: [0, 1]
-                    },
-                    {
-                        question: "Wo muss überall Druck ausgeglichen werden? (Mehrere Antworten möglich)",
-                        options: ["Im Mittelohr", "In den Nasennebenhöhlen", "In der Lunge", "In der Tauchmaske", "In den Flossen"],
-                        correct: [0, 1, 2, 3]
                     },
                     {
                         question: "Was ist die Tauchmaske für ein Hohlraum?",
@@ -761,19 +691,9 @@ const bookData = {
                         correct: [0, 1, 2]
                     },
                     {
-                        question: "Welche Aussagen über Hohlräume sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Die Lunge ist der größte Hohlraum", "Die Tauchmaske ist ein künstlicher Hohlraum", "Bei Erkältung sind die Gänge blockiert", "Hohlräume brauchen keinen Druckausgleich", "Die Stirnhöhle sitzt im Bauch"],
-                        correct: [0, 1, 2]
-                    },
-                    {
                         question: "Was passiert mit der Luft in den Hohlräumen beim Abtauchen?",
                         options: ["Sie wird zusammengedrückt", "Sie dehnt sich aus", "Sie bleibt gleich", "Sie entweicht", "Sie wird warm"],
                         correct: 0
-                    },
-                    {
-                        question: "Welche Hohlräume nehmen nicht am Druckausgleich teil? (Mehrere Antworten möglich)",
-                        options: ["Kariesnester in Zähnen", "Siebbeinzellen (wenn verschlossen)", "Die Lunge", "Das Mittelohr", "Die Nasennebenhöhlen"],
-                        correct: [0, 1]
                     },
                     {
                         question: "Was ist die Valsalva-Methode?",
@@ -831,21 +751,6 @@ const bookData = {
                         correct: 1
                     },
                     {
-                        question: "Wie lange hielt Stéphane Mifsud die Luft an?",
-                        options: ["5 Minuten", "11 Minuten und 35 Sekunden", "3 Minuten", "20 Minuten", "1 Minute"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie weit tauchte Mateusz Malina mit einem Atemzug?",
-                        options: ["50 m", "100 m", "250 m", "500 m", "10 m"],
-                        correct: 2
-                    },
-                    {
-                        question: "Wie tief tauchte Alexey Molchanov?",
-                        options: ["50 m", "100 m", "137 m", "200 m", "10 m"],
-                        correct: 2
-                    },
-                    {
                         question: "Was darf man vor dem Apnoe-Tauchen nicht machen?",
                         options: ["Hyperventilieren", "Ruhig atmen", "Tief einatmen", "Ausatmen", "Entspannen"],
                         correct: 0
@@ -864,11 +769,6 @@ const bookData = {
                         question: "Was ist die goldene Regel beim Apnoe-Tauchen?",
                         options: ["Niemals allein tauchen", "Immer so tief wie möglich", "Immer so lange wie möglich", "Immer ohne Maske", "Immer mit Blei"],
                         correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über Apnoe sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Es ist eine Sportart", "Rekorde sind beeindruckend", "Es ist gefährlich", "Man sollte immer einen Buddy haben", "Es ist ungefährlich"],
-                        correct: [0, 1, 2, 3]
                     },
                     {
                         question: "Was passiert bei einem Blackout? (Mehrere Antworten möglich)",
@@ -1151,11 +1051,6 @@ const bookData = {
                         correct: 0
                     },
                     {
-                        question: "Welche Flossen gibt es? (Mehrere Antworten möglich)",
-                        options: ["Geräteflossen (offen)", "Fußteilflossen (geschlossen)", "Lange, harte Flossen", "Kurze, weiche Flossen", "Elektrische Flossen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
                         question: "Was gehört zur Grundausrüstung? (Mehrere Antworten möglich)",
                         options: ["Tauchflasche", "Atemregler", "Jacket", "Tauchcomputer", "Fahrrad"],
                         correct: [0, 1, 2, 3]
@@ -1221,26 +1116,6 @@ const bookData = {
                         correct: 1
                     },
                     {
-                        question: "Welche Farbe hat der Hauptregler-Schlauch?",
-                        options: ["Grün", "Gelb", "Rot", "Blau", "Schwarz"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Farbe hat der Reserve-Regler-Schlauch?",
-                        options: ["Grün", "Gelb", "Rot", "Blau", "Schwarz"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Farbe hat der Finimeter-Schlauch?",
-                        options: ["Grün", "Gelb", "Rot", "Blau", "Schwarz"],
-                        correct: 2
-                    },
-                    {
-                        question: "Welche Farbe hat der Inflatorschlauch?",
-                        options: ["Grün", "Gelb", "Rot", "Orange", "Blau"],
-                        correct: 3
-                    },
-                    {
                         question: "Was machst du im Notfall, wenn dein Partner keine Luft hat? (Mehrere Antworten möglich)",
                         options: ["Du gibst ihm deinen Hauptregler", "Du wechselst auf den Reserve-Regler", "Du tauchst schnell auf", "Du hältst die Luft an", "Du gibst ihm deinen Finimeter"],
                         correct: [0, 1]
@@ -1296,11 +1171,6 @@ const bookData = {
                         correct: [0, 1, 2, 3]
                     },
                     {
-                        question: "Welcher Anzug ist für 12–20 °C geeignet?",
-                        options: ["Halbtrockenanzug", "Shorty", "Trockenanzug", "Nassanzug", "Eisweste"],
-                        correct: 0
-                    },
-                    {
                         question: "Warum trägt man Neopren? (Mehrere Antworten möglich)",
                         options: ["Es hält warm", "Es schützt vor Kratzern", "Es ist leicht", "Es ist wasserdicht", "Es ist aus Glas"],
                         correct: [0, 1]
@@ -1344,11 +1214,6 @@ const bookData = {
                         question: "Welche Aussagen über die Pflege sind richtig? (Mehrere Antworten möglich)",
                         options: ["Flaschen sichern", "Flossen nicht verbiegen", "Mit Süßwasser spülen", "Im Schatten lagern", "In der Sonne trocknen"],
                         correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum trägt man schwere Ausrüstung gemeinsam?",
-                        options: ["Weil sie schwer ist", "Weil sie groß ist", "Weil sie teuer ist", "Weil sie nass ist", "Weil sie kalt ist"],
-                        correct: 0
                     },
                     {
                         question: "Was passiert, wenn man die Ausrüstung nicht pflegt? (Mehrere Antworten möglich)",
@@ -1569,23 +1434,13 @@ const bookData = {
                         correct: [0, 1]
                     },
                     {
-                        question: "Was ist ein Zeichen, dass man nicht tauchen sollte? (Mehrere Antworten möglich)",
-                        options: ["Frieren", "Fieber", "Schmerzen", "Lachen", "Müdigkeit"],
-                        correct: [0, 1, 2, 4]
-                    },
-                    {
-                        question: "Was macht man, wenn alle anderen tauchen wollen, man aber nicht? (Mehrere Antworten möglich)",
+                        question: "Was macht man, wenn alle anderen tauchen wollen, du aber nicht? (Mehrere Antworten möglich)",
                         options: ["Nein sagen", "An Land bleiben", "Trotzdem mitgehen", "Die Gruppe fragen", "Schnell tauchen"],
                         correct: [0, 1]
                     },
                     {
                         question: "Warum ist der Neoprenanzug an Land heiß?",
                         options: ["Weil die Körperwärme nicht entweichen kann", "Weil er aus Metall ist", "Weil er schwarz ist", "Weil er zu eng ist", "Weil er nass ist"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist der Merksatz?",
-                        options: ["Erst auf den Körper hören, dann ins Wasser gehen", "Erst ins Wasser, dann hören", "Immer mitmachen", "Nie trinken", "Immer in der Sonne stehen"],
                         correct: 0
                     },
                     {
@@ -1644,24 +1499,14 @@ const bookData = {
                         correct: 1
                     },
                     {
-                        question: "Wie viele Tauchgänge pro Tag?",
+                        question: "Wie viele Tauchgänge pro Tag darfst du mit KTSA Silber machen?",
                         options: ["1", "2", "3", "4", "So viele wie möglich"],
                         correct: 0
-                    },
-                    {
-                        question: "Wie tief darf man mit KTSA Bronze tauchen?",
-                        options: ["3 m", "5 m", "8 m", "12 m", "20 m"],
-                        correct: 1
                     },
                     {
                         question: "Wie tief darf man mit KTSA Silber tauchen?",
                         options: ["5 m", "8 m", "12 m", "15 m", "20 m"],
                         correct: 1
-                    },
-                    {
-                        question: "Wie tief darf man mit KTSA Gold tauchen?",
-                        options: ["5 m", "8 m", "12 m", "15 m", "20 m"],
-                        correct: 2
                     },
                     {
                         question: "Welche Regeln gelten für Kinder? (Mehrere Antworten möglich)",
@@ -1672,11 +1517,6 @@ const bookData = {
                         question: "Was ist KTSA?",
                         options: ["Kinder-Tauchsport-Abzeichen", "Ein Tauchcomputer", "Ein Atemregler", "Ein Boot", "Eine Flosse"],
                         correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über die KTSA-Stufen sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Bronze ist die erste Stufe", "Silber ist die zweite Stufe", "Gold ist die dritte Stufe", "Gold ist die erste Stufe", "Es gibt nur eine Stufe"],
-                        correct: [0, 1, 2]
                     },
                     {
                         question: "Warum dürfen Kinder nicht so tief tauchen? (Mehrere Antworten möglich)",
@@ -1702,11 +1542,6 @@ const bookData = {
                         question: "Was bedeutet „Nicht OK“?",
                         options: ["Etwas stimmt nicht", "Alles gut", "Ich tauche auf", "Ich friere", "Ich habe keine Luft"],
                         correct: 0
-                    },
-                    {
-                        question: "Was bedeutet das Zeichen für „Kalt“? (Mehrere Antworten möglich)",
-                        options: ["Arme kreuzen", "Hände reiben", "Daumen hoch", "Hand vor den Hals", "Faust"],
-                        correct: [0, 1]
                     },
                     {
                         question: "Welches Zeichen bedeutet „Nach oben“?",
@@ -1775,21 +1610,6 @@ const bookData = {
                         correct: 4
                     },
                     {
-                        question: "Wie viele Hände benutzt man für Zahlen?",
-                        options: ["1", "2", "3", "4", "Egal"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wohin zeigt die Handfläche bei 1–5?",
-                        options: ["Zum Partner", "Zu sich selbst", "Nach oben", "Nach unten", "Egal"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wohin zeigt die Handfläche bei 6–9?",
-                        options: ["Zu sich selbst", "Zum Partner", "Nach oben", "Nach unten", "Egal"],
-                        correct: 0
-                    },
-                    {
                         question: "Wie zeigt man die 0? (Mehrere Antworten möglich)",
                         options: ["Alle Finger", "Nur Daumen und Zeigefinger", "Faust", "Ein Finger", "Zwei Finger"],
                         correct: [0, 1]
@@ -1827,11 +1647,6 @@ const bookData = {
                         correct: 3
                     },
                     {
-                        question: "Welche Aussagen über die Zahlen sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Nur eine Hand", "Ziffern einzeln", "1–5 Handfläche zum Partner", "6–9 Handfläche zu sich", "0 ist wie OK"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
                         question: "Wie zeigt man 180 bar? (Mehrere Antworten möglich)",
                         options: ["1", "8", "0", "2", "5"],
                         correct: [0, 1, 2]
@@ -1847,27 +1662,27 @@ const bookData = {
                         correct: 0
                     },
                     {
-                        question: "Was bedeutet das „T“ im Merksatz?",
+                        question: "Was bedeutet das „T“ im Merksatz: Taucher brauchen saubere Luft, OK?",
                         options: ["Taucher (Tarierweste/Jacket)", "Tiefe", "Tauchgang", "Taschenlampe", "Taucherbrille"],
                         correct: 0
                     },
                     {
-                        question: "Was bedeutet das „B“?",
+                        question: "Was bedeutet das „B“ im Merksatz: Taucher brauchen saubere Luft, OK??",
                         options: ["Brauchen (Blei)", "Boot", "Buddy", "Brille", "Bauchgurt"],
                         correct: 0
                     },
                     {
-                        question: "Was bedeutet das „S“?",
+                        question: "Was bedeutet das „S“ im Merksatz: Taucher brauchen saubere Luft, OK??",
                         options: ["Saubere (Schnallen & Gurte)", "Sicherheit", "Sauerstoff", "Schnorchel", "Seil"],
                         correct: 0
                     },
                     {
-                        question: "Was bedeutet das „L“?",
+                        question: "Was bedeutet das „L“ im Merksatz: Taucher brauchen saubere Luft, OK??",
                         options: ["Luft (Hauptregler, Reserve-Regler, Manometer)", "Lampe", "Leine", "Lunge", "Luftdruck"],
                         correct: 0
                     },
                     {
-                        question: "Was bedeutet das „OK“? (Mehrere Antworten möglich)",
+                        question: "Was bedeutet das „OK“ im Merksatz: Taucher brauchen saubere Luft, OK?? (Mehrere Antworten möglich)",
                         options: ["Gesamt-Check", "Alles gut", "Freigabe", "Ende", "Start"],
                         correct: [0, 1, 2]
                     },
@@ -1877,12 +1692,12 @@ const bookData = {
                         correct: [0, 1, 2, 3]
                     },
                     {
-                        question: "Was prüft man beim „T“? (Mehrere Antworten möglich)",
+                        question: "Was prüft man beim „T“ im Merksatz: Taucher brauchen saubere Luft, OK?? (Mehrere Antworten möglich)",
                         options: ["Jacket aufblasen", "Ventile", "Dichtigkeit", "Blei", "Maske"],
                         correct: [0, 1, 2]
                     },
                     {
-                        question: "Was prüft man beim „L“? (Mehrere Antworten möglich)",
+                        question: "Was prüft man beim „L“ im Merksatz: Taucher brauchen saubere Luft, OK?? (Mehrere Antworten möglich)",
                         options: ["Hauptregler", "Reserve-Regler", "Manometer", "Flaschendruck", "Jacket"],
                         correct: [0, 1, 2, 3]
                     }
@@ -2037,11 +1852,6 @@ const bookData = {
                         correct: [0, 1]
                     },
                     {
-                        question: "Warum taucht man an der Leine ab? (Mehrere Antworten möglich)",
-                        options: ["Zur Orientierung", "Bei starker Strömung", "Weil es Spaß macht", "Weil es schneller geht", "Weil man dann besser sieht"],
-                        correct: [0, 1]
-                    },
-                    {
                         question: "Welche Aussagen über den Einstieg sind richtig? (Mehrere Antworten möglich)",
                         options: ["Riesen-Schritt vom Steg", "Rückwärts-Rolle vom Boot", "Leine zum Abtauchen", "Immer Kopfsprung", "Immer Arschbombe"],
                         correct: [0, 1, 2]
@@ -2067,24 +1877,9 @@ const bookData = {
                         correct: [0, 1, 2]
                     },
                     {
-                        question: "Was ist eine Leine? (Mehrere Antworten möglich)",
-                        options: ["Ein dickes Seil", "Ein Hilfsmittel zum Abtauchen", "Ein Werkzeug", "Eine Flosse", "Ein Atemregler"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was ist der Ehrenkodex?",
-                        options: ["Fünf Regeln zum Schutz der Natur", "Ein Tauchgang", "Ein Test", "Ein Spiel", "Ein Werkzeug"],
-                        correct: 0
-                    },
-                    {
                         question: "Was macht man mit Tieren? (Mehrere Antworten möglich)",
                         options: ["Nicht jagen", "Nicht stressen", "Nicht anfassen", "Beobachten", "Fangen"],
                         correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Wo soll man schwimmen? (Mehrere Antworten möglich)",
-                        options: ["Auf vorgeschriebenen Wegen", "Im Freiwasser", "Überall", "Nur am Grund", "Nur an der Oberfläche"],
-                        correct: [0, 1]
                     },
                     {
                         question: "Was macht man mit Korallen? (Mehrere Antworten möglich)",
@@ -2102,16 +1897,6 @@ const bookData = {
                         correct: [0, 1, 4]
                     },
                     {
-                        question: "Welche Aussagen über den Ehrenkodex sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Tiere beobachten", "Korallen schützen", "Müll einsammeln", "Auf Wegen bleiben", "Tiere anfassen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist der Merksatz?",
-                        options: ["Schauen ja – Anfassen nein", "Anfassen ja – Schauen nein", "Alles anfassen", "Nichts anschauen", "Müll ins Wasser"],
-                        correct: 0
-                    },
-                    {
                         question: "Warum soll man keine Korallen berühren? (Mehrere Antworten möglich)",
                         options: ["Sie sind lebendig", "Sie wachsen langsam", "Sie können verletzt werden", "Sie sind aus Stein", "Sie sind giftig"],
                         correct: [0, 1, 2]
@@ -2122,64 +1907,9 @@ const bookData = {
                         correct: [0, 1, 2, 3]
                     },
                     {
-                        question: "Welche Fische leben in heimischen Seen? (Mehrere Antworten möglich)",
-                        options: ["Flussbarsch", "Hecht", "Wels", "Aal", "Hai"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Wie erkennt man einen Hecht? (Mehrere Antworten möglich)",
-                        options: ["Lang", "Torpedoförmig", "Gefleckt", "Blitzschnell", "Bunt"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Wie erkennt man einen Flussbarsch? (Mehrere Antworten möglich)",
-                        options: ["Dunkle Streifen", "Schwarm", "Pflanzen", "Groß", "Silbrig"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist ein Edelkrebs? (Mehrere Antworten möglich)",
-                        options: ["Kein Fisch", "Krebstier", "Scheren", "Unter Steinen", "Ein Fisch"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Wie beobachtet man einen Hecht? (Mehrere Antworten möglich)",
-                        options: ["Nach geraden Linien suchen", "Nach dem Muster suchen", "Nach Bewegung suchen", "Nach Farbe suchen", "Nach Größe suchen"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was bedeutet ein hektischer Fischschwarm?",
-                        options: ["Ein Raubfisch ist in der Nähe", "Die Fische spielen", "Die Fische fressen", "Die Fische schlafen", "Die Fische laichen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Meeresfische gibt es? (Mehrere Antworten möglich)",
-                        options: ["Hai", "Delfin", "Wal", "Papageifisch", "Flussbarsch"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist ein Mantarochen? (Mehrere Antworten möglich)",
-                        options: ["Sanfter Riese", "Fliegender Teppich", "Frisst Plankton", "Groß", "Aggressiv"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist an einem Anemonenfisch besonders? (Mehrere Antworten möglich)",
-                        options: ["Nemo", "Lebt mit Anemone", "Immun gegen Gift", "Bunt", "Groß"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was macht ein Kugelfisch? (Mehrere Antworten möglich)",
-                        options: ["Pumpt sich auf", "Wird stachelig", "Schützt sich", "Ist giftig", "Ist immer klein"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Wann bricht man ab? (Mehrere Antworten möglich)",
+                        question: "Wann bricht man den Tauchgang ab? (Mehrere Antworten möglich)",
                         options: ["Gruppenführer-Signal", "Starkes Frieren", "Abbruchwunsch", "50 bar", "Bei guter Laune"],
                         correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist das Gruppenführer-Signal? (Mehrere Antworten möglich)",
-                        options: ["Stopp-Zeichen", "Flache Hand", "Halt", "Daumen hoch", "Faust"],
-                        correct: [0, 1, 2]
                     },
                     {
                         question: "Was macht man bei starkem Frieren?",
@@ -2336,19 +2066,14 @@ const bookData = {
                         correct: 0
                     },
                     {
-                        question: "Was ist der erste Schritt?",
+                        question: "Was ist der erste Schritt in Rettungskette?",
                         options: ["Erkennen und Bergen", "Notruf", "Erste Hilfe", "Rettungsdienst", "Druckkammer"],
                         correct: 0
                     },
                     {
-                        question: "Welche Nummer ruft man?",
+                        question: "Welche Notfall-Nummer ruft man?",
                         options: ["112", "110", "911", "115", "0800"],
                         correct: 0
-                    },
-                    {
-                        question: "Was gibt man beim Notruf an? (Mehrere Antworten möglich)",
-                        options: ["WO", "WAS", "WER", "WIE VIEL", "WIE ALT"],
-                        correct: [0, 1, 2, 3]
                     },
                     {
                         question: "Was macht man bei der Ersten Hilfe? (Mehrere Antworten möglich)",
