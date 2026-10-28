@@ -2,9 +2,9 @@ const bookData = {
     cover: {
         title: "Willkommen in der Unterwasserwelt",
         subTitle: "Schön, dass du dabei bist!",
-        text1: "Tauchen ist wie eine Reise in einen völlig anderen Kosmos: Du gleitest ganz leise und schwerelos durch das blaue Wasser, beobachtest bunte Fische und erlebst hautnah, wie faszinierend die Natur funktioniert.",
-        text2: "Dieses Buch begleitet dich auf dem Weg zu deinem <strong>VDST Kindertauchschein (KTSA) Silber</strong>. Es zeigt dir Schritt für Schritt, wie du dich sicher unter Wasser bewegst, deine Ausrüstung richtig bedienst und warum wir als Taucher besonders gut auf unsere Unterwasser-Umwelt achtgeben müssen.",
-        footer: "Mach dich bereit für dein großes Abenteuer – viel Spaß beim Entdecken!",
+        text1: "Das Tauchen eröffnet einen Zugang zu einer eigenen, faszinierenden Welt. Unter Wasser bewegt sich der Taucher ruhig und nahezu schwerelos durch das blaue Element, beobachtet die Tierwelt und erlebt die Natur aus einer ungewöhnlichen Perspektive.",
+        text2: "Dieses Buch begleitet den Weg zum VDST-Kindertauchsportabzeichen (KTSA) Silber. Es vermittelt Schritt für Schritt die sichere Bewegung unter Wasser, den korrekten Umgang mit der Tauchausrüstung und die Bedeutung des Umweltschutzes für die Unterwasserwelt.",
+        footer: "Der Weg zum KTSA Silber beginnt hier.",
         image: "bilder/0_Cover.jpg"
     },
     chapters: [
@@ -20,42 +20,26 @@ const bookData = {
                     subrows: [
                         {
                             subTitle: "Luftdruck",
-                            text: `<p>Überall um uns herum ist Luft – auch wenn wir sie nicht sehen können. Diese Luft besteht aus vielen winzigen Teilchen und hat ein echtes Gewicht. 
-							Sie drückt auf uns und alles um uns herum. Diesen Druck nennt man Luftdruck.
-							Schauen wir uns an, wie sich dieser Druck verändert, wenn wir nach oben fliegen oder ganz tief tauchen:</p>
-							<p><strong>1. Ganz oben im Flugzeug (ca. 10.000 m Höhe)</strong><br>
-							Wenn du im Flugzeug sitzt, bist du sehr hoch über der Erde. Hier oben ist die Luft extrem dünn, weil nur noch sehr wenige Luftteilchen da sind. 
-							Der Luftdruck ist mit etwa 0,2 bar sehr niedrig. Deshalb muss im Flugzeug künstlich frische Luft zugeführt werden, damit alle gut atmen können.</p>
-							<p><strong>2. Hoch oben im Gebirge (ca. 5.000 m Höhe)</strong><br>
-							Bergsteiger merken den Luftdruck deutlich, wenn sie auf einen hohen Berg steigen. Die Lufthülle über ihnen wird dünner, und der Druck sinkt auf etwa 0,5 bar. 
-							Das Atmen fällt hier oben schon viel schwerer, weshalb manche Bergsteiger Sauerstoffflaschen mitnehmen.</p>
-							<p><strong>3. Am Meeresspiegel (0 m)</strong><br>
-							Am Strand am Meer ist alles ganz normal. Hier drückt die gesamte Luft über uns mit einem Druck von 1 bar auf uns. Das nennt man auch Normaldruck. Unser Körper 
-							ist daran gewöhnt, und wir spüren den Druck gar nicht, weil er von allen Seiten gleichmäßig kommt.</p>
-							<p><strong>4. Ganz tief unten im Meer (ca. 5.000 m Tiefe)</strong><br>
-							Wenn ein U-Boot ganz tief ins Meer taucht, kommt zum Luftdruck noch der Druck des Wassers dazu. Wasser lässt sich nämlich kaum zusammendrücken, deshalb steigt 
-							der Druck enorm an. In 5.000 Metern Tiefe herrscht ein gigantischer Druck von ca. 501 bar! Das ist mehr als 500-mal so viel wie an der Wasseroberfläche.</p>
-							<p><strong>Fazit:</strong><br>
-							Ob dünne Luft hoch oben am Himmel oder gewaltiger Druck tief unten im Meer – der Druck ist überall anders. Er ist wie eine unsichtbare Kraft, die uns umgibt!</p>`,
+                            text: `<p>Luft hat ein Gewicht und drückt auf alles, was sich auf der Erde befindet. Diese Kraft wird <strong>Luftdruck</strong> genannt. Der Luftdruck ist nicht überall gleich, er ändert sich mit der Höhe.</p>
+							<p>In einer Höhe von <strong>10.000 Metern</strong>, in der Reiseflughöhe von Flugzeugen, ist die Luft sehr dünn. Der Druck liegt hier bei etwa <strong>0,2 bar</strong>. Aus diesem Grund muss die Kabine eines 
+							Flugzeugs künstlich belüftet werden. Auf einem <strong>5.000 Meter</strong> hohen Berg sinkt der Druck auf etwa <strong>0,5 bar</strong>. Die Atmung wird dadurch erschwert, weshalb Bergsteiger 
+							oft Sauerstoffflaschen mitführen.</p>
+							<p>Am Meeresspiegel (0 Meter) beträgt der Luftdruck <strong>1 bar</strong>. Dieser Wert wird als <strong>Normaldruck</strong> bezeichnet. Der menschliche Körper ist an diesen Druck gewöhnt. 
+							In einer Tiefe von <strong>5.000 Metern</strong> im Ozean addiert sich zum Luftdruck der Druck des Wassers. Da Wasser kaum komprimierbar ist, herrscht in dieser Tiefe ein gewaltiger Druck von 
+							etwa <strong>501 bar</strong>.</p>`,
                             image: "bilder/1_1_Luftdruck.jpg"
                         },
                         {
                             subTitle: "Wasserdruck",
-                            text: `<p>Unter Wasser ist es genau umgekehrt wie in der Luft: Wasser ist nämlich viel schwerer und dichter als Luft! Stell dir vor, du tauchst in einen See oder ins Meer. 
-							Je tiefer du kommst, desto mehr Wasser ist über dir – und dieses Wasser drückt mit seinem ganzen Gewicht auf dich herab.</p>
-							<p><strong>Alle 10 Meter kommt ein ganzes „Bar“ dazu</strong><br>
-							Das Wasser drückt dabei viel stärker als die Luft. Physikalisch ist es ganz einfach: Alle 10 Meter, die du tiefer tauchst, kommt ein kompletter neuer Druck von 1 bar hinzu.</p>
-							<p>•	An der Wasseroberfläche (0 Meter) drückt nur die Luft auf uns: 1 bar.<br>
-							•	Bei 10 Metern Tiefe drückt das Wasser mit 1 bar – zusammen mit dem Luftdruck sind das schon 2 bar.<br>
-							•	Bei 20 Metern Tiefe sind es 3 bar, bei 30 Metern 4 bar und bei 40 Metern Tiefe lastet bereits ein Gesamtdruck von 5 bar auf dir!</p>
-							<p><strong>Warum werden die Luftballons immer kleiner?</strong><br>
-							Schau dir die Luftballons im Bild an. Je tiefer sie sinken, desto kleiner werden sie. Das liegt daran, dass der Wasserdruck die Luft im Ballon von 
-							allen Seiten fest zusammendrückt. Die Luftteilchen werden sozusagen in eine kleinere Form gepresst. (Und im Rechenkästchen unten rechts siehst du noch 
-							einmal genau, wie man den Gesamtdruck ausrechnet: 30 Meter Tiefe = 3 bar Wasserdruck + 1 bar Luftdruck = 4 bar Gesamtdruck).</p>
-							<p><strong>Atmen unter Wasser</strong><br>
-							Weil Wasser so dicht ist und so schwer auf uns lastet, ist es unter Wasser für unseren Körper anstrengend und wir können dort nicht 
-							einfach so atmen. Deshalb nutzen Taucher spezielle Lungenautomaten (Atemregler). Diese Geräte sind super schlau: Sie liefern uns die Luft 
-							genau mit dem passenden Umgebungsdruck, damit wir uns beim Tauchen trotzdem wohlfühlen und atmen können.</p>`,
+                            text: `<p>Wasser ist dichter und schwerer als Luft. Beim Tauchen lastet mit zunehmender Tiefe immer mehr Wasser auf dem Körper. Die physikalische Regel lautet: Pro <strong>10 Meter</strong> 
+							Wassertiefe erhöht sich der Druck um <strong>1 bar</strong>.</p>
+							<p>An der Wasseroberfläche wirkt nur der Luftdruck von <strong>1 bar</strong>.<br>
+							In <strong>10 Metern</strong> Tiefe addiert sich der Wasserdruck hinzu, der Gesamtdruck beträgt <strong>2 bar</strong>. <br>
+							In <strong>20 Metern</strong> Tiefe sind es <strong>3 bar</strong>, <br>
+							in <strong>30 Metern</strong> <strong>4 bar</strong><br>
+							und in <strong>40 Metern</strong> Tiefe bereits <strong>5 bar</strong>.</p>
+							<p>Ein anschauliches Beispiel für diesen Druck ist ein Luftballon. Wird er in die Tiefe geführt, drückt das Wasser von allen Seiten auf ihn. Die Luft im Inneren wird komprimiert, 
+							der Ballon verkleinert sich. Aus dem gleichen Grund können Menschen unter Wasser nicht atmen. Taucher verwenden <strong>Atemregler</strong>, die die Luft mit dem exakten Umgebungsdruck der jeweiligen Tiefe liefern.</p>`,
                             image: "bilder/1_1_1_Wasserdruck.jpg"
                         }
                     ]
@@ -63,120 +47,63 @@ const bookData = {
                 {
                     id: "kap1-2",
                     title: "Was haben wir in der Flasche?",
-                    text: `<p>Unter Wasser können wir Menschen nicht atmen. Deshalb nehmen Taucher eine Tauchflasche mit. Aber was ist da eigentlich drin? Viele denken, in einer Tauchflasche sei reiner Sauerstoff. 
-					Das stimmt aber nicht! In der Flasche befindet sich ganz normale, hochreine und gefilterte Atemluft – also genau die Mischung, die wir auch über Wasser einatmen.</p>
-					<p><strong>Was ist in unserer Luft? (Schau auf die Diagramme rechts)</strong><br>
-					Wenn wir draußen Luft einatmen (Diagramm 1: Einatemluft), besteht sie aus:</p>
+					text: `<p>In einer Tauchflasche befindet sich keine reine Sauerstoffmischung, sondern hochreine, gefilterte Atemluft. Die Zusammensetzung entspricht genau der Luft, die wir auch über Wasser einatmen. Ein Blick auf die beiden Diagramme in der Grafik verdeutlicht den Unterschied zwischen Ein- und Ausatemluft.</p>
+					<h4>Diagramm 1: Die Einatemluft</h4>
+					<p>Wenn Luft eingeatmet wird, besteht sie aus drei Hauptbestandteilen:</p>
 					<ul style="margin-bottom: 15px; padding-left: 20px;">
-						<li>78 % Stickstoff</li>
-						<li>21 % Sauerstoff (den brauchen wir zum Leben)</li>
-						<li>1 % Edelgase (wie zum Beispiel Kohlendioxid)</li>
+						<li><strong>78 % Stickstoff:</strong> Dieses Gas macht den größten Anteil aus. Es wird vom Körper nicht verbraucht.</li>
+						<li><strong>21 % Sauerstoff:</strong> Dieser Anteil ist lebensnotwendig. Der Körper benötigt ihn für die Energiegewinnung.</li>
+						<li><strong>1 % Edelgase und Kohlendioxid:</strong> Dazu zählen Spurengase wie Argon oder das bereits ausgeatmete Kohlendioxid.</li>
 					</ul>
-					<p>Wenn wir die Luft wieder ausatmen (Diagramm 2: Ausatemluft), hat sich etwas verändert: Unser Körper hat einen Teil des Sauerstoffs verbraucht (er sinkt von 21 % auf 16 %). 
-					Dafür haben wir Kohlendioxid ausgeatmet, das nun 4 % der Luft ausmacht. Der Stickstoff bleibt mit 78 % gleich.</p>
-					<p><strong>Die Luft wird zusammengedrückt</strong><br>
-					Damit ganz viel Luft in die kompakte Flasche passt, wird sie von starken Kompressoren extrem stark zusammengedrückt (komprimiert). Das nennt man Pressluft. Auf dem Finimeter (
-					dem Druckmesser auf dem Bild) siehst du, wie viel Druck in der Flasche ist – oft sind das bis zu 200 oder 300 bar!</p>
-					<p><strong>Warum muss die Luft so trocken und sauber sein?</strong><br>
-					Es ist lebenswichtig, dass diese Pressluft absolut trocken und sauber ist. Wäre Feuchtigkeit in der Flasche, würde der hohe Druck in der Tiefe (oder das kalte Wasser) dazu führen, 
-					dass Wassertröpfchen gefrieren oder das Metall der Flasche von innen rostet. Zudem müssen die Gaszusammensetzung und die Reinheit exakt stimmen, damit unser Körper beim Atmen 
-					unter Druck keinen Schaden nimmt.</p>
-					<p><strong>Wie kommt die Luft in den Mund? (Schau auf die linke Seite)</strong><br>
-					Wenn der Taucher atmet, passiert die Luft zwei wichtige Stationen:<br>
-					1. Die 1. Stufe (oben an der Flasche) nimmt den extrem hohen Druck aus der Flasche (z.B. 200 bar) und reduziert ihn auf einen mittleren Druck.<br>
-					2. Durch einen Schlauch fließt die Luft zur 2. Stufe (dem Atemregler im Mund). Diese passt den Druck genau an die Wassertiefe an, damit der Taucher ganz leicht ein- und ausatmen kann. 
-					Und das Ganze gibt es gleich zweimal: einmal für dich (Hauptregler) und einmal als Reserve (Halsregler) für deinen Partner. Der Halsregler hängt dabei an einem kurzen Schlauch, 
-					der direkt mit der ersten Stufe verbunden ist, und wird mit einem Bungee am Hals gehalten.</p>`,
+					<h4>Diagramm 2: Die Ausatemluft</h4>
+					<p>Nachdem die Luft die Lunge passiert hat, hat sich ihre Zusammensetzung verändert:</p>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Der Sauerstoffanteil sinkt auf 16 %:</strong> Der Körper hat einen Teil des Sauerstoffs aufgenommen und verbraucht.</li>
+						<li><strong>Der Kohlendioxidanteil steigt auf 4 %:</strong> Dieses Gas entsteht als Abfallprodukt im Stoffwechsel und wird ausgeatmet.</li>
+						<li><strong>Der Stickstoffanteil bleibt bei 78 %:</strong> Stickstoff wird vom Körper weder aufgenommen noch abgegeben. Er bleibt unverändert.</li>
+						<li><strong>2 % Edelgase und Wasserdampf:</strong> Der Wasserdampf entsteht durch die Atmung und die Feuchtigkeit in der Lunge.</li>
+					</ul>
+					<h4>Die Komprimierung in der Tauchflasche</h4>
+					<p>Damit ausreichend Atemluft in die kompakte Flasche passt, wird sie von starken Kompressoren extrem stark zusammengedrückt (komprimiert). Dieser Vorgang erzeugt <strong>Pressluft</strong> mit einem Druck von oft <strong>200 bis 300 bar</strong>.</p>
+					<p>Ein entscheidender Punkt ist die Qualität dieser Pressluft. Sie muss absolut trocken und sauber sein. Wäre Feuchtigkeit in der Flasche, würde der hohe Druck in der Tiefe oder das kalte Wasser dazu führen, dass Wassertröpfchen gefrieren. Zudem würde das Metall der Flasche von innen korrodieren (rosten). Die Gaszusammensetzung und die Reinheit müssen exakt stimmen, damit der Körper beim Atmen unter Druck keinen Schaden nimmt.</p>`,
                     image: "bilder/1_2_Atemluft.jpg"
                 },
                 {
                     id: "kap1-3",
                     title: "Licht & Farben unter Wasser",
-                    text: `<p>Wasser ist nicht nur schwer und dicht, es wirkt auch wie ein gigantischer, unsichtbarer Farbfilter. 
-					Wenn das Sonnenlicht ins Wasser scheint, wird es auf seinem Weg nach unten Stück für Stück verschluckt (absorbiert). 
-					Das Besondere daran: Nicht alle Farben verschwinden gleichzeitig, sondern nach einer exakten physikalischen Skala.</p>
-					<p><strong>Schau dir die Farbfelder im Bild genau an:</strong><br>
-					•	Rot verblasst bereits ab ca. 1 bis 5 Metern Tiefe vollständig. Es sieht dann aus wie ein langweiliges Grau.<br>
-					•	Orange verschwindet bei etwa 10 Metern.<br>
-					•	Gelb wird ab 15 bis 20 Metern geschluckt.<br>
-					•	Ab 30 Metern Tiefe schluckt das Wasser auch das Grün.</p>
-					<p>Ganz tief unten (bei 40 Metern) bleibt nur noch ein tiefes, eintöniges Blau übrig. Die Welt da unten sieht für Taucher fast aus wie ein Schwarz-Weiß-Film in Blau!</p>
-					<p><strong>Warum brauchen Taucher eine Taschenlampe?</strong><br>
-					Weil die Sonne es nicht schafft, alle Farben bis ganz nach unten zu bringen! Wie du unten im Bild siehst, bringt erst das grelle Licht einer Taucherlampe die echten Farben wieder zurück. 
-					Der Lichtstrahl der Lampe ist so hell, dass er die Farben auf kurzer Distanz wieder sichtbar macht.</p>
-					<p><strong>Warum ist Tauchausrüstung so bunt?</strong><br>
-					Hast du dich schon mal gefragt, warum viele Tauchanzüge, Flossen oder Masken signalbunte Ränder in Neon-Pink, Leuchtgelb oder Giftgrün haben? Das ist kein Zufall! 
-					Aus genau diesem Grund: Wenn die natürlichen Farben in der Tiefe längst verschluckt sind, kann man seinen Tauchpartner durch die grellen Neonfarben trotzdem schnell wiedererkennen. 
-					So findet man sich in der eintönigen blauen Unterwasserwelt nicht aus den Augen.</p>`,
+                    text: `<p>Wasser absorbiert Sonnenlicht. Es wirkt wie ein Filter, der Farben mit zunehmender Tiefe verschluckt. Die Farbe <strong>Rot</strong> verschwindet bereits in <strong>1 bis 5 Metern</strong> Tiefe.
+					<strong>Orange</strong> verschwindet bei etwa <strong>10 Metern</strong>, <strong>Gelb</strong> bei <strong>15 bis 20 Metern</strong>. Ab <strong>30 Metern</strong> wird auch <strong>Grün</strong> absorbiert. 
+					In <strong>40 Metern</strong> Tiefe dominiert nur noch die Farbe <strong>Blau</strong>.</p>
+					<p>Aus diesem Grund benötigen Taucher Taschenlampen. Das künstliche Licht der Lampe dringt nur über eine kurze Distanz und bringt die ursprünglichen Farben in unmittelbarer Nähe wieder zum Vorschein. 
+					So können Objekte und Lebewesen direkt vor dem Taucher in ihrer echten Farbe betrachtet werden, während die Umgebung weiterhin blau bleibt.</p>
+					<p>Neonfarbene Ränder an Tauchausrüstung sind ebenfalls auf dieses Phänomen zurückzuführen. Sie bleiben auch in größeren Tiefen sichtbar und ermöglichen die schnelle Wiedererkennung des Tauchpartners.</p>`,
                     image: "bilder/1_3_Farben.jpg"
                 },
                 {
                     id: "kap1-4",
                     title: "Sehen unter Wasser",
-                    text: `<p>Hast du dich schon mal gefragt, warum Fische unter Wasser manchmal wie riesige Monster aussehen? Das liegt an einer cleveren optischen Täuschung!</p>
-					<p><strong>Unser Auge braucht Luft</strong><br>
-					Unser menschliches Auge ist darauf optimiert, Lichtstrahlen zu verarbeiten, die durch Luft wandern. Da das Wasser direkt vor unseren Augen aber eine völlig 
-					andere Dichte hat (es ist ja viel schwerer und dichter als Luft), würden wir ohne Hilfsmittel alles nur total verschwommen sehen. Das Wasser würde das Licht nämlich ganz anders brechen als Luft.</p>
-					<p><strong>Die Tauchmaske ist der Trick</strong><br>
-					Erst die Tauchmaske schafft ein schützendes Luftpolster vor den Augen. Sie sorgt dafür, dass wir wieder scharf sehen können. Aber Achtung: Durch den Übergang vom Wasser zur 
-					Glasscheibe und zur Luft im Inneren der Maske entsteht ein bekannter optischer Effekt (der sogenannte Brechungsindex).</p>
-					<p><strong>Die Unterwasser-Lupe</strong><br>
-					Schau dir das Bild genau an: Der Taucher sieht den Fisch viel größer und näher, als er eigentlich ist. Dieser Effekt ist bei allen Gegenständen und Fischen unter Wasser gleich:<br>
-					•	Alles erscheint uns um etwa ein Drittel (ca. 33 %) größer!<br>
-					•	Und alles wirkt um etwa ein Viertel (ca. 25 %) näher!</p>
-					<p><strong>Ein kleines Rechenbeispiel:</strong><br>
-					Stell dir vor, du siehst einen Fisch, der scheinbar 4 Meter von dir entfernt ist. In Wirklichkeit ist er aber knapp einen Meter weiter weg! Und wenn du denkst, 
-					du siehst einen kleinen Fisch, der nur 15 cm groß ist, dann ist er in Wahrheit nur etwa 10 cm groß.</p>
-					<p>Das ist auch der Grund, warum Taucher lernen müssen, Entfernungen unter Wasser richtig einzuschätzen. Wenn sie einen Fisch fangen oder ein Foto machen wollen, 
-					müssen sie immer ein bisschen "daneben" zielen – nämlich weiter weg und kleiner, als es ihnen das Auge vorgaukelt!</p>`,
+                    text: `<p>Das menschliche Auge ist für das Sehen in Luft ausgelegt. Wasser hat eine andere Dichte und bricht das Licht anders. Ohne Tauchmaske wäre die Sicht unter Wasser unscharf. 
+					Die Maske erzeugt ein Luftpolster vor den Augen und ermöglicht klares Sehen.</p>
+					<p>Durch die Glasscheibe entsteht ein Brechungseffekt. Objekte erscheinen unter Wasser etwa <strong>33 % größer</strong> und <strong>25 % näher</strong>, als sie tatsächlich sind. 
+					Ein Fisch, der scheinbar 4 Meter entfernt ist, befindet sich in Wirklichkeit weiter weg. Taucher müssen diese optische Täuschung bei der Einschätzung von Entfernungen berücksichtigen.</p>`,
                     image: "bilder/1_4_Sehen.jpg"
                 },
                 {
                     id: "kap1-5",
                     title: "Hören unter Wasser",
-                    text: `<p>Über Wasser können wir ganz genau hören, woher ein Geräusch kommt – zum Beispiel, wenn ein Auto hupt. Unser Gehirn merkt sich, welches Ohr den Schall zuerst erreicht, 
-					und weiß dann: "Aha, das kommt von links!"</p>
-					<p><strong>Unter Wasser funktioniert das nicht mehr</strong><br>
-					Im Wasser ist das anders. Schall breitet sich im dichten Medium Wasser nämlich etwa viermal schneller aus als in der Luft – nämlich mit ca. 1.500 Metern pro Sekunde 
-					(in der Luft sind es nur 343 m/s). Das klingt erst mal super, führt aber zu einem Problem: Weil der Schall so rasant schnell ist, erreicht er beide Ohren fast genau gleichzeitig. 
-					Unser Gehirn kann diese winzigen Zeitunterschiede nicht mehr auseinanderhalten. Die Folge: Wir können die Richtung eines Geräusches – wie das tiefe Brummen 
-					eines Bootsmotors – akustisch nicht mehr orten. Alles klingt, als käme es von überall gleichzeitig.</p>
-					<p><strong>⚠️ Wichtige Warnung für Taucher!</strong><br>
-					Weil man unter Wasser nicht hören kann, woher ein Geräusch kommt, gibt es eine ganz wichtige Sicherheitsregel: <strong>Niemals Schall als Signal zum Auftauchen nutzen!</strong>
-					Geräusche im Wasser können irreführend sein. Schiffe oder Motoren können viel näher sein, als sie klingen. Taucher müssen deshalb immer die Umgebung genau beobachten und den Blick 
-					nach oben richten, bevor sie auftauchen.</p>
-					<p><strong>Wie machen das eigentlich die Tiere?</strong><br>
-					Während wir Menschen uns unter Wasser schwer tun, haben Fische und Meeressäuger coole Tricks auf Lager.<br>
-					•	Fische nutzen die schnelle Schallausbreitung im Wasser oder ihre sogenannten Seitenlinienorgane (das ist ein besonderes Sinnesorgan an ihrer Seite), 
-					um feinste Erschütterungen im Wasser wahrzunehmen – so spüren sie Gefahren oder Beute.<br>
-					•	Wale nutzen die Physik sogar für ihren Gesang! Ihre extrem lauten Laute pflanzen sich durch die verschiedenen Schichten des Ozeans über hunderte oder 
-					sogar tausende Kilometer fort. So können sie über riesige Entfernungen miteinander "sprechen" und Artgenossen rufen.</p>`,
+                    text: `<p>Schall breitet sich in Wasser etwa viermal schneller aus als in Luft (ca. <strong>1.500 m/s</strong> statt <strong>343 m/s</strong>). Dadurch erreicht ein Geräusch beide Ohren nahezu gleichzeitig. 
+					Das menschliche Gehirn kann die Richtung des Schalls nicht mehr berechnen. Eine akustische Ortung ist unter Wasser nicht möglich.</p>
+					<p>Aus diesem Grund gilt eine wichtige Sicherheitsregel: Schall darf niemals als Signal zum Auftauchen genutzt werden. Geräusche können irreführend sein. Vor dem Auftauchen muss die Umgebung visuell kontrolliert werden.</p>
+					<p>Fische nutzen die Schallausbreitung über ihre Seitenlinienorgane, um Erschütterungen wahrzunehmen. Wale nutzen die Physik für ihren Gesang, der sich über hunderte Kilometer im Ozean ausbreiten kann.</p>`,
                     image: "bilder/1_5_Hoeren.jpg"
                 },
                 {
                     id: "kap1-6",
                     title: "Auftrieb & Tarierung",
-                    text: `<p>Fragst du dich manchmal, wie Taucher es schaffen, einfach so im Wasser zu schweben, ohne unterzugehen oder wie ein Korken nach oben zu schießen? 
-					Das Zauberwort heißt Tarierung (das spricht man "Tar-ie-rung").</p>
-					<p>Dabei geht es um zwei Kräfte, die gegeneinander wirken:<br>
-					•	<strong>Der Auftrieb</strong> will dich nach oben ziehen (zum Beispiel durch den Neoprenanzug, der wie ein kleiner Schwimmring wirkt).<br>
-					•	<strong>Das Gewicht</strong> (zum Beispiel durch Blei) will dich nach unten ziehen.</p>
-					<p>Um im Wasser weder wie ein Stein abzusinken (negativer Auftrieb) noch unkontrolliert an die Oberfläche gezogen zu werden (positiver Auftrieb), 
-					streben wir den neutralen Auftrieb an. Das ist der perfekte Zustand: Du schwebst völlig schwerelos im Wasser, so wie ein Astronaut im Weltraum!</p>
-					<p>Schau dir die drei Bilder genau an:<br>
-					<strong>1. Zu wenig Blei</strong><br>
-					Der Taucher hat gar kein Blei oder zu wenig davon. Sein Neoprenanzug hat viel Auftrieb. Die Folge: Der Taucher treibt oben und kommt gar nicht richtig unter Wasser.<br><br>
-					<strong>2. Perfekt austariert</strong><br>
-					Hier ist das hydrostatische Gleichgewicht erreicht. Das klingt kompliziert, heißt aber nur: Blei und Neoprenanzug halten sich exakt die Waage. 
-					Die Pfeile zeigen nach oben und unten gleich stark. Der Taucher schwebt perfekt im Wasser. Einfach toll!<br><br>
-					<strong>3. Zu viel Blei</strong>
-					Hier hat der Taucher viel zu viel Blei am Gürtel. Das Gewicht zieht ihn sofort tief nach unten. Die Folge: Gefahr von zu schnellem Sinken! Er muss ständig gegen die Schwerkraft ankämpfen.</p>
-					<p><strong>Der Profi-Trick: Der Bleicheck</strong><br>
-					Um herauszufinden, ob man richtig bebleit ist, machen Taucher einen einfachen Test. Das kannst du auch leicht nachmachen (natürlich nur im Schwimmbad mit einem Erwachsenen!):<br>
-					1. Du ziehst deine komplette Ausrüstung an und springst ins Wasser.<br>
-					2. Du lässt die ganze Luft aus deiner Tarierweste (dem Jacket) ab.<br>
-					3. Du nimmst den Atemregler in den Mund und atmest ganz normal.<br>
-					4. Das Ergebnis: Wenn du nun bis auf Augenhöhe im Wasser stehst und erst beim Ausatmen langsam absinkst, ist dein Blei perfekt portioniert!</p>`,
+                    text: `<p>Im Wasser wirken zwei Kräfte: Der <strong>Auftrieb</strong> (zum Beispiel durch den Neoprenanzug) zieht nach oben, das <strong>Gewicht</strong> (Blei) zieht nach unten. 
+					Das Ziel ist der <strong>neutrale Auftrieb</strong>, bei dem der Taucher schwerelos im Wasser schwebt.</p>
+					<p>Bei zu wenig Blei treibt der Taucher an der Oberfläche. Bei zu viel Blei sinkt er unkontrolliert. Die perfekte Bleimenge wird im <strong>Bleicheck</strong> ermittelt: 
+					Der Taucher lässt die Luft aus dem Jacket ab und atmet normal. Steht er bis zur Augenhöhe im Wasser und sinkt erst beim Ausatmen langsam ab, ist die Bleimenge korrekt.</p>`,
                     image: "bilder/1_6_Auftrieb.jpg"
                 }
             ],
@@ -488,96 +415,55 @@ const bookData = {
                 {
                     id: "kap2-1",
                     title: "Anatomie des Ohrs",
-                    text: `<p>Schau dir das Bild genau an. Unser Ohr ist wie ein kleiner, spannender Tunnel aufgebaut und unterteilt sich in drei Bereiche:</p>
-					<p><strong>1. Das Außenohr (der Empfang)</strong><br>
-					Ganz außen siehst du die Ohrmuschel. Sie funktioniert wie ein Trichter und fängt die Schallwellen auf. Diese wandern dann durch den äußeren Gehörgang tief hinein ins Ohr.</p>
-					<p><strong>2. Das Mittelohr (der Verstärker)</strong><br>
-					Am Ende des Gehörgangs ist eine ganz dünne, empfindliche Haut gespannt: das Trommelfell. Es trennt das Außenohr vom Mittelohr. Wenn Schallwellen ankommen, 
-					bringt es das Trommelfell zum Schwingen. Dahinter liegen im Mittelohr die drei winzigen Gehörknöchelchen (sie heißen Hammer, Amboss und Steigbügel). 
-					Sie nehmen die Schwingungen auf und geben sie weiter – wie bei einer kleinen Telefonkette.</p>
-					<p><strong>3. Das Innenohr (das Gehirn des Ohrs)</strong><br>
-					Hier gibt es zwei wichtige Teile:<br>
-					•	Die Hörschnecke: Sie ist mit Flüssigkeit gefüllt. Die Schwingungen der Gehörknöchelchen werden hier in elektrische Signale umgewandelt, 
-					die über den Hörnerv direkt ins Gehirn wandern. Erst dort verstehen wir das Geräusch.<br>
-					•	Das Gleichgewichtsorgan: Es sorgt dafür, dass wir wissen, wo oben und unten ist, und dass wir nicht umfallen.</p>
-					<p><strong>Warum "knackt" es beim Tauchen?</strong><br>
-					Ganz wichtig beim Tauchen ist die Eustachische Röhre (die du auf dem Bild rechts siehst). Sie ist ein kleiner Verbindungsschlauch zwischen dem 
-					Mittelohr und dem Nasen-Rachen-Raum. Sie sorgt dafür, dass der Luftdruck hinter dem Trommelfell immer gleich bleibt. Beim Tieftauchen presst das Wasser 
-					von außen auf das Trommelfell. Wenn die Eustachische Röhre nicht gut geöffnet ist, tut das weh. Deshalb müssen Taucher immer wieder ausatmen und dabei die 
-					Nase zuhalten (das nennt man "Druckausgleich"). Dann zischt oder knackt es kurz – und der Druck ist wieder ausgeglichen.</p>
-					<p><strong>Wie hören wir unter Wasser?</strong><br>
-					Unter Wasser ist das Hören etwas anders. Wenn Schallwellen durch das Wasser auf unseren Kopf treffen, versetzen sie den Schädelknochen direkt in Schwingung. 
-					Diese Schwingungen werden dann direkt an das Innenohr weitergegeben. (Das ist der Grund, warum wir unter Wasser Geräusche oft dumpf hören und nicht so gut orten können, 
-					wie wir bereits gelernt haben!)</p>`,
+                    text: `<p>Das Ohr besteht aus drei Bereichen. Das <strong>Außenohr</strong> fängt die Schallwellen auf. Das <strong>Mittelohr</strong> wird durch das <strong>Trommelfell</strong> vom Außenohr getrennt. 
+					Die drei Gehörknöchelchen (Hammer, Amboss, Steigbügel) leiten die Schwingungen weiter. Im <strong>Innenohr</strong> befindet sich die <strong>Hörschnecke</strong>, 
+					die Schwingungen in elektrische Signale umwandelt, sowie das <strong>Gleichgewichtsorgan</strong>.</p>
+					<p>Die <strong>Eustachische Röhre</strong> verbindet das Mittelohr mit dem Rachenraum. Sie reguliert den Druckausgleich hinter dem Trommelfell. Beim Abtauchen drückt Wasser auf das Trommelfell. 
+					Ist die Röhre nicht geöffnet, entsteht Schmerz. Durch den Druckausgleich (Nase zuhalten und sanft ausatmen) wird die Röhre geöffnet.</p>`,
                     image: "bilder/2_1_Ohr.jpg"
                 },
                 {
                     id: "kap2-2",
                     title: "Hohlräume in unserem Körper",
-                    text: `<p>Wusstest du, dass in deinem Körper viele kleine Lufträume stecken? Wenn wir tauchen, wirkt das Wasser von außen mit starkem Druck auf uns. 
-					Weil sich Luft unter Druck zusammendrücken lässt (das haben wir bei der Tauchflasche schon gesehen), müssen diese Hohlräume besonders gut aufpassen. 
-					Sonst entsteht ein gefährliches Ungleichgewicht. Schau dir die Grafik an:</p>
-					<p><strong>1. Stirnhöhle & 2. Nasennebenhöhlen</strong><br>
-					Diese Hohlräume sitzen in unserem Schädelknochen, direkt über und hinter der Nase. Sie sind mit Luft gefüllt und über kleine Gänge mit dem Rachenraum verbunden. 
-					Beim Abtauchen muss hier der Druck ausgeglichen werden.</p>
-					<p><strong>3. Mittelohr</strong><br>
-					Das ist der Raum hinter deinem Trommelfell (das wir im letzten Bild gesehen haben). Auch hier muss die Luft „mitatmen“, damit das Trommelfell nicht nach innen gedrückt wird. 
-					Über die Eustachische Röhre (der Verbindungsschlauch zum Rachen) kann Luft nachströmen – beim Druckausgleich „knackt“ es dann kurz.</p>
-					<p><strong>4. Luftröhre & 5. Lunge</strong><br>
-					Die Lunge ist der größte luftgefüllte Raum. Sie ist über die Luftröhre mit dem Mund verbunden. Beim Tauchen atmen wir aus der Tauchflasche ein, 
-					deren Luft bereits den richtigen Druck hat. So bleibt die Lunge geschützt.</p>
-					<p><strong>6. Die Tauchmaske</strong><br>
-					Das ist ein künstlicher Lufthohlraum! Die Maske schließt mit einem Luftpolster vor deinen Augen ab. Beim Abtauchen presst das Wasser von außen dagegen. 
-					Deshalb musst du beim Tauchen durch die Nase in die Maske ausatmen, um den Druck auszugleichen. Sonst würde sie wie ein Saugnapf auf deinem Gesicht kleben!</p>
-					<p><strong>Warum ist der Druckausgleich so wichtig?</strong><br>
-					Luft lässt sich unter Druck zusammendrücken. Wenn die Hohlräume das nicht können, entsteht ein starker Unterdruck. Das kann sehr wehtun. 
-					Deshalb müssen Taucher beim Abtauchen immer wieder ausatmen und dabei die Nase zuhalten – so kann frische Luft in alle Hohlräume nachströmen.</p>
-					<p><strong>Was passiert bei einer Erkältung?</strong><br>
-					Es gibt Hohlräume, die nicht am Druckausgleich teilnehmen können, wie zum Beispiel kleine Knochenhöhlen im Schädel (die Siebbeinzellen) oder Kariesnester in Zähnen. 
-					Wenn du eine Erkältung hast, schwellen deine Schleimhäute an. Die kleinen Verbindungsgänge in Nase und Rachen werden blockiert. 
-					Der Druckausgleich schlägt fehl, und es drohen schmerzhafte Quetschungen (die Fachleute nennen das Barotrauma). Deshalb gilt: Nie mit einer Erkältung tauchen gehen!</p>`,
+                    text: `<p>Der menschliche Körper besitzt verschiedene luftgefüllte Hohlräume. Beim Tauchen wirkt der Wasserdruck von außen auf diese Räume. Da sich Luft unter Druck zusammendrücken lässt, 
+					müssen alle Hohlräume beim Abtauchen einen Druckausgleich erhalten. Die Grafik zeigt die betroffenen Bereiche:</p>
+					<ol style="padding-left: 20px;">
+						<li><strong>Stirnhöhle:</strong> Ein luftgefüllter Raum im Schädelknochen über der Nase.</li>
+						<li><strong>Nasennebenhöhlen:</strong> Hohlräume hinter der Nase, die über kleine Gänge mit dem Rachen verbunden sind.</li>
+						<li><strong>Mittelohr:</strong> Der Raum hinter dem Trommelfell.</li>
+						<li><strong>Luftröhre:</strong> Verbindet den Mund mit der Lunge.</li>
+						<li><strong>Lunge:</strong> Der größte luftgefüllte Raum des Körpers. Beim Gerätetauchen wird sie mit Luft unter dem exakten Umgebungsdruck versorgt.</li>
+						<li><strong>Tauchmaske:</strong> Ein künstlicher Lufthohlraum. Beim Abtauchen presst Wasser von außen dagegen. Durch Ausatmen durch die Nase in die Maske wird der Druck ausgeglichen.</li>
+					</ol>`,
                     image: "bilder/2_2_Hohlraum.jpg"
                 },
                 {
                     id: "kap2-3",
                     title: "Druckausgleich",
-                    text: `<p>Beim Tauchen presst das Wasser von außen auf unsere Ohren. Damit das nicht wehtut, müssen Taucher einen Trick anwenden: den Druckausgleich. Schau dir die linke Seite des Bildes an:</p>
-					<p><strong>So funktioniert der Druckausgleich (die Valsalva-Methode):</strong><br>
-					<strong>1. Normalzustand (ganz oben):</strong> Das Trommelfell ist entspannt, und die Eustachische Röhre (der Verbindungsschlauch zwischen Ohr und Rachen) ist frei. Alles ist im Gleichgewicht.<br>
-					<strong>2. Beim Abtauchen (Mitte):</strong><br> Der Wasserdruck wird stärker. Das Trommelfell wird nach innen gedrückt (es "wölbt sich nach innen"). Das tut unangenehm weh!<br>
-					<strong>3. Der Trick (unten):</strong> Jetzt kommt die Valsalva-Methode ins Spiel. So geht's: Du schließt den Mund fest, drückst deine Nasenflügel 
-					mit den Fingern zu und presst ganz sanft Luft aus der Lunge durch die Nase nach oben. Durch diesen leichten Überdruck im Rachen öffnet sich die Eustachische Röhre. 
-					Frische Luft strömt ins Mittelohr, das Trommelfell ploppt in seine Ausgangslage zurück – und der Schmerz verschwindet! Wichtig: Mache den Druckausgleich frühzeitig und regelmäßig alle paar Meter!</p>
-					<p><strong>Die Gefahr bei einer Erkältung (rechte Seite)</strong><br>
-					Ganz anders sieht es aus, wenn du erkältet bist. Wie du auf der rechten Seite siehst, sind bei einer Erkältung die Schleimhäute geschwollen und verstopft durch Schleim. 
-					Die Eustachische Röhre ist dann dicht.</p>
-					<p>Wenn du jetzt tauchst, kann die Luft nicht mehr ins Mittelohr nachströmen. Der Druck von außen wird immer stärker, das Trommelfell wird extrem nach innen gezogen – 
-					das kann sehr schmerzhaft werden und sogar das Trommelfell verletzen (das nennt man Barotrauma).</p>
-					<p>Deshalb gilt die eiserne Regel: <strong>Nie mit einer Erkältung tauchen gehen!</strong> (Das zeigt auch das Verbotsschild oben rechts). Warte lieber, bis deine Nase wieder frei ist!</p>`,
+                    text: `<p>Beim Abtauchen erhöht sich der Wasserdruck auf das Trommelfell. Ohne einen Druckausgleich wird das Trommelfell nach innen gedrückt. Das verursacht Schmerzen. Die Grafik zeigt links 
+					den Ablauf des Druckausgleichs und rechts die Gefahr bei einer Erkältung.</p>
+					<p><strong>So funktioniert der Druckausgleich:</strong><br>
+					<ul style="padding-left: 20px;">
+						<li><strong>Normalzustand:</strong> Das Trommelfell ist entspannt, und die Eustachische Röhre (der Verbindungsschlauch zwischen Ohr und Rachen) ist frei. Der Druck ist im Gleichgewicht.</li>
+						<li><strong>Beim Abtauchen:</strong> Der Wasserdruck steigt. Das Trommelfell wölbt sich nach innen. Das ist schmerzhaft.</li>
+						<li><strong>Die Valsalva-Methode:</strong> Der Taucher schließt den Mund, hält die Nase zu und presst sanft Luft aus der Lunge durch die Nase nach oben. Dadurch öffnet sich die Eustachische Röhre. 
+						Luft strömt ins Mittelohr, das Trommelfell entspannt sich wieder, und der Schmerz verschwindet. Der Druckausgleich muss frühzeitig und regelmäßig alle paar Meter erfolgen.</li>
+					</ul></p>
+					<p><strong>Die Gefahr bei einer Erkältung:</strong><br>
+					Bei einer Erkältung sind die Schleimhäute geschwollen und die Eustachische Röhre ist durch Schleim verstopft. Ein Druckausgleich ist dann nicht möglich. Beim Abtauchen wird das 
+					Trommelfell extrem nach innen gezogen. Das kann zu einer schmerzhaften Verletzung des Trommelfells führen (<strong>Barotrauma</strong>). Aus diesem Grund gilt: <strong>Tauchen mit einer Erkältung ist strikt untersagt.</strong></p>`,
                     image: "bilder/2_3_Druckausgleich.jpg"
                 },
                 {
                     id: "kap2-4",
                     title: "Lunge & Druck",
-                    text: `<p>Wenn wir tauchen, ist unsere Lunge der wichtigste Körperteil. Aber wusstest du, dass die Lunge beim Tauchen ganz unterschiedlich beansprucht wird, je nachdem, 
-					wie du tauchst? Schau dir die beiden Seiten im Bild an:</p>
-					<p><strong>Die linke Seite: Das Apnoe-Tauchen (Freitauchen)</strong><br>
-					Beim Apnoe-Tauchen hältst du die Luft an und tauchst ohne Flasche. Wenn du tiefer sinkst, drückt das Wasser immer stärker auf deinen Brustkorb. 
-					Wie du im kleinen Kreis siehst, wird die Lunge mit zunehmender Tiefe immer weiter zusammengedrückt – sie schrumpft regelrecht. Das ist für trainierte Freitaucher normal, 
-					aber für uns eine große körperliche Anstrengung.</p>
-					<p><strong>Die rechte Seite: Das Gerätetauchen</strong><br>
-					Beim Gerätetauchen mit Flasche ist das ganz anders! Du atmest durch den Atemregler Luft ein, die bereits den exakten Druck deiner aktuellen Tauchtiefe hat. 
-					Der Druck von außen und der Druck in deiner Lunge sind also immer im Gleichgewicht. Wie du im rechten Kreis siehst, wird die Lunge nicht zusammengedrückt, sondern bleibt prall gefüllt.</p>
-					<p><strong>Das physikalische Gesetz (Boyle-Mariotte)</strong><br>
-					Hier kommt ein wichtiges Gesetz ins Spiel: Wenn du mit der Flasche tief unten bist und dann langsam nach oben tauchst, wird der Wasserdruck weniger. 
-					Die Luft in deiner Lunge dehnt sich dabei wieder aus – sie nimmt wieder mehr Platz ein.</p>
-					<p><strong>⚠️ Die goldenen Regeln des Gerätetauchens</strong><br>
-					Weil sich die Luft beim Auftauchen ausdehnt, gelten zwei absolute Grundregeln, die du unten im Kasten siehst:<br>
-					<strong>1. Niemals die Luft anhalten beim Aufsteigen!</strong><br>
-					Wenn du die Luft anhalten würdest, könnte die sich ausdehnende Luft nicht entweichen. Das würde deine Lunge aufblähen wie einen Luftballon und das empfindliche Lungengewebe schwer verletzen. 
-					Deshalb: Atme auf dem Weg nach oben immer gleichmäßig weiter! (Siehst du das kleine Symbol mit der Hand und dem Mund? Es erinnert daran, immer auszuatmen.)<br>
-					<strong>2. Niemals zu schnell aufsteigen!</strong><br>
-					Wenn du zu schnell nach oben schießt, kann die Luft nicht schnell genug entweichen. Steige deshalb immer langsam und entspannt auf, damit sich deine Lunge an den geringer werdenden Druck anpassen kann.</p>`,
+                    text: `<p>Beim <strong>Apnoe-Tauchen</strong> (ohne Flasche) wird die Lunge durch den Wasserdruck komprimiert. Beim <strong>Gerätetauchen</strong> (mit Flasche) wird Luft mit dem exakten 
+					Umgebungsdruck eingeatmet, die Lunge bleibt gefüllt.</p>
+					<p>Beim Auftauchen verringert sich der Wasserdruck. Die Luft in der Lunge dehnt sich gemäß dem <strong>Boyle-Mariotte-Gesetz</strong> aus. Daraus ergeben sich zwei fundamentale Regeln:</p>
+					<ol style="margin-bottom: 15px; padding-left: 20px;">
+						<li>Die Luft beim Aufsteigen niemals anhalten.</li>
+						<li>Niemals zu schnell aufsteigen. Die Luft muss kontinuierlich entweichen können.</li>
+					</ol>`,
                     image: "bilder/2_4_Lunge.jpg"
                 },
                 {
@@ -587,32 +473,35 @@ const bookData = {
                     subrows: [
                         {
 							subTitle: "Tauchen ohne Flasche",					
-							text: `<p>Vielleicht kennst du das schon aus dem Schwimmbad: Beim Streckentauchen hältst du die Luft an und tauchst eine Bahn entlang, ohne eine Tauchflasche zu benutzen. 
-							Das nennt man <strong>Apnoe-Tauchen</strong>.</p>
-							<p><strong>Eine echte Sportart</strong><br>
-							Apnoe ist aber viel mehr als nur ein Spiel im Schwimmbad – es ist eine richtige Sportart! Trainierte Apnoe-Taucher können mit nur einem einzigen Atemzug unglaublich lange unter 
-							Wasser bleiben oder sehr tief tauchen. Sie trainieren ihren Körper und ihren Geist über Jahre, um das zu schaffen.</p>
-							<p><strong>Was ist möglich?</strong><br>
-							Schau dir diese verrückten Rekorde an:</p>
-							<p>• <strong>Zeit:</strong> Der Franzose Stéphane Mifsud hielt es ganze <strong>11 Minuten und 35 Sekunden</strong> unter Wasser aus – ohne einmal zu atmen!</p>
-							<p>• <strong>Strecke:</strong> Der Pole Mateusz Malina tauchte mit einem Atemzug <strong>250 Meter</strong> weit – das sind zehn Bahnen in einem Schwimmbad!</p>
-							<p>• <strong>Tiefe:</strong> Der Russe Alexey Molchanov tauchte mit nur einem Atemzug <strong>137 Meter</strong> tief ins Meer hinab. Das ist tiefer als ein 40-stöckiges Hochhaus hoch ist!</p>`,
+							text: `<p>Apnoe bezeichnet das Tauchen mit angehaltenem Atem, ohne Verwendung einer Tauchflasche. Eine bekannte Form ist das Streckentauchen im Schwimmbad, bei dem eine Bahn mit einem Atemzug zurückgelegt wird.</p>
+							<p><strong>Eine eigenständige Sportart</strong><br>
+							Apnoe ist eine eigenständige Sportart. Trainierte Apnoe-Taucher erreichen mit nur einem Atemzug große Tiefen oder weite Strecken. Dies erfordert ein jahrelanges Training von Körper und Geist.</p>
+							<p><strong>Rekorde im Apnoe-Tauchen</strong><br>
+							Die aktuellen Rekorde zeigen die Leistungsfähigkeit des menschlichen Körpers unter kontrollierten Bedingungen:</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Zeit:</strong> Der Franzose Stéphane Mifsud hielt sich 11 Minuten und 35 Sekunden unter Wasser auf, ohne zu atmen.</li>
+								<li><strong>Strecke:</strong> Der Pole Mateusz Malina tauchte mit einem Atemzug 250 Meter weit. Dies entspricht zehn Bahnen in einem Schwimmbad.</li>
+								<li><strong>Tiefe:</strong> Der Russe Alexey Molchanov tauchte mit einem Atemzug 137 Meter tief ins Meer. Diese Tiefe übertrifft die Höhe eines 40-stöckigen Hochhauses.</li>
+							</ul>`,
 							image: "bilder/2_5_Apnoe.jpg"
 						},
 						{
 							subTitle: "Atmung bei Apnoe",
-							text:`<p><strong>Die goldene Regel vor dem Tauchen: Richtig atmen!</strong><br>
-							Bevor du losschwimmst, musst du deinen Körper vorbereiten. Atme ein paar Mal ruhig und tief ein und aus. <strong>Hyperventiliere nicht!</strong> 
-							Das bedeutet, du darfst nicht hektisch und extrem schnell hintereinander ein- und ausatmen. Denn wenn du zu viel Luft einatmest, denkt dein Gehirn: 
-							<em>„Alles super, ich habe genug Sauerstoff!“</em> – und du merkst nicht, dass dir eigentlich schon die Luft ausgeht. Das ist sehr gefährlich!</p>`,
+							text:`<p>Bevor ein Apnoe-Taucher abtaucht, ist eine kontrollierte Atmung entscheidend. Die Atmung erfolgt ruhig und tief. Eine hilfreiche Technik zur Kontrolle ist die <strong>Bauchatmung</strong>: 
+							Der Taucher legt eine Hand auf den Bauch und atmet so, dass sich die Bauchdecke hebt und senkt. Die Schultern bleiben dabei entspannt. Diese Methode beruhigt den Körper und bereitet ihn auf den Atemstillstand vor.</p>
+							<p>Ein häufiger Fehler ist die <strong>Hyperventilation</strong>. Dabei atmet der Taucher hektisch und schnell hintereinander ein und aus. Das ist gefährlich, weil dadurch der Kohlendioxidgehalt im Blut sinkt. 
+							Kohlendioxid ist aber das Signal, das dem Gehirn meldet, wann der Körper wieder atmen muss. Bei Hyperventilation fällt dieses Warnsignal aus. Der Taucher bemerkt den Sauerstoffmangel nicht 
+							rechtzeitig und kann das Bewusstsein verlieren.</p>`,
 							image: "bilder/2_5_1_Apnoe_Atmung.jpg"
 						},
 						{
 							subTitle: "Schwimmbad-Blackout",
-							text: `<p>Wenn du die Luft anhältst und tauchst, kann es passieren, dass dein Gehirn plötzlich keinen Sauerstoff mehr bekommt. Dann schaltest du einfach ab – du wirst ohnmächtig. 
-							Das nennt man <strong>Blackout</strong>. Das Schlimme daran: Du merkst es oft nicht vorher. Du fühlst dich vielleicht noch super, aber plötzlich bist du weg.<br>
-							<strong>Deshalb gilt:</strong> Tauche niemals allein! Immer ein Buddy (ein Freund oder Erwachsener) muss über Wasser sein und auf dich aufpassen. Und: Höre sofort auf, 
-							wenn du ein Kribbeln oder Druck in der Lunge spürst.</p>`,
+							text: `<p>Ein <strong>Blackout</strong> tritt auf, wenn das Gehirn plötzlich keinen Sauerstoff mehr erhält. Der Taucher wird ohne Vorwarnung ohnmächtig. Der gefährliche Aspekt dabei ist: 
+							Der Taucher spürt in der Regel keine Warnzeichen. Er fühlt sich oft noch völlig normal, bevor die Ohnmacht einsetzt.</p>
+							<p>Ein <strong>Schwimmbad-Blackout</strong> ist häufig die direkte Folge von Hyperventilation vor dem Abtauchen. Durch das hektische Atmen wird das natürliche Warnsignal des Körpers ausgeschaltet, 
+							sodass der Taucher den kritischen Sauerstoffmangel nicht bemerkt.</p>
+							<p>Deshalb gilt eine absolute Sicherheitsregel: <strong>Apnoe-Tauchen ohne einen aufmerksamen Partner (Buddy) ist strengstens verboten.</strong> Der Buddy muss den Taucher an der 
+							Wasseroberfläche beobachten und im Notfall sofort eingreifen können.</p>`,
 							image: "bilder/2_5_2_Apnoe_Blackout.jpg"
 						}
 					]                    
@@ -840,32 +729,31 @@ const bookData = {
                     subrows: [
                         {
 							subTitle: "Die ABC",
-							text: `<p>Wenn du ins Wasser willst, um die Unterwasserwelt zu erkunden, brauchst du nicht sofort eine schwere Tauchflasche. Für den Anfang reicht die <strong>ABC-Ausrüstung</strong>.</p>
-							<p><strong>Was ist der Unterschied?</strong><br>
-							Mit der ABC-Ausrüstung kannst du <strong>schnorcheln</strong>. Das heißt, du schwimmst an der Wasseroberfläche und schaust nach unten. 
-							Wenn du aber wirklich nach unten tauchen und Fische aus der Nähe sehen willst, brauchst du eine Tauchflasche und einen Atemregler. Das nennt man dann <strong>Gerätetauchen</strong>.</p>
-							<p><strong>Das „ABC“ steht für die drei wichtigsten Dinge. Merke dir: A ist eine Flosse, B ist wie eine Maske und C ist wie ein Schnorchel!</strong></p>
-							<p><strong>A – sieht wie eine Flosse aus</strong><br>
-							Flossen sind wie große Schwimmflossen für deine Füße. Sie geben dir einen starken Vortrieb, damit du dich im Wasser schnell und ohne viel Kraftaufwand fortbewegen kannst. 
-							Aber wusstest du, dass es verschiedene Arten von Flossen gibt? Es gibt längere, härtere Flossen für starke Strömungen und kürzere, weichere Flossen, die wendiger sind.</p>
-							<p><strong>B – sieht wie eine Maske aus</strong><br>
-							Sie ist wie eine große Unterwasserbrille. Sie sorgt dafür, dass deine Augen geschützt sind und du ein Luftpolster vor der Nase hast. 
-							So kannst du scharf sehen und auch durch die Nase ausatmen, um den Druck in der Maske auszugleichen. <em>(Das „B“ erinnert dich an das Wort „Brille“ – denn eine Maske ist ja eine große Brille!)</em></p>
-							<p><strong>C – sieht wie ein Schnorchel aus</strong><br>
-							Das ist der gelbe Schlauch. Er hat oben eine Öffnung und unten ein Mundstück. Wenn du an der Wasseroberfläche schwimmst, kannst du durch den Schnorchel atmen, 
-							ohne deinen Kopf aus dem Wasser heben zu müssen. So kannst du stundenlang die Fische beobachten!</p>`,
+							text: `<p>Die <strong>ABC-Ausrüstung</strong> bildet die Basis für das Tauchen. Der Name leitet sich aus den drei Hauptbestandteilen ab, die man sich leicht merken kann: 
+							<strong>A</strong> sieht aus wie eine Flosse, <strong>B</strong> steht für die Maske (ähnlich einer Brille) und <strong>C</strong> sieht aus wie ein Schnorchel.</p>
+							<p>Die drei Teile haben spezifische Funktionen: Die <strong>Flossen</strong> liefern den nötigen Vortrieb im Wasser. Die <strong>Maske</strong> schützt die Augen, 
+							schafft ein Luftpolster und ermöglicht eine klare Sicht. Der <strong>Schnorchel</strong> ermöglicht die Atmung, während man an der Wasseroberfläche schwimmt.</p>
+							<p>Mit der ABC-Ausrüstung ist das <strong>Schnorcheln</strong> möglich. Wer jedoch in die Tiefe tauchen möchte, benötigt zusätzlich eine Tauchflasche mit Atemregler. 
+							Dieser Vorgang wird als <strong>Gerätetauchen</strong> bezeichnet.</p>`,
 							image: "bilder/3_1_ABC.jpg"
 						},
 						{
 							subTitle: "Die Flossen",
-							text: `<p><strong>Welche Flosse passt zu dir?</strong><br>
-							•	<strong>Geräteflossen (offene Flossen):</strong> Bei diesen Flossen ist die Ferse offen. Du ziehst sie mit einem Band über spezielle Neopren-Füßlinge (das sind warme Socken aus Neopren). 
-							Sie sind ideal für kalte Gewässer und schützen deine Füße an steinigen Ufern.<br>
-							•	<strong>Fußteilflossen (geschlossene Flossen):</strong> Diese haben einen geschlossenen Schuh, den du wie einen normalen Schuh anziehst. Sie sind perfekt, 
-							um barfuß im warmen Schwimmbad oder im Meer zu schwimmen.</p>
-							<p><strong>Länge und Härte machen den Unterschied</strong><br>
-							•	<strong>Längere, härtere Flossen</strong> geben dir einen enormen Vortrieb. Das ist super, wenn du gegen eine starke Strömung anschwimmen musst.<br>
-							•	<strong>Kürzere, weichere Flossen</strong> sind kraftsparend und wendig. Sie sind ideal für flaches Wasser oder wenn du im Schwimmbad trainierst.</p>`,
+							text: `<p>Flossen sind ein zentraler Bestandteil der ABC-Ausrüstung. Sie liefern den Vortrieb im Wasser. Es gibt verschiedene Arten von Flossen, die sich in ihrer Bauweise 
+							und ihrem Einsatzgebiet unterscheiden. Ein Blick auf die Grafik zeigt den Unterschied zwischen zwei grundlegenden Typen.</p>
+							<h4>Vollfußflossen für das Hallenbad</h4>
+							<p><strong>Vollfußflossen</strong> (auch Fußteilflossen genannt) besitzen ein geschlossenes Fußteil. Der Fuß wird komplett vom Flossenmaterial umschlossen, ähnlich wie bei einem festen Schuh. 
+							Diese Flossen werden barfuß getragen. Sie sind die optimale Wahl für das Schwimmbad, da sie einfach anzuziehen sind und im flachen, warmen Wasser einen guten Vortrieb bieten.</p>
+							<h4>Geräteflossen für den See</h4>
+							<p><strong>Geräteflossen</strong> (auch offene Flossen genannt) haben ein offenes Fußteil mit einem Fersenband. Sie werden nicht barfuß getragen, sondern über spezielle Neopren-Füßlinge gezogen. 
+							Diese Füßlinge schützen die Füße vor Kälte und Verletzungen an steinigen Ufern. Das Fersenband sorgt dafür, dass die Flosse fest am Fuß sitzt. Geräteflossen sind daher ideal für den Einsatz 
+							in kälteren Gewässern wie Seen oder im Meer.</p>
+							<h4>Länge und Härte der Flossen</h4>
+							<p>Neben der Bauweise spielen auch die Länge und die Härte des Flossenblatts eine wichtige Rolle:</p>
+							<ul style="padding-left: 20px;">
+								<li><strong>Längere, härtere Flossen</strong> erzeugen einen enormen Vortrieb. Sie sind besonders dann von Vorteil, wenn man gegen eine starke Strömung anschwimmen muss.</li>
+								<li><strong>Kürzere, weichere Flossen</strong> sind kraftsparender und wendiger. Sie eignen sich hervorragend für flaches Wasser oder für Trainingseinheiten im Schwimmbad.</li>
+							</ul>`,
 							image: "bilder/3_1_1_Flossen.jpg"
 						}
 					]
@@ -877,67 +765,79 @@ const bookData = {
                     subrows: [
                         {
 							subTitle: "Übersicht",
-							text: `<p>Wenn ein Taucher ins Wasser geht, sieht er aus wie ein Astronaut! Er braucht nämlich eine ganze Menge Ausrüstung, um sicher atmen und sich bewegen zu können. 
-							Schau dir das große Bild mit dem Taucher in der Mitte an. Das sind die wichtigsten Teile:</p>
-							<p>•	<strong>Die Tauchflasche</strong> (mit zwei Ventilen oben): Darin ist die Pressluft, die wir schon kennengelernt haben – bis zu 300 bar!<br>
-							•	<strong>Das Atemregler-Set:</strong> Das ist das Herzstück. Es besteht aus zwei ersten Stufen (die oben an der Flasche sitzen) und zwei zweiten Stufen (das sind die Atemregler). 
-							Eine zweite Stufe hast du beim Tauchen im Mund – das ist dein Hauptregler. Die andere zweite Stufe ist dein Reserve-Regler. Er hängt an einem kurzen Schlauch, 
-							der direkt mit der ersten Stufe verbunden ist, und ist mit einem Bungee (einem Gummiband) am Hals befestigt.<br>
-							•	<strong>Das Manometer:</strong> Die kleine runde Anzeige, die dir zeigt, wie viel Luft noch in der Flasche ist.<br>
-							•   <strong>Der Tauchcomputer:</strong> Das ist das kleine Gerät am Handgelenk (wie eine schlaue Uhr). Er misst die Zeit und die Tiefe und rechnet aus, wie lange du noch unter 
-							Wasser bleiben darfst. So weißt du immer, wann du auftauchen musst.<br>
-							•	<strong>Die Tauchmaske, der Schnorchel, die Flossen, die Tauchlampe</strong> und die <strong>Haube, Füßlinge und Handschuhe</strong> gegen die Kälte.<br>
-							•	<strong>Das Jacket (BCD):</strong> deine Schwimmweste unter Wasser. Hast du dich schon gefragt, was das für eine dicke Weste ist, die der Taucher trägt? 
-							Das ist das Jacket (manchmal auch BCD genannt). Es ist wie ein aufblasbarer Rettungsring. Wenn du an der Oberfläche treiben willst, drückst du auf einen Knopf und die 
-							Weste füllt sich mit Luft aus der Flasche. Dann treibst du wie ein Korken oben. Wenn du abtauchen willst, lässt du die Luft wieder raus. So hilft du dir, im Wasser zu schweben 
-							(das nennt man Tarierung).</p>`,
+							text: `<p>Für einen Tauchgang ist eine umfangreiche Ausrüstung erforderlich. Sie dient der sicheren Atmung, der Fortbewegung und dem Schutz des Tauchers. Die Grafik zeigt die wichtigsten Bestandteile im Überblick.</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Die Tauchflasche (mit zwei Ventilen):</strong> Sie enthält die Pressluft mit einem Druck von bis zu 300 bar.</li>
+								<li><strong>Das Atemregler-Set:</strong> Es besteht aus zwei ersten Stufen (an der Flasche) und zwei zweiten Stufen (den Atemreglern). Eine zweite Stufe wird im Mund getragen (Hauptregler). 
+								Die andere zweite Stufe ist der Reserve-Regler. Er hängt an einem kurzen Schlauch, der direkt mit der ersten Stufe verbunden ist, und ist mit einem Bungee (Gummiband) am Hals befestigt.</li>
+								<li><strong>Das Manometer:</strong> Die runde Anzeige zeigt den aktuellen Luftvorrat in der Flasche an.</li>
+								<li><strong>Der Tauchcomputer:</strong> Das Gerät am Handgelenk misst Zeit und Tiefe. Es berechnet die verbleibende Tauchzeit und zeigt an, wann der Aufstieg eingeleitet werden muss.</li>
+								<li><strong>Die ABC-Ausrüstung:</strong> Dazu gehören die Tauchmaske, der Schnorchel und die Flossen. Sie ermöglichen die Fortbewegung und die klare Sicht unter Wasser.</li>
+								<li><strong>Der Kälteschutz (Extremitäten):</strong> Dazu gehören die <strong>Kopfhaube</strong> (schützt Kopf und Ohren), die <strong>Füßlinge</strong> (Neopren-Socken unter den Flossen) 
+								und die <strong>Handschuhe</strong>. Sie sind wichtig, um den Wärmeverlust an Händen, Füßen und Kopf zu reduzieren.</li>
+								<li><strong>Das Jacket (BCD):</strong> Es ist die Tarierweste des Tauchers. Über einen Knopf wird die Weste mit Luft aus der Flasche befüllt, um an der Oberfläche zu treiben. 
+								Beim Abtauchen wird die Luft wieder abgelassen. Das Jacket ermöglicht die Regelung des Auftriebs (Tarierung).</li>
+							</ul>`,
 							image: "bilder/3_2_Ausruestung.jpg"
 						},
 						{
 							subTitle: "Die Tauchmaske",
-							text: `<p>Schau dir die linke Detailzeichnung an. Die Maske ist viel mehr als eine einfache Brille:</p>
-							•	Das <strong>Maskenglas</strong> besteht aus gehärtetem Sicherheitsglas, damit es nicht so leicht zerbricht.<br>
-							•	Der <strong>Maskenkörper</strong> aus Silikon ist flexibel und schmiegt sich an dein Gesicht an.<br>
-							•	Ganz wichtig ist der <strong>Nasenerker</strong> unter der Nase! Durch ihn kannst du deine Nase zuhalten, um den Druckausgleich zu machen (das haben wir beim Ohr gelernt).<br>
-							•	Mit der <strong>Maskenschnalle</strong> und dem <strong>Maskenband</strong> stellst du die Maske perfekt ein, damit kein Wasser eindringt.</p>`,
+							text: `<p>Die Tauchmaske ist weit mehr als eine einfache Schwimmbrille. Sie besteht aus mehreren wichtigen Bauteilen, die in der Grafik beschriftet sind:</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Das Maskenglas:</strong> Es besteht aus gehärtetem Sicherheitsglas, damit es unter Wasser nicht so leicht zerbricht.</li>
+								<li><strong>Der Maskenkörper:</strong> Er besteht aus flexiblem Silikon und schmiegt sich an das Gesicht an. So entsteht ein wasserdichter Abschluss.</li>
+								<li><strong>Der Nasenerker:</strong> Dies ist ein besonders wichtiges Bauteil. Er umschließt die Nase und ermöglicht es dem Taucher, die Nase zum Druckausgleich zuzuhalten. 
+								Ohne ihn wäre der Druckausgleich unter Wasser nicht möglich.</li>
+								<li><strong>Das Maskenband und die Maskenschnalle:</strong> Mit ihnen wird die Maske individuell eingestellt und am Kopf fixiert, damit sie fest sitzt und kein Wasser eindringt.</li>
+							</ul>`,
 							image: "bilder/3_2_1_Maske.jpg",
 						},
 						{
 							subTitle: "Das Jacket",
-							text: `<p>•	Der <strong>Inflatorschlauch</strong> ist der dicke Schlauch vorne. Wenn du mitten im Wasser schweben willst, drückst du auf den Knopf an diesem Schlauch. 
-							Dann strömt Luft aus der Flasche in deine Weste und du steigst ein Stück nach oben. Wenn du wieder sinken willst, hältst du den Schlauch hoch und drückst auf den Knopf oben am Jacket. 
-							Dann entweicht die Luft mit einem lauten Zischen, und du sinkst langsam nach unten.<br>
-							•	Die <strong>Schnellablässe</strong> (kleine Ventile oben und unten) lassen die Luft ganz schnell wieder entweichen, wenn du abtauchen willst.<br>
-							•	Der <strong>Bauchgurt</strong> und der <strong>Flaschengurt</strong> halten alles fest am Körper.<br>
-							•	In den <strong>Bleitasche</strong> kommt das Blei hinein, damit du nicht wie ein Korken nach oben treibst.<br>
-							•	Und die <strong>D-Ringe</strong> sind kleine Ringe, an denen man die Taschenlampe oder andere Ausrüstung befestigen kann.</p>`,
+							text: `<p>Das Jacket ist die aufblasbare Weste des Tauchers. Es hat zwei Hauptaufgaben: Es hält die Tauchflasche auf dem Rücken und reguliert den Auftrieb im Wasser (Tarierung). 
+							Die Grafik zeigt die wichtigsten Bestandteile:</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Der Inflatorschlauch:</strong> Über diesen dicken Schlauch wird das Jacket mit Luft aus der Flasche befüllt. Drückt der Taucher auf den Knopf, strömt Luft in die Weste und er steigt auf.</li>
+								<li><strong>Die Schnellablässe:</strong> Dies sind kleine Ventile, meist oben an der Schulter und unten am Gesäß. Über sie kann die Luft schnell und kontrolliert entweichen, wenn der Taucher abtauchen möchte.</li>
+								<li><strong>Der Bauchgurt und der Flaschengurt:</strong> Sie fixieren das Jacket und die Flasche fest am Körper.</li>
+								<li><strong>Die Bleitasche:</strong> In ihr wird das Blei verstaut, das den Auftrieb des Neoprenanzugs ausgleicht.</li>
+								<li><strong>Die D-Ringe:</strong> Sie dienen als Befestigungspunkte für zusätzliche Ausrüstung wie eine Taucherlampe.</li>
+							</ul>`,
 							image: "bilder/3_2_2_Jacket.jpg",
 						},
 						{
 							subTitle: "Der Atemregler-Set",
-							text: `<p>Schau dir das Bild genau an. Oben auf der Flasche sitzen nicht ein, sondern <strong>zwei Ventile</strong> (das sind die Drehknöpfe, mit denen man die Flasche aufdreht). 
-							An jedem Ventil ist eine <strong>1. Stufe</strong> befestigt – das ist der Teil, der den hohen Druck aus der Flasche reguliert.</p>
-							<p><strong>Wichtig für die Sicherheit:</strong> Die <strong>primäre 1. Stufe</strong> (die Hauptstufe) sitzt auf dem <strong>rechten Ventil</strong>. 
-							Die <strong>Reserve-1. Stufe</strong> (Backup) sitzt auf dem <strong>linken Ventil</strong>. So sind die beiden Systeme voneinander getrennt, und wenn eines ausfällt, 
-							funktioniert das andere noch.</p>
-							<p>Daran hängen verschiedene Schläuche mit jeweils einer <strong>2. Stufe</strong> (dem Atemregler für den Mund):</p>
-							<p>• <strong>Der Hauptregler (Primär):</strong> Er hat einen <strong>langen, grünen Schlauch</strong>. Diesen Regler hast du beim Tauchen ganz normal im Mund. 
-							Der lange Schlauch ist wichtig, damit du dich frei bewegen kannst und im Notfall genug Abstand zu deinem Partner hast.</p>
-							<p>• <strong>Der Reserve-Regler (Backup):</strong> Er hat einen <strong>kurzen, gelben Schlauch</strong> und hängt an einem grünen Gummiband (Bungee) direkt unter deinem Kinn.</p>
-							<p><strong>Was hängt noch an der Flasche?</strong><br>
-							Neben den Atemreglern gibt es noch zwei wichtige Anschlüsse:</p>
-							<p>• <strong>Der Finimeter (die Druckanzeige):</strong> Er hängt an einem <strong>roten Schlauch</strong> und zeigt dir an, wie viel Luft noch in der Flasche ist 
-							(die Anzeige mit dem grünen, gelben und roten Bereich).</p>
-							<p>• <strong>Der Inflatorschlauch:</strong> Er hängt an einem <strong>orangenen Schlauch</strong> und ist dafür da, dein Jacket (die Tarierweste) mit Luft zu füllen.</p>
-							<h4>So funktioniert die Hilfe im Notfall:</h4>
-							<p>Stell dir vor, dein Tauchpartner hat plötzlich keine Luft mehr. Dann gehst du so vor:</p>
-							<p><strong>1.</strong> Du nimmst <strong>deinen eigenen Hauptregler (den langen grünen Schlauch) aus dem Mund</strong> und gibst ihn deinem Partner. 
-							Der lange Schlauch ist dafür da, dass ihr genug Abstand habt und euch nicht in die Quere kommt.</p>
-							<p><strong>2.</strong> Du selbst wechselst <strong>sofort auf deinen Reserve-Regler (den kurzen gelben Schlauch am Hals)</strong> und atmest daraus weiter.</p>
-							<p><strong>Warum ist das so sicher?</strong><br>
-							Weil du den Regler, der direkt vor deiner Nase hängt (den gelben), blind findest. Du musst nicht erst nach einem Schlauch suchen. So habt ihr beide 
-							sofort wieder Luft, und keiner gerät in Panik. Das ist wie ein Zaubertrick – nur in echt und lebensrettend!</p>
-							<p>Mit dieser Ausrüstung bist du perfekt ausgestattet für ein großes Unterwasser-Abenteuer!</p>`,
+							text: `<p>Die Luft aus der Tauchflasche steht unter hohem Druck und kann nicht direkt eingeatmet werden. Deshalb ist ein Atemregler-Set erforderlich, das den Druck reguliert. 
+							Die Grafik zeigt den Aufbau dieses Systems. Zur besseren Orientierung sind die Schläuche in der Grafik farbig markiert. In der Praxis können die Farben der Schläuche abweichen.</p>
+							<h4>Die Ventile und die 1. Stufen</h4>
+							<p>Oben auf der Tauchflasche befinden sich zwei Ventile. Das sind die Drehknöpfe, mit denen die Flasche aufgedreht wird. An jedem Ventil ist eine <strong>1. Stufe</strong> befestigt. 
+							Diese Stufe hat die Aufgabe, den hohen Druck aus der Flasche (bis zu 300 bar) auf einen mittleren Druck zu reduzieren.</p>
+							<p>Für die Sicherheit ist dieses System doppelt ausgelegt: Die <strong>primäre 1. Stufe</strong> (Hauptstufe) sitzt auf dem rechten Ventil. 
+							Die <strong>Reserve-1. Stufe</strong> (Backup) sitzt auf dem linken Ventil. Dadurch sind die beiden Systeme voneinander getrennt. Fällt ein System aus, bleibt das andere funktionsfähig.</p>
+
+							<h4>Die 2. Stufen (Atemregler)</h4>
+							<p>An den 1. Stufen hängen verschiedene Schläuche, die zu den 2. Stufen führen. Die <strong>2. Stufe</strong> ist der eigentliche Atemregler, der in den Mund genommen wird. Es gibt zwei davon:</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Der Hauptregler (Primär):</strong> Er ist in der Grafik mit dem langen, grünen Schlauch verbunden. Dieser Regler wird beim Tauchen normalerweise im Mund getragen. 
+								Der lange Schlauch ermöglicht Bewegungsfreiheit und sorgt im Notfall für ausreichend Abstand zum Tauchpartner.</li>
+								<li><strong>Der Reserve-Regler (Backup):</strong> Er ist in der Grafik mit dem kurzen, gelben Schlauch verbunden. Dieser Regler hängt an einem grünen Gummiband (Bungee) direkt unter dem Kinn des Tauchers.</li>
+							</ul>
+							<h4>Weitere Anschlüsse an der Flasche</h4>
+							<p>Neben den Atemreglern gibt es zwei weitere wichtige Anschlüsse:</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Der Finimeter (Druckanzeige):</strong> Er hängt in der Grafik an dem roten Schlauch. Die Anzeige zeigt den aktuellen Druck in der Flasche an. 
+								Der grüne, gelbe und rote Bereich auf dem Ziffernblatt gibt Auskunft über den verbleibenden Luftvorrat.</li>
+								<li><strong>Der Inflatorschlauch:</strong> Er hängt in der Grafik an dem orangefarbenen Schlauch und dient dazu, das Tarierjacket (die Weste) mit Luft aus der Flasche zu befüllen.</li>
+							</ul>
+							<h4>Die Hilfe im Notfall</h4>
+							<p>Ein Notfall liegt vor, wenn der Tauchpartner plötzlich keine Luft mehr hat. In dieser Situation greift die doppelte Auslegung des Systems:</p>
+							<ol style="margin-bottom: 15px; padding-left: 20px;">
+								<li>Der Taucher nimmt seinen eigenen <strong>Hauptregler</strong> (den langen grünen Schlauch) aus dem Mund und gibt ihn an den Partner weiter. 
+								Der lange Schlauch stellt sicher, dass beide Taucher genügend Abstand zueinander halten können.</li>
+								<li>Der Taucher wechselt sofort auf seinen <strong>Reserve-Regler</strong> (den kurzen gelben Schlauch am Hals) und atmet daraus weiter.</li>
+							</ol>
+							<p>Dieses Vorgehen bietet einen entscheidenden Sicherheitsvorteil: Der Reserve-Regler hängt direkt vor der Nase des Tauchers. Er ist ohne Suchen zu finden. 
+							Dadurch sind beide Taucher innerhalb kürzester Zeit wieder mit Atemluft versorgt.</p>`,
 							image: "bilder/3_2_3_Atemregler.jpg"
 						}
 					]
@@ -949,28 +849,36 @@ const bookData = {
                     subrows: [
                         {
 							subTitle: "Anzugsarten",
-							text: `<p>Stell dir vor, du springst im tiefsten Winter in einen kalten See – brrr, das wäre eiskalt! Deshalb tragen Taucher spezielle Anzüge. 
-							Sie schützen nicht nur vor Kälte, sondern auch vor Kratzern an Felsen. Aber nicht jeder Anzug ist für jedes Wasser gleich.</p> 
-							<p>Schau dir die fünf Bilder oben an (von links nach rechts):<br>
-							1. <strong>Der Shorty</strong> (Warmes Wasser über 24 °C): Ein kurzer Anzug mit kurzen Armen und Beinen. Perfekt für einen Urlaub am warmen Strand, wo das Wasser wie eine warme Badewanne ist.<br>
-							2. <strong>Der Nassanzug</strong> (Mäßig warm, 15–24 °C): Ein Einteiler (er bedeckt Arme und Beine). Hier kommt ein kleiner Trick ins Spiel: Durch den Kragen dringt ein bisschen Wasser in den Anzug. 
-							Das ist aber Absicht! Der Körper wärmt dieses dünne Wasserpolster auf, und der Neoprenanzug hält die Wärme dann wie eine zweite Haut fest.<br>
-							3. <strong>Nassanzug + Eisweste</strong> (Kühler, 10–18 °C): Wenn das Wasser kälter wird, reicht der normale Anzug nicht mehr. Taucher ziehen eine zusätzliche Weste über den Anzug und 
-							setzen eine Kopfhaube auf. So bleibt die Körperwärme noch besser eingeschlossen.<br>
-							4. <strong>Der Halbtrockenanzug</strong> (Kühl bis kalt, 12–20 °C): Er sieht aus wie ein normaler Nassanzug, hat aber an den Armen und Beinen enge Dichtungsmanschetten 
-							(wie kleine Gummiringe). Dadurch kommt fast kein Wasser mehr rein und raus – er hält also viel wärmer!<br>
-							5. <strong>Der Trockenanzug</strong> (Sehr kalt, unter 10 °C): Das ist der Super-Schutz für eiskalte Gewässer (oder sogar unter Eis!). Er ist meistens orange oder knallrot, 
-							damit man gut gesehen wird. Hier dringt überhaupt kein Wasser ein. Der Taucher bleibt darin komplett trockenen – wie in einem wasserdichten Schneeanzug.</p>`,
+							text: `<p>Taucher benötigen spezielle Anzüge. Sie schützen den Körper vor Kälte und bieten einen gewissen Schutz vor Kratzern an Felsen oder Korallen. Da die Wassertemperaturen weltweit sehr unterschiedlich sind, 
+							gibt es verschiedene Anzugstypen. Die Grafik zeigt fünf Varianten.</p>
+							<h4>1. Der Shorty (Warmes Wasser)</h4>
+							<p>Der Shorty ist ein kurzer Anzug mit kurzen Armen und Beinen. Er wird in warmen Gewässern (z. B. im Urlaub in den Tropen) getragen. Er bietet maximale Bewegungsfreiheit und verhindert eine Überhitzung des Tauchers.</p>
+							<h4>2. Der Nassanzug (Mäßig warm)</h4>
+							<p>Der Nassanzug ist ein Einteiler, der Arme und Beine vollständig bedeckt. Er funktioniert nach einem physikalischen Prinzip: Durch den Kragen dringt eine geringe Menge Wasser in den Anzug. 
+							Dieses Wasser wird vom Körper erwärmt und bildet ein isolierendes Polster. In unseren heimischen Seen ist das Wasser oft kühler. 
+							Deshalb wird der Nassanzug hier fast immer in Kombination mit <strong>Kopfhaube, Füßlingen und Handschuhen</strong> getragen, um den Wärmeverlust an den Extremitäten zu minimieren.</p>
+							<h4>3. Nassanzug mit Eisweste (Kühler)</h4>
+							<p>Bei kühleren Temperaturen reicht ein normaler Nassanzug nicht mehr aus. Der Taucher zieht zusätzlich eine sogenannte <strong>Eisweste</strong> über den Anzug. 
+							Zusammen mit der Kopfhaube, Handschuhen und Füßlingen reduzieren diese zusätzlichen Schichten den Wärmeverlust des Körpers deutlich.</p>
+							<h4>4. Der Halbtrockenanzug (Kühl bis kalt)</h4>
+							<p>Der Halbtrockenanzug ähnelt in seinem Aufbau einem Nassanzug. Er besitzt jedoch an den Armen, den Beinen und am Hals sogenannte <strong>Dichtungsmanschetten</strong>. 
+							Das sind enge Gummiringe, die den Wasseraustausch stark minimieren. Zusätzlich verfügt er über einen <strong>gasdichten Reißverschluss</strong>, der von Schulter zu Schulter verläuft. 
+							Bei einer guten Passform dringt dadurch kaum oder gar kein Wasser in den Anzug ein. Der Taucher bleibt besser vor dem Eindringen von Wasser geschützt und kühlt deutlich langsamer aus.</p>
+							<h4>5. Der Trockenanzug (Sehr kalt)</h4>
+							<p>Der Trockenanzug ist für extrem kalte Gewässer konzipiert, teilweise auch für Tauchgänge unter Eis. Er ist oft in Signalfarben wie Orange oder Rot gehalten, 
+							um die Sichtbarkeit zu erhöhen. Beim Trockenanzug dringt kein Wasser in den Anzug ein. Der Taucher bleibt vollständig trocken. Zusätzliche Kleidung unter dem Anzug sorgt für Wärmeisolierung.</p>`,
 							image: "bilder/3_3_Anzug.jpg"
 						},
 						{
 							subTitle: "Achtung, Hitze an Land!",
-							text: `<p>Neopren ist ein tolles Material, um im Wasser warm zu halten. Aber an Land, wenn die Sonne knallt, wird es in so einem Anzug ganz schnell superheiß! 
-							Die Körperwärme kann nicht entweichen, und der Taucher schwitzt stark. Deshalb zieht man den Anzug an Land am besten erst kurz vor dem Tauchgang an oder rollt ihn an heißen Tagen bis zur Hüfte herunter.</p>
-							<p><strong>Achtung, Sonnenlicht schadet dem Anzug! (Rechtes unteres Bild)</strong><br>
-							So toll Neopren ist, es hat einen Feind: die <strong>UV-Strahlung</strong> der Sonne. Wie du auf dem rechten Bild siehst, wird das Material davon ganz trocken und brüchig. 
-							Es bilden sich Risse, und die schönen Farben bleichen aus. Deshalb gilt die wichtige Regel: Tauchanzüge niemals in der pralle Sonne trocknen lassen! 
-							Hänge sie lieber in den Schatten oder an einen schattigen Haken. So hast du länger Freude an deinem Anzug.</p>`,
+							text: `<p>Neopren ist ein effektives Material zur Wärmeisolierung im Wasser. An Land, bei direkter Sonneneinstrahlung, führt diese Eigenschaft jedoch zu einem Problem: 
+							Die Körperwärme kann nicht entweichen, und der Taucher überhitzt schnell. Der Körper reagiert mit starkem Schwitzen. Aus diesem Grund sollte der Tauchanzug erst unmittelbar 
+							vor dem Tauchgang angezogen werden. An heißen Tagen kann der obere Teil des Anzugs bis zur Hüfte heruntergerollt werden, um eine Überhitzung zu vermeiden.</p>
+							<h4>Achtung: Materialschaden durch UV-Licht</h4>
+							<p>Neopren ist empfindlich gegenüber UV-Strahlung. Wie auf dem rechten Bild zu erkennen ist, führt intensive Sonneneinstrahlung dazu, dass das Material austrocknet und brüchig wird. 
+							Es entstehen Risse, und die Farben bleichen aus. Dadurch verliert der Anzug seine isolierende Wirkung und seine Elastizität.</p>
+							<p>Daraus ergibt sich eine wichtige Pflegeregel: <strong>Tauchanzüge dürfen niemals in der prallen Sonne trocknen.</strong> Sie müssen nach dem Abspülen im Schatten aufgehängt werden. 
+							Nur so bleibt das Material intakt und der Anzug funktionsfähig.</p>`,
 							image: "bilder/3_3_1_Anzug.jpg"
 						}
 					]
@@ -978,28 +886,25 @@ const bookData = {
                 {
                     id: "kap3-4",
                     title: "Richtiger Umgang & Pflege",
-                    text: `<p>Deine Tauchausrüstung ist wie ein guter Freund – sie beschützt dich unter Wasser. Damit sie lange hält und immer sicher ist, musst du sie gut behandeln. 
-					Hier sind die wichtigsten Regeln, die du auf den Bildern siehst:</p>
-					<p><strong>1. Tauchflaschen immer hinlegen oder sichern!</strong><br>
-					Eine Tauchflasche ist schwer und steht unter hohem Druck. Wenn sie umfällt, kann das gefährlich sein. Leg sie deshalb immer flach hin oder sichere sie gut, 
-					damit sie nicht umkippen kann. (Und schwere Flaschen trägst du am besten gemeinsam mit einem Erwachsenen, wie unten rechts zu sehen ist!)</p>
-					<p><strong>2. Flossen niemals auf das Flossenblatt stellen oder verbiegen!</strong><br>
-					Flossen sind aus festem Kunststoff. Wenn du sie auf das Blatt stellst oder sie knickst, können sie brechen. Leg sie deshalb immer flach hin oder stelle sie auf den Fußteil.</p>
-					<p><strong>3. Ausrüstung niemals werfen oder fallen lassen!</strong><br>
-					Atemregler und Masken sind empfindlich. Wenn sie auf den Boden fallen, können sie kaputtgehen. Leg sie deshalb immer vorsichtig in deine Tauchtasche, anstatt sie hineinzuwerfen.</p>
-					<p><strong>4. Nach jedem Tauchgang gründlich mit Süßwasser abspülen!</strong><br>
-					Salzwasser und Sand können die Ausrüstung angreifen. Spüle deshalb alles – besonders den Atemregler und die Maske – nach dem Tauchen mit klarem Süßwasser ab.</p>
-					<p><strong>5. Ausrüstung im Schatten lagern!</strong><br>
-					Starke Hitze und direkte Sonne schaden dem Material. Leg deine Ausrüstung deshalb immer in den Schatten und nicht in die pralle Sonne.</p>
-					<p><strong>6. Tauchanzüge gereinigt und gut getrocknet hängend lagern!</strong><br>
-					Hänge deinen Anzug nach dem Abspülen auf einen Bügel, damit er gut trocknen kann. Am besten an einem schattigen, luftigen Ort. 
-					(Und denk dran: Neopren besteht aus winzigen Gasbläschen, die durch UV-Strahlen spröde werden und ausbleichen – deshalb niemals in die Sonne hängen!)</p>
-					<p><strong>7. Ausrüstung sauber halten und vor Sand und Dreck schützen!</strong><br>
-					Sand in der Maske oder im Atemregler ist nicht nur unangenehm, sondern kann auch die Dichtungen kaputt machen. Bewahre deine Ausrüstung deshalb in einer sauberen Box auf.</p>
-					<p><strong>8. Schwere Ausrüstung gemeinsam tragen!</strong><br>
-					Eine Tauchflasche ist ganz schön schwer. Trage sie deshalb immer gemeinsam mit einem Erwachsenen oder benutze eine Tragehilfe.</p>
-					<p><strong>Warum ist das alles so wichtig?</strong><br>
-					Weil deine Ausrüstung dich unter Wasser schützt! Wenn sie gut gepflegt ist, funktioniert sie immer zuverlässig – und du kannst dich ganz auf dein Unterwasser-Abenteuer freuen.</p>`,
+                    text: `<p>Die Tauchausrüstung schützt den Taucher unter Wasser. Damit sie zuverlässig funktioniert und lange hält, ist eine korrekte Behandlung und Pflege notwendig. Die beiden Grafiken zeigen die wichtigsten Regeln.</p>
+					<h4>Regeln für den Transport und die Lagerung</h4>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Tauchflaschen immer hinlegen oder sichern:</strong> Eine Tauchflasche ist schwer und steht unter hohem Druck. Sie muss flach hingelegt oder gegen Umkippen gesichert werden. 
+						Beim Tragen ist die Hilfe eines Erwachsenen erforderlich.</li>
+						<li><strong>Flossen niemals auf das Flossenblatt stellen oder verbiegen:</strong> Flossen bestehen aus festem Kunststoff. Werden sie auf das Blatt gestellt oder geknickt, 
+						können sie brechen. Sie müssen flach hingelegt oder auf den Fußteil gestellt werden.</li>
+						<li><strong>Ausrüstung niemals werfen oder fallen lassen:</strong> Atemregler und Masken sind empfindlich. Sie müssen vorsichtig in die Tauchtasche gelegt werden.</li>
+						<li><strong>Ausrüstung im Schatten lagern:</strong> Starke Hitze und direkte Sonneneinstrahlung schädigen das Material. Die Ausrüstung muss im Schatten gelagert werden.</li>
+						<li><strong>Ausrüstung sauber halten und vor Sand und Dreck schützen:</strong> Sand in der Maske oder im Atemregler kann die Dichtungen beschädigen. Die Ausrüstung sollte in einer sauberen Box aufbewahrt werden.</li>
+					</ul>
+					<h4>Regeln für die Reinigung und Trocknung</h4>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Nach jedem Tauchgang gründlich mit Süßwasser abspülen:</strong> Salzwasser und Sand greifen die Ausrüstung an. Besonders Atemregler und Maske müssen nach dem Tauchen mit klarem Süßwasser abgespült werden.</li>
+						<li><strong>Tauchanzüge gereinigt und gut getrocknet hängend lagern:</strong> Der Anzug muss nach dem Abspülen auf einen Bügel gehängt werden. Er sollte an einem schattigen, 
+						luftigen Ort trocknen. Neopren besteht aus winzigen Gasbläschen, die durch UV-Strahlung spröde werden und ausbleichen. Direkte Sonneneinstrahlung ist daher zu vermeiden.</li>
+					</ul>
+					<h4>Warum ist die Pflege wichtig?</h4>
+					<p>Eine gut gepflegte Ausrüstung funktioniert zuverlässig. Sie bietet dem Taucher die notwendige Sicherheit, sodass er sich vollständig auf den Tauchgang konzentrieren kann.</p>`,
                     images: ["bilder/3_4_Pflege.jpg", "bilder/3_4_1_Pflege.jpg"]
                 }
             ],
@@ -1231,60 +1136,97 @@ const bookData = {
                 {
                     id: "kap4-1",
                     title: "Fitness, Hitze & Wohlbefinden",
-                    text: `<p>Bevor du ins Wasser springst, musst du erst einmal checken, wie es dir geht. Tauchen ist nämlich anstrengend für deinen Körper. 
-					Nur wenn du fit und gesund bist, macht es richtig Spaß! Achte vor dem Start auf diese drei Dinge:</p>
-					<p><strong>Die Hitze: Ab in den Schatten!</strong><br>
-					Stell dir vor, die Sonne knallt vom Himmel und du stehst in deinem dicken Neoprenanzug am Strand. Das ist wie in einem Backofen! Du schwitzt stark und dein Körper verliert viel Flüssigkeit.</p>
-					<p><strong>Tipp:</strong> Halte dich vor dem Tauchgang im Schatten auf und trinke ausreichend Wasser. Ziehe den Neoprenanzug erst kurz vor dem Sprung ins Wasser an oder rolle ihn bis zur Hüfte herunter.</p>
-					<p><strong>Der Körper: Frieren, Fieber oder Schmerzen?</strong><br>
-					Dein Körper sendet dir Signale, wenn etwas nicht stimmt.</p>
-					<p>• <strong>Frieren:</strong> Wenn dir jetzt schon kalt ist, wird es unter Wasser noch viel kälter. Du zitterst und dein Körper kann sich nicht mehr auf das Tauchen konzentrieren.</p>
-					<p>• <strong>Fieber oder Schmerzen:</strong> Wenn du dich schlapp fühlst, Fieber hast, Kopfschmerzen oder Schnupfen (denk an den Druckausgleich!), darfst du nicht tauchen. 
-					Dein Körper braucht dann Ruhe, um gesund zu werden.</p>
-					<p><strong>Tipp:</strong> Wenn du dich nicht fit fühlst, verschiebe den Tauchgang lieber. Ein Tauchgang, der heute ausfällt, kann morgen nachgeholt werden – aber deine Gesundheit ist wichtiger!</p>
-					<p><strong>Gruppenzwang: Trau dich, „Nein“ zu sagen!</strong><br>
-					Manchmal wollen alle anderen tauchen, aber du fühlst dich nicht gut. Vielleicht hast du Angst oder fühlst dich krank. Das ist völlig in Ordnung!</p>
-					<p><strong>Wichtig:</strong> Du musst nicht mitmachen, nur weil alle anderen es tun. Du bist der Chef über deinen eigenen Körper. Sagt dein Bauchgefühl „Nein“, 
-					dann sag auch „Nein“ und bleib an Land. Ein guter Buddy versteht das und passt auf dich auf!</p>
-					<p><strong>Merksatz für Kinder:</strong><br>
-					<em>„Erst auf den Körper hören, dann ins Wasser gehen!“</em></p>`,
+                    text: `<p>Tauchen ist eine körperlich anstrengende Aktivität. Vor jedem Tauchgang muss der eigene Gesundheitszustand überprüft werden. Nur wer fit und gesund ist, kann sicher tauchen. 
+					Die Grafik zeigt drei wichtige Faktoren, die vor dem Start beachtet werden müssen.</p>
+					<h4>Die Hitze: Ab in den Schatten</h4>
+					<p>Neoprenanzüge speichern die Körperwärme sehr gut. Bei direkter Sonneneinstrahlung und hohen Temperaturen führt das zu einer schnellen Überhitzung des Körpers. Der Körper verliert dabei viel Flüssigkeit.</p>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Verhalten:</strong> Vor dem Tauchgang sollte man sich im Schatten aufhalten und ausreichend Wasser trinken. Der Neoprenanzug wird erst kurz vor dem Tauchgang angezogen oder bis zur Hüfte heruntergerollt.</li>
+					</ul>
+					<h4>Der Körper: Frieren, Fieber oder Schmerzen</h4>
+					<p>Der Körper sendet Warnsignale, wenn er nicht bereit für das Tauchen ist. Diese Signale müssen ernst genommen werden.</p>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Frieren:</strong> Wenn dem Körper bereits an Land kalt ist, kühlt er unter Wasser weiter aus. Zittern führt zu einem Kontrollverlust über die Bewegungen.</li>
+						<li><strong>Fieber oder Schmerzen:</strong> Bei Krankheitssymptomen wie Fieber, Kopfschmerzen, Schwäche oder Schnupfen ist Tauchen nicht erlaubt. 
+						Besonders bei Schnupfen ist der Druckausgleich nicht möglich. Der Körper benötigt Ruhe zur Genesung.</li>
+						<li><strong>Verhalten:</strong> Wenn man sich nicht fit fühlt, muss der Tauchgang verschoben werden. Die Gesundheit hat Vorrang.</li>
+					</ul>
+					<h4>Gruppenzwang: Die eigene Entscheidung treffen</h4>
+					<p>Es kann vorkommen, dass andere Taucher in der Gruppe tauchen möchten, man selbst sich aber nicht wohlfühlt. Die eigene Entscheidung ist hier entscheidend. 
+					Niemand muss tauchen, nur weil die Gruppe es tut. Jeder ist für seinen eigenen Körper verantwortlich. Wenn das Gefühl „Nein“ sagt, bleibt man an Land. Ein verantwortungsvoller Buddy akzeptiert diese Entscheidung.</p>
+					<p><strong>Merksatz:</strong> „Erst auf den Körper hören, dann ins Wasser gehen.“</p>`,
                     image: "bilder/4_1_Vorbereitung.jpg"
                 },
                 {
                     id: "kap4-2",
-                    title: "Das professionelle Tauch-Briefing",
-                    text: `<p>Bevor ein Taucher ins Wasser springt, wird erst einmal geredet! Das nennt man Briefing. Es ist wie ein wichtiges Team-Meeting vor dem großen Abenteuer. 
-					Dabei besprechen die Taucher (die "Buddys") vier Hauptbereiche:</p>
-					<p><strong>1. Mensch (Das Buddy-Team)</strong><br>
-					•	Wie fühlt sich jeder heute? (Tagesform und Fitness prüfen)<br>
-					•	Wer taucht mit wem? (Buddy-Teams einteilen)<br>
-					•	Welche Handzeichen benutzen wir? (Kommunikation absprechen)</p>
-					<p><strong>2. Tauchgang (Der Plan)</strong><br>
-					•	Wie tief wollen wir tauchen? (Maximale Tiefe)<br>
-					•	Wie lange bleiben wir unten? (Maximale Tauchzeit)<br>
-					•	Wo schwimmen wir lang und wo tauchen wir wieder auf? (Route und Orientierung)</p>
-					<p><strong>3. Gewässer (Die Umgebung)</strong><br>
-					•	Gibt es gefährliche Strömungen oder Wellen?<br>
-					•	Wie kalt ist das Wasser und wie weit können wir sehen?<br>
-					•	Wo steigen wir ins Wasser ein und wo wieder aus?</p>
-					<p><strong>4. Ausrüstung (Die Technik)</strong><br>
-					•	Ist genug Luft in der Flasche? (Flaschendruck prüfen)<br>
-					•	Funktionieren Atemregler und Jacket?<br>
-					•	Haben wir alles dabei? (Maske, Flossen, Blei)</p>
-					<p><strong>Die goldenen Regeln für Kinder (KTSA)</strong><br>
-					Für Kinder gibt es beim Tauchen ganz besondere Regeln. Schau dir die Bilder oben an:<br>
-					1. <strong>Tiefengrenzen einhalten:</strong> Kinder dürfen nicht so tief tauchen wie Erwachsene.<br>
-					2. <strong>Maximal 1 Tauchgang am Tag:</strong> Kinder sollten nur einen Tauchgang pro Tag machen.<br>
-					3. <strong>Immer langsam auftauchen:</strong> Nie nach oben schießen!<br>
-					4. <strong>Nur mit einem erfahrenen Buddy tauchen:</strong> Niemals allein!<br>
-					5. <strong>Erst ab 8 Jahren:</strong> Vor dem vollendeten 8. Lebensjahr darf man noch nicht tauchen. (Das zeigt das große "8+"-Schild).</p>
-					<p><strong>Die KTSA-Stufen: Dein Tauch-Führerschein</strong><br>
-					Unten im Bild siehst du die drei Stufen des KTSA (Kinder-Tauchsport-Abzeichen). Das ist wie ein Führerschein fürs Tauchen – du fängst klein an und wirst immer besser:<br>
-					•	<strong>KTSA Bronze:</strong> Du darfst bis 5 Meter tief tauchen.<br>
-					•	<strong>KTSA Silber:</strong> Du darfst bis 8 Meter tief tauchen.<br>
-					•	<strong>KTSA Gold:</strong> Du darfst bis 12 Meter tief tauchen.</p>
-					<p>Jede Stufe zeigt, dass du fleißig geübt hast und die Regeln perfekt beherrschst. So wirst du Schritt für Schritt ein echter Tauchprofi!</p>`,
-                    images: ["bilder/4_2_Briefing.jpg", "bilder/4_2_1_Regeln.jpg"]
+                    title: "Vor dem Start: Regeln und Briefing",
+					type: "stacked",
+					subrows: [
+						{
+							subTitle: "Das professionelle Tauch-Briefing",
+							text: `<p>Vor jedem Tauchgang findet ein Briefing statt. Dabei handelt es sich um eine strukturierte Besprechung, in der das Tauchteam alle relevanten Sicherheitsaspekte durchgeht. 
+							Die Grafik zeigt die vier Hauptbereiche, die dabei abgedeckt werden müssen.</p>
+							<h4>1. Mensch (Buddy-Team)</h4>
+							<p>Im ersten Schritt wird das Team organisiert.</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Partner-Check und Team-Zusammensetzung:</strong> Es wird festgelegt, wer mit wem taucht.</li>
+								<li><strong>Gesundheit und Tagesform:</strong> Alle Teilnehmer prüfen ihren aktuellen Gesundheitszustand.</li>
+								<li><strong>Handzeichen:</strong> Die Kommunikation unter Wasser wird wiederholt und geklärt.</li>
+								<li><strong>Rollen und Aufgaben:</strong> Besondere Aufgaben werden verteilt.</li>
+								<li><strong>Buddy-Kontakt:</strong> Der Abstand und die Kontaktregeln zwischen den Tauchpartnern werden besprochen.</li>
+							</ul>
+							<h4>2. Tauchgang (Der Plan)</h4>
+							<p>Hier wird der eigentliche Ablauf des Tauchgangs festgelegt.</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Ziele und Zweck:</strong> Was ist das Ziel des Tauchgangs (z. B. ein Fototauchgang oder eine Kursübung)?</li>
+								<li><strong>Tiefe und Dauer:</strong> Die maximale Tiefe und die geplante Tauchzeit werden bestimmt.</li>
+								<li><strong>Aufstiegsroute:</strong> Die Route für den Aufstieg und die Sicherheitsstopps werden festgelegt.</li>
+								<li><strong>Umkehrpunkte:</strong> Es wird definiert, wann der Tauchgang umgedreht wird.</li>
+								<li><strong>Team-Regeln:</strong> Die Regeln für das Tauchen im Team werden besprochen.</li>
+							</ul>
+							<h4>3. Gewässer (Umgebung)</h4>
+							<p>Die Umgebung des Tauchgangs wird analysiert.</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Unterwasserwelt und Topografie:</strong> Wie sieht der Grund aus? Gibt es Hindernisse?</li>
+								<li><strong>Strömungen:</strong> Strömungsverhältnisse und -richtungen werden geprüft.</li>
+								<li><strong>Temperatur:</strong> Die Wassertemperatur und mögliche Temperaturschichten werden besprochen.</li>
+								<li><strong>Sichtweite:</strong> Die Sichtweiten und mögliche Trübung werden eingeschätzt.</li>
+								<li><strong>Ein- und Ausstieg:</strong> Die Stellen für den Einstieg ins Wasser und den Ausstieg werden geplant.</li>
+							</ul>
+							<h4>4. Ausrüstung (Technik)</h4>
+							<p>Zum Schluss wird die Ausrüstung geprüft.</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Luftvorrat:</strong> Der Flaschendruck wird kontrolliert.</li>
+								<li><strong>Atemregler:</strong> Die Funktion der Atemregler wird getestet.</li>
+								<li><strong>Tarierjacket:</strong> Die Funktion des Jackets wird geprüft.</li>
+								<li><strong>Tauchcomputer:</strong> Der Tauchcomputer wird kontrolliert (z. B. auf MOD oder O2-Einstellungen).</li>
+								<li><strong>Abschluss:</strong> Der Partner-Check wird abgeschlossen mit der Frage: „Sind wir bereit?“</li>
+							</ul>`,
+							image: "bilder/4_2_Briefing.jpg"
+						},
+						{
+							subTitle: "KTSA-Regeln",
+							text: `<p>Für das Tauchen mit Kindern und Jugendlichen gelten spezifische Sicherheitsregeln. Die Grafik zeigt die fünf wichtigsten Grundregeln, die zwingend eingehalten werden müssen.</p>
+							<h4>Die 5 wichtigsten Grundregeln</h4>
+							<ol style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Tiefengrenzen einhalten:</strong> Kinder und Jugendliche dürfen nicht so tief tauchen wie Erwachsene. Die jeweiligen Tiefengrenzen müssen unbedingt eingehalten werden.</li>
+								<li><strong>Maximal 1 Tauchgang am Tag:</strong> Pro Tag ist nur ein Tauchgang erlaubt. Das begrenzt die körperliche Belastung.</li>
+								<li><strong>Immer langsam aus der Tiefe aufsteigen:</strong> Der Aufstieg muss kontrolliert und langsam erfolgen. Ein schnelles Auftauchen ist verboten.</li>
+								<li><strong>Nur mit einem erfahrenen Buddy tauchen:</strong> Das Tauchen ist nur mit einem erfahrenen Partner erlaubt (mindestens DTSA** oder Gold). Tauchen ohne Buddy ist verboten.</li>
+								<li><strong>Erst ab 8 Jahren:</strong> Vor dem vollendeten 8. Lebensjahr ist das Tauchen nicht gestattet. Das zeigt das Symbol mit der Zahl 8.</li>
+							</ol>
+							<h4>Die VDST-Tiefengrenzen für KTSA</h4>
+							<p>Die KTSA-Stufen (Kinder-Tauchsport-Abzeichen) regeln die maximale Tauchtiefe für Kinder und Jugendliche. Sie sind in drei Stufen unterteilt:</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>KTSA Bronze:</strong> Maximale Tiefe 5 Meter.</li>
+								<li><strong>KTSA Silber:</strong> Maximale Tiefe 8 Meter.</li>
+								<li><strong>KTSA Gold:</strong> Maximale Tiefe 12 Meter.</li>
+							</ul>
+							<p>Jede Stufe dokumentiert den Ausbildungsfortschritt und die sichere Beherrschung der Regeln für die jeweilige Tiefe.</p>`,
+							image: "bilder/4_2_1_Regeln.jpg"
+							
+						}
+					]				
                 },
                 {
                     id: "kap4-3",
@@ -1293,84 +1235,83 @@ const bookData = {
                     subrows: [
                         {
                             subTitle: "Grundlegende Handzeichen",
-                            text: `<p>Unter Wasser kann man nicht sprechen – der Atemregler ist ja im Mund! Damit sich Taucher trotzdem verständigen können, nutzen sie eine besondere Zeichensprache mit den Händen. 
-							Diese Zeichen sind überall auf der Welt gleich, damit sich Taucher aus verschiedenen Ländern verstehen. Schau dir die Bilder genau an und mach die Zeichen am besten gleich mit!</p>
-							<p><strong>Die wichtigsten Grundzeichen:</strong><br>
-							👍 <strong>Das OK-Zeichen</strong><br>
-							Daumen und Zeigefinger bilden einen Kreis, die anderen drei Finger zeigen nach oben. Das bedeutet: "Alles gut bei mir!" oder "Ich bin bereit!"</p>
-							<p>✋ <strong>„Stimmt was nicht“ (Nicht OK)</strong><br>
-							Wenn etwas nicht in Ordnung ist, hältst du deine flache Hand waagerecht vor die Brust und wippst damit hin und her (wie ein Boot auf Wellen). Das heißt: "Irgendetwas stimmt nicht!"</p>
-							<p>👆 <strong>Problem mit dem Druckausgleich</strong><br>
-							Du tippst mit dem Zeigefinger mehrfach an dein Ohr oder deine Schläfe. Das bedeutet: "Mein Ohr tut weh, ich brauche Hilfe beim Druckausgleich!"</p>
-							<p>🥶 <strong>„Mir ist kalt“</strong><br>
-							Du kreuzst die Arme vor der Brust und reibst deine Hände an den Schultern. Das ist das universelle Zeichen für: "Brrr, ich friere!"</p>
-							<p>👉 <strong>„Du“</strong> und <strong>„Ich“</strong><br>
-								Du: Du zeigst mit dem Zeigefinger direkt auf deinen Tauchpartner.<br>
-								Ich: Du zeigst mit dem Zeigefinger auf deine eigene Brust.<br>
-								So kannst du sagen: "Du sollst das machen" oder "Ich mache das."</p>
-							<p>👍⬆️ <strong>„Nach oben / Auftauchen“</strong><br>
-							Du ballst eine Faust und streckst den Daumen steil nach oben. Das bedeutet: "Lass uns auftauchen!"</p>
-							<p>👎⬇️ <strong>„Nach unten / Abtauchen“</strong><br>
-							Du ballst eine Faust und richtest den Daumen nach unten. Das bedeutet: "Lass uns tiefer gehen!"</p>
-							<p>✋➡️ <strong>„Tiefe halten“</strong><br>
-							Du hältst deine flache Hand waagerecht ausgestreckt und bewegst sie leicht hin und her. Das bedeutet: "Bleib auf dieser Höhe, tauche nicht tiefer!"</p>
-							<p>🛑 <strong>„Stopp / Anhalten“</strong><br>
-							Du streckst deine flache Hand wie ein Stoppschild nach vorne. Das bedeutet: "Halt an, geh nicht weiter!"</p>
-							<p>✌️🖐️ <strong>„Frage nach dem Druck“</strong><br>
-							Du tippst mit zwei flachen Fingern in die geöffnete Handfläche deiner anderen Hand. Damit fragst du deinen Partner: "Ist dein Druck in der Flasche noch in Ordnung?"</p>`,
+                            text: `<p>Unter Wasser ist eine verbale Kommunikation nicht möglich, da sich der Atemregler im Mund befindet. Aus diesem Grund nutzen Taucher eine standardisierte Zeichensprache mit den Händen. 
+							Diese Handzeichen sind international genormt, damit sich Taucher weltweit verständigen können. Die Grafik zeigt die wichtigsten Grundzeichen.</p>
+							<h4>Status- und Befindlichkeitszeichen</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>OK:</strong> Daumen und Zeigefinger bilden einen Kreis, die restlichen drei Finger zeigen nach oben. Das Zeichen bedeutet: Alles ist in Ordnung, oder: Ich bin bereit.</li>
+								<li><strong>Nicht OK / Stimmt was nicht:</strong> Die flache Hand wird waagerecht vor der Brust gehalten und hin und her gekippt. Das signalisiert ein Problem.</li>
+								<li><strong>Problem mit dem Druckausgleich:</strong> Der Zeigefinger tippt mehrmals an das eigene Ohr. Das bedeutet: Der Druckausgleich funktioniert nicht, es gibt Schmerzen.</li>
+								<li><strong>Kalt:</strong> Ein Arm wird angewinkelt, die Handfläche streicht über den Unterarm. Das Zeichen bedeutet, dass dem Taucher kalt ist.</li>
+							</ul>
+							<h4>Richtungs- und Positionsangaben</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Du / Ich:</strong> Der Zeigefinger zeigt entweder nach vorne auf den Tauchpartner (Du) oder auf die eigene Brust (Ich).</li>
+								<li><strong>Nach oben / Auftauchen:</strong> Die Faust wird geballt, der Daumen zeigt steil nach oben. Das bedeutet: Auftauchen.</li>
+								<li><strong>Nach unten / Abtauchen:</strong> Die Faust wird geballt, der Daumen zeigt nach unten. Das bedeutet: Tiefer tauchen.</li>
+								<li><strong>Tiefe halten:</strong> Die flache Hand wird waagerecht ausgestreckt und leicht hin und her bewegt. Das bedeutet: Die aktuelle Tiefe beibehalten.</li>
+							</ul>
+							<h4>Sicherheits- und Kontrollzeichen</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Stopp / Anhalten:</strong> Die geöffnete Handfläche wird nach vorne gestreckt (wie ein Stoppschild). Das bedeutet: Sofort anhalten.</li>
+								<li><strong>Frage nach dem Druck:</strong> Zwei Finger tippen flach auf die geöffnete Handfläche der anderen Hand. Damit wird der Partner aufgefordert, den aktuellen Flaschendruck anzuzeigen.</li>
+							</ul>`,
                             image: "bilder/4_3_Zeichen.jpg"
                         },
 						{
-							subTitle: "Luftnot und Essoufflement",
-							text: `<strong>Luftnot (Keine Luft / Atemnot)</strong>
-							<p>Du hältst eine Hand waagerecht vor deinen Hals und bewegst sie von dir weg und wieder zum Hals zurück. Das bedeutet: <em>„Ich bekomme keine Luft!“</em> 
-							oder <em>„Ich habe Atemnot!“</em> Dieses Zeichen ist ein absoluter Notfall und bedeutet, dass sofort geholfen werden muss!</p>
-							<strong>Essoufflement (Panik-Atmung)</strong>
-							<p>Du legst beide Hände flach auf die Brust und bewegst deine Arme vom Hals weg und wieder zurück (als würdest du nach Luft schnappen). 
-							Deine Augen sind dabei weit aufgerissen oder fest zusammengekniffen. Das Zeichen zeigt an, dass du nicht mehr ein- oder ausatmen kannst und in Panik gerätst. 
-							Auch hier muss der Partner sofort reagieren und dich beruhigen!</p>`,
+							subTitle: "Notfall-Handzeichen: Luftnot und Essoufflement",
+							text: `<p>Neben den grundlegenden Handzeichen gibt es zwei spezielle Zeichen für akute Notfälle. Sie erfordern eine sofortige Reaktion des Tauchpartners. Die Grafik zeigt beide Zeichen im Vergleich.</p>
+							<h4>Luftnot (Keine Luft / Atemnot)</h4>
+							<p>Bei diesem Zeichen hält der Taucher eine Hand waagerecht vor den Hals und bewegt sie von sich weg und wieder zum Hals zurück. 
+							Dieses Signal bedeutet: „Ich bekomme keine Luft“ oder „Ich habe Atemnot“. Es handelt sich um einen absoluten Notfall. Der Tauchpartner muss sofort reagieren und Hilfe leisten.</p>
+							<h4>Essoufflement (Panik-Atmung)</h4>
+							<p>Beim Essoufflement legt der Taucher beide Hände flach auf die Brust und bewegt die Arme vom Hals weg und wieder zurück. Die Augen sind dabei oft weit aufgerissen oder fest zusammengekniffen. 
+							Das Zeichen zeigt an, dass der Taucher nicht mehr ein- oder ausatmen kann und in Panik gerät. Auch hier muss der Partner sofort eingreifen, den Taucher beruhigen und die Situation kontrollieren.</p>`,
 							image: "bilder/4_3_0_Zeichen.jpg"
 						},
                         {
                             subTitle: "Zahlen & Druckangabe in bar",
-                            text: `<p>Unter Wasser kann man nicht rufen: „Wie viel Luft hast du noch?“ Deshalb nutzen Taucher ihre Hände, um Zahlen und den Druck in der Flasche anzuzeigen. 
-							Damit es keine Verwirrung gibt, folgen sie einer klaren Philosophie: Es wird immer nur eine Hand benutzt, und jede Ziffer einer Zahl wird nacheinander einzeln gezeigt.</p>
-							<p>Schau dir die Bilder an und achte genau darauf, wohin die Handfläche zeigt:</p>
-							<p><strong>Die Zahlen von 1 bis 5</strong><br>
-							Bei den Zahlen 1 bis 5 zeigst du die entsprechenden Finger (1 Finger, 2 Finger, bis zur ganzen Hand für die 5). Ganz wichtig dabei:
-							<strong>Die Handfläche zeigt dabei immer zu deinem Tauchpartner.</strong> So kann er die Finger klar und deutlich erkennen.</p>
-							<p><strong>Die Zahlen von 6 bis 9</strong><br>
-							Bei den Zahlen 6 bis 9 drehst du deine Hand um! <strong>Die Handfläche zeigt jetzt zu dir selbst.</strong> Die Anzeige beginnt hier immer beim <strong>Zeigefinger</strong> (nicht beim Daumen).<br>
-							•	Für die <strong>6</strong> nimmst Zeigefinger und machst mit der flachen Hand eine Drehbewegung nach rechts.<br>
-							•	Für die <strong>7</strong> nimmst du Zeige- und Mittelfinger und drehst.<br>
-							•	Für die <strong>8</strong> nimmst du Zeige-, Mittel- und Ringfinger und drehst.<br>
-							•	Für die <strong>9</strong> hältst du alle Finger flach und drehst deine Hand nach rechts.</p>
-							<p><strong>Die Null (0)</strong><br>
-							Damit die Null nicht mit dem „OK“-Zeichen (Daumen und Zeigefinger zum Kreis) verwechselt wird, gibt es hier eine Sonderregel: Für die Null werden alle Finger benutzt! 
-							Du formst mit der ganzen Hand eine kleine Faust oder einen Kreis, bei dem alle Finger mitmachen. So weiß jeder sofort: Das ist eine Null und kein „OK“.</p>
-							<p><strong>Die wichtigsten Druck-Zeichen (für die Luft in der Flasche)</strong><br>
-							•	<strong>50 bar (Druckwarnung)</strong>: Du ballst die Faust und streckst nur den kleinen Finger nach unten. Das ist das Zeichen für „Achtung, meine Luft wird knapp!“ 
-							(50 bar ist die Grenze, bei der man den Tauchgang beenden und auftauchen sollte).<br>
-							•	<strong>100 bar (Halbzeit)</strong>: Du zeigst den Zeigefinger nach oben (das ist die 1) und hältst darunter die flache Hand (das ist die 0). 
-							Das bedeutet: „Ich habe noch 100 bar Luft, also die Hälfte meiner Flasche.“</p>
-							<p><strong>Warum ist das so wichtig?</strong><br>
-							Weil die Luft unter Wasser dein Lebenselixier ist! Wenn du deinem Tauchpartner genau sagen kannst, wie viel Luft du noch hast, kann er auf dich aufpassen und ihr könnt rechtzeitig auftauchen.</p>`,
+                            text: `<p>Um den aktuellen Druck in der Tauchflasche zu übermitteln, nutzen Taucher ihre Hände. Dabei gilt eine klare Regel: 
+							Es wird immer nur eine Hand verwendet, und jede Ziffer einer Zahl wird einzeln nacheinander angezeigt. Die Grafik zeigt die genaue Ausführung.</p>
+							<h4>Die Zahlen von 0 bis 5</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Die 0 (Null):</strong> Damit die Null nicht mit dem OK-Zeichen verwechselt wird, werden alle Finger benutzt. Die Hand formt eine kleine Faust oder einen Kreis, bei dem alle Finger mitwirken.</li>
+								<li><strong>Die Zahlen 1 bis 5:</strong> Es werden die entsprechenden Finger ausgestreckt (1 Finger für die 1, bis zur ganzen Hand für die 5). Wichtig: Die Handfläche zeigt dabei immer zum Tauchpartner. 
+								So kann er die Finger klar erkennen.</li>
+							</ul>
+							<h4>Die Zahlen von 6 bis 9</h4>
+							<p>Bei diesen Zahlen wird die Hand umgedreht. Die Handfläche zeigt nun zum eigenen Körper. Die Anzeige beginnt immer beim Zeigefinger (nicht beim Daumen).</p>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Die 6:</strong> Der Zeigefinger wird ausgestreckt, mit der flachen Hand wird eine Drehbewegung nach rechts ausgeführt.</li>
+								<li><strong>Die 7:</strong> Zeige- und Mittelfinger werden ausgestreckt, die Drehbewegung nach rechts wird ausgeführt.</li>
+								<li><strong>Die 8:</strong> Zeige-, Mittel- und Ringfinger werden ausgestreckt, die Drehbewegung nach rechts wird ausgeführt.</li>
+								<li><strong>Die 9:</strong> Alle Finger werden flach gehalten, die Hand wird nach rechts gedreht.</li>
+							</ul>
+							<h4>Die Druck-Zeichen für die Flasche</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>50 bar (Druckwarnung):</strong> Die Faust wird geballt, nur der kleine Finger wird nach unten gestreckt. Dieses Zeichen bedeutet: 
+								Achtung, die Luft wird knapp. 50 bar ist die Grenze, bei der der Tauchgang beendet und aufgetaucht werden sollte.</li>
+								<li><strong>100 bar (Halbzeit):</strong> Der Zeigefinger wird nach oben gestreckt (die 1), darunter wird die flache Hand gehalten (die 0). 
+								Das bedeutet: Es sind noch 100 bar Luft in der Flasche, also die Hälfte des Vorrats.</li>
+							</ul>
+							<p>Die genaue Übermittlung des Luftvorrats ist essenziell. Nur so kann der Tauchpartner die verbleibende Zeit einschätzen und den Aufstieg rechtzeitig einleiten.</p>`,
                             image: "bilder/4_3_1_Zeichen.jpg"
                         },
                         {
                             subTitle: "Beispielanzeigen",
-                            text: `<p>Damit du und dein Tauchpartner genau wissen, wie viel Luft noch in der Flasche ist, zeigt man den Druck Ziffer für Ziffer. Schau dir das obere Beispiel im Bild an: 180 bar.</p>
-							<p>So geht's Schritt für Schritt:<br>
-							1. <strong>Die Abfrage:</strong> Zuerst zeigst du das Druckabfrage-Zeichen (die zwei Finger in die offene Handfläche tippen) – so sagst du: „Ich zeige dir jetzt meinen Druck!“<br>
-							2. <strong>Die 1:</strong> Du streckst kurz den Zeigefinger nach oben (Handfläche zum Partner). Das steht für die 100.<br>
-							3. <strong>Die 8:</strong> Für die 80 zeigst du acht Finger. Wichtig: Dafür drehst du die Hand um, sodass die Handfläche zu dir zeigt (wie bei den Zahlen 6 bis 9 gelernt).<br>
-							4. <strong>Die 0:</strong> Zum Schluss formst du mit allen Fingern einen Kreis (die Sonder-Null).</p>
-							<p><strong>Und so funktioniert es bei anderen Zahlen:</strong><br>
-							•	<strong>140 bar:</strong> Du zeigst die <strong>1</strong> (Zeigefinger nach oben), dann die <strong>4</strong> (vier Finger, Handfläche zum Partner) 
-							und zum Schluss die <strong>0</strong> (Kreis mit allen Fingern).<br>
-							•	<strong>60 bar:</strong> Du zeigst die <strong>6</strong> (Drehbewegung nach rechts, Handfläche zu dir, beginnend beim Zeigefinger) 
-							und danach die <strong>0</strong> (Kreis mit allen Fingern).</p>
-							<p>So weiß dein Buddy sofort ganz genau Bescheid, wie viel Luft du noch hast. Übe das am besten zu Hause vor dem Spiegel oder mit einem Freund!</p>`,
+                            text: `<p>Die Übermittlung des Flaschendrucks erfolgt Ziffer für Ziffer. Die Grafik zeigt drei konkrete Beispiele, wie der Druck mit den Händen angezeigt wird.</p>
+							<h4>Beispiel 180 bar</h4>
+							<ol style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Die Abfrage:</strong> Zuerst wird das Druckabfrage-Zeichen gezeigt (zwei Finger tippen in die offene Handfläche). Das signalisiert dem Partner: Jetzt wird der Druck angezeigt.</li>
+								<li><strong>Die 1:</strong> Der Zeigefinger wird kurz nach oben gestreckt (Handfläche zum Partner). Das steht für die 100.</li>
+								<li><strong>Die 8:</strong> Acht Finger werden gezeigt. Dafür wird die Hand umgedreht, sodass die Handfläche zum eigenen Körper zeigt (wie bei den Zahlen 6 bis 9).</li>
+								<li><strong>Die 0:</strong> Zum Schluss wird mit allen Fingern ein Kreis geformt (die Sonder-Null).</li>
+							</ol>
+							<h4>Beispiel 140 bar</h4>
+							<p>Es wird die 1 gezeigt (Zeigefinger nach oben), dann die 4 (vier Finger, Handfläche zum Partner) und zum Schluss die 0 (Kreis mit allen Fingern).</p>
+							<h4>Beispiel 60 bar</h4>
+							<p>Es wird die 6 gezeigt (Drehbewegung nach rechts, Handfläche zum eigenen Körper, beginnend beim Zeigefinger) und danach die 0 (Kreis mit allen Fingern).</p>
+							<p>Durch diese standardisierte Zeichenfolge kann der Tauchpartner den verbleibenden Luftvorrat exakt ablesen und die weitere Tauchgangsplanung entsprechend anpassen.</p>`,
                             image: "bilder/4_3_2_Zeichen.jpg"
                         }
                     ]
@@ -1378,26 +1319,24 @@ const bookData = {
                 {
                     id: "kap4-4",
                     title: "Der Buddy-Check & der Start",
-                    text: `<p><strong>Der Buddycheck: Gemeinsam sicher starten</strong></p>
-					<p>Bevor es ins Wasser geht, prüfen sich die beiden Tauchpartner (die „Buddys“) gegenseitig von oben bis unten. Dieses wichtige Sicherheitsritual nennt man <strong>Buddycheck</strong>. 
-					Damit niemand einen Schritt vergisst, gibt es einen tollen Merksatz:</p>
+                    text: `<p>Vor jedem Tauchgang führen die beiden Tauchpartner (die Buddys) eine gegenseitige Kontrolle ihrer Ausrüstung durch. Dieses Sicherheitsritual wird 
+					als <strong>Buddy-Check</strong> bezeichnet. Um die Reihenfolge der fünf Kontrollen nicht zu vergessen, dient der Merksatz:</p>
 					<p><strong>„Taucher brauchen saubere Luft, OK?“</strong></p>
-					<p>Dieser Satz hilft dir, die fünf Kontrollen in der richtigen Reihenfolge durchzuführen. Schau dir die fünf Bilder an:</p>
-					<p><strong>1. T – Taucher (Tarierweste / Jacket)</strong><br>
-					Der eine Taucher drückt auf den Knopf der Tarierweste des anderen. Dabei wird geprüft, ob die Weste sich aufbläst und ob die Luft über die Ventile auch wieder entweichen kann. 
-					So weiß man, dass sie dicht ist und funktioniert.</p>
-					<p><strong>2. B – Brauchen (Blei)</strong><br>
-					Jetzt wird der Bleigurt kontrolliert. Der Partner prüft, ob die Bleitasche sicher befestigt ist und ob der Schnellabwurf (der Mechanismus, um das Blei im Notfall ganz schnell abzuwerfen) 
-					einwandfrei funktioniert.</p>
-					<p><strong>3. S – Saubere (Schnallen &amp; Gurte)</strong><br>
-					Hier werden alle Schnallen, der Flaschengurt und die Tragegurte überprüft. Der Partner zieht fest daran, um sicherzugehen, dass wirklich alles bombenfest sitzt und nicht verrutschen kann.</p>
-					<p><strong>4. L – Luft (Hauptregler, Oktopus &amp; Manometer)</strong><br>
-					Der Taucher atmet einmal tief durch den Hauptatemregler und durch den Reserve-Regler am Hals ein, um zu prüfen, ob bei beiden Luft kommt. 
-					(Hier wird auch geprüft, ob beide ersten Stufen an der Flasche richtig funktionieren und ob das Bungee am Hals noch fest sitzt.)</p>
-					<p><strong>5. OK – OK? (Gesamt-Check &amp; Freigabe)</strong><br>
-					Zum Schluss werfen beide noch einen letzten Blick auf die Maske, die Flossen und die restliche Ausrüstung. Sie schauen sich in die Augen, geben sich gegenseitig 
-					das <strong>OK-Zeichen</strong> (Daumen und Zeigefinger bilden einen Kreis) und fragen sich: <em>„Bist du bereit?“</em></p>
-					<p>Wenn beide „OK“ zeigen, kann das Abenteuer beginnen!</p>`,
+					<p>Die Grafik zeigt die fünf aufeinanderfolgenden Schritte.</p>
+					<h4>1. T – Taucher (Tarierweste / Jacket)</h4>
+					<p>Ein Taucher betätigt den Knopf der Tarierweste des Partners. Dabei wird überprüft, ob sich die Weste aufbläst und ob die Luft über die Ventile wieder entweichen kann. 
+					So wird die Dichtigkeit und Funktion der Weste sichergestellt.</p>
+					<h4>2. B – Brauchen (Blei)</h4>
+					<p>Der Bleigurt wird kontrolliert. Der Partner prüft, ob die Bleitasche sicher befestigt ist und ob der Schnellabwurf (der Mechanismus zum schnellen Abwerfen des Bleis im Notfall) einwandfrei funktioniert.</p>
+					<h4>3. S – Saubere (Schnallen &amp; Gurte)</h4>
+					<p>Alle Schnallen, der Flaschengurt und die Tragegurte werden überprüft. Der Partner zieht fest daran, um sicherzustellen, dass alle Verbindungen fest sitzen und nicht verrutschen können.</p>
+					<h4>4. L – Luft (Hauptregler, Reserve-Regler &amp; Manometer)</h4>
+					<p>Der Taucher atmet einmal tief durch den Hauptatemregler und durch den Reserve-Regler am Hals ein. So wird geprüft, ob bei beiden Reglern Luft austritt.Zusätzlich wird kontrolliert, 
+					ob beide ersten Stufen an der Flasche korrekt funktionieren und ob das Bungee am Hals fest sitzt. Der Flaschendruck wird am Manometer abgelesen.</p>
+					<h4>5. OK – OK? (Gesamt-Check und Freigabe)</h4>
+					<p>Zum Abschluss werfen beide Taucher einen letzten Blick auf die Maske, die Flossen und die restliche Ausrüstung. Sie stellen Blickkontakt her, geben sich gegenseitig das OK-Zeichen 
+					(Daumen und Zeigefinger bilden einen Kreis) und bestätigen: „Bist du bereit?“</p>
+					<p>Wenn beide Taucher das OK-Zeichen geben, ist die Ausrüstung vollständig geprüft und der Tauchgang kann beginnen.</p>`,
                     image: "bilder/4_4_BuddyCheck.jpg"
                 }
             ],
@@ -1712,47 +1651,41 @@ const bookData = {
                 {
                     id: "kap5-1",
                     title: "Der Weg nach unten",
-                    text: `<p><strong>Der Weg nach unten: So kommen Taucher ins Wasser</strong></p>
-					<p>Bevor ein Taucher die Unterwasserwelt erkunden kann, muss er erst einmal sicher ins Wasser kommen. Je nachdem, wo man startet, gibt es dafür verschiedene Tricks. Schau dir die drei Bilder an:</p>
-					<p><strong>1. Einstieg vom Steg: Der Riesen-Schritt</strong><br>
-					Wenn du von einem festen Steg oder einer Kaimauer ins Wasser steigst, machst du den <strong>Riesen-Schritt</strong>. Dabei hältst du mit einer Hand deine Maske 
-					und den Atemregler fest (damit sie nicht verrutschen oder verloren gehen). Du schaust geradeaus nach vorne, machst einen großen Ausfallschritt ins Wasser und 
-					gibst nach dem Auftauchen sofort das <strong>OK-Zeichen</strong>. Ein wichtiger Tipp: Vom Ufer aus watest du am besten vorsichtig über sichere Sandwege oder flache 
-					Stellen hinein, damit du den empfindlichen Meeresboden nicht aufwirbelst.</p>
-					<p><strong>2. Einstieg vom Boot: Die Rückwärts-Rolle</strong><br>
-					Wenn du von einem kleinen Boot oder einem Schlauchboot ins Wasser willst, machst du die <strong>Rückwärts-Rolle</strong>. Du setzt dich mit deiner Ausrüstung auf 
-					den Rand des Bootes. Dann rollst du dich einfach rückwärts ins Wasser. Das klingt verrückt, ist aber eine extrem sichere und bequeme Methode, weil du dich nicht an 
-					der schweren Flasche auf dem Rücken verletzen kannst und nicht kopfüber ins Wasser stürzt.</p>
-					<p><strong>3. Sicheres Abtauchen an der Leine</strong><br>
-					Wenn du dann im Wasser bist und nach unten willst, hilft dir oft eine <strong>Leine</strong> (ein dickes Seil, das vom Boot oder von einem Bojen-System nach unten hängt). 
-					Du hältst dich an der Leine fest und ziehst dich daran Stück für Stück nach unten. Das ist besonders praktisch, wenn die Strömung stark ist oder du dich beim Abtauchen 
-					orientieren musst. So kannst du ganz in Ruhe deinen Druckausgleich machen, während du dich am Seil festhältst.</p>`,
+                    text: `<p>Bevor die Unterwasserwelt erkundet werden kann, muss der Taucher sicher ins Wasser gelangen. Je nach Ausgangspunkt gibt es dafür unterschiedliche Methoden. Die Grafik zeigt drei Vorgehensweisen.</p>
+						<h4>1. Einstieg vom Steg: Der Riesen-Schritt</h4>
+						<p>Beim Einstieg von einem festen Steg oder einer Kaimauer wird der <strong>Riesen-Schritt</strong> angewendet. Eine Hand hält dabei die Maske und den Atemregler fest, damit diese nicht verrutschen. 
+						Der Blick ist geradeaus nach vorne gerichtet. Es wird ein großer Ausfallschritt ins Wasser ausgeführt. Nach dem Auftauchen wird sofort das <strong>OK-Zeichen</strong> gegeben. 
+						Beim Einstieg vom Ufer aus sollte vorsichtig über flache Stellen oder Sandwege gewatet werden, um den empfindlichen Grund nicht aufzuwirbeln.</p>
+						<h4>2. Einstieg vom Boot: Die Rückwärts-Rolle</h4>
+						<p>Beim Einstieg von einem kleinen Boot oder Schlauchboot wird die <strong>Rückwärts-Rolle</strong> angewendet. Der Taucher sitzt mit vollständiger Ausrüstung auf dem Bootsrand und rollt sich rückwärts ins Wasser. 
+						Diese Methode ist sehr sicher, da der Taucher nicht kopfüber ins Wasser stürzt und die schwere Flasche auf dem Rücken keinen Schaden nimmt.</p>
+						<h4>3. Kontrolliertes Abtauchen</h4>
+						<p>Nach dem Einstieg ins Wasser folgt das <strong>Abtauchen</strong>. Der Taucher lässt die Luft aus dem Jacket ab und sinkt langsam in die Tiefe. 
+						Während des Abstiegs muss der <strong>Druckausgleich</strong> regelmäßig durchgeführt werden. Das Abtauchen erfolgt kontrolliert und ohne Hektik, 
+						damit sich der Körper an den zunehmenden Wasserdruck anpassen kann. Der Blick ist dabei nach unten gerichtet, um Hindernisse frühzeitig zu erkennen.</p>`,
                     image: "bilder/5_1_Abtauchen.jpg"
                 },
                 {
                     id: "kap5-2",
                     title: "Der Unterwasser-Ehrenkodex",
-                    text: `<p><strong>Der Unterwasser-Ehrenkodex: Schützt die Meere!</strong></p>
-					<p>Als Taucher lieben und schätzen wir die Natur. Die Unterwasserwelt ist der Lebensraum von unzähligen Tieren und Pflanzen – und wir sind nur zu Gast. 
-					Damit wir auch in Zukunft noch faszinierende Abenteuer unter Wasser erleben können, halten sich alle Taucher an fünf wichtige Regeln:</p>
-					<p><strong>1. Tiere nicht jagen, stressen oder anfassen!</strong><br>
-					Beobachte die Fische und anderen Meeresbewohner immer nur aus sicherer Entfernung. Wenn du sie anfasst oder jagst, erschrecken sie und fühlen sich bedroht. 
-					Mit den Augen schauen ist viel spannender als mit den Händen anfassen!</p>
-					<p><strong>2. Immer auf den vorgeschriebenen Wegen und im Freiwasser bleiben.</strong><br>
-					Unter Wasser gibt es oft markierte Wege (ähnlich wie Wanderwege). Bleib auf diesen Wegen und schwebe am besten frei im Wasser. So schonst du die empfindlichen 
-					Lebensräume der Tiere und zerstörst keine Pflanzen.</p>
-					<p><strong>3. Korallen und Unterwasserlebewesen niemals berühren – sie sind sehr empfindlich!</strong><br>
-					Korallen sehen zwar aus wie Steine, sind aber lebendige Tiere. Sie wachsen ganz langsam. Schon eine winzige Berührung mit der Hand oder dem Flossenschlag kann sie 
-					für immer verletzen. Schau sie dir lieber aus der Ferne an!</p>
-					<p><strong>4. Flossenschlag kontrollieren, damit kein Schlamm aufgewirbelt wird.</strong><br>
-					Wenn du wild mit den Flossen schlägst, wirbelst du den Sand oder Schlamm vom Grund auf. Dann wird das Wasser trüb und die Fische können nichts mehr sehen. Eine ruhige, 
-					gleichmäßige Bewegung schützt den Meeresboden. (Deshalb ist die richtige Tarierung so wichtig!)</p>
-					<p><strong>5. Keinerlei Müll hinterlassen – im Gegenteil: Plastikmüll einsammeln!</strong><br>
-					Nimm alles, was du mit ins Wasser genommen hast, auch wieder mit an Land. Und wenn du unterwegs Plastikmüll siehst, sammle ihn ein! So hilfst du mit, dass die Meere 
-					sauber bleiben und keine Tiere daran ersticken.</p><br>
-					<hr>
-					<p><strong>Merksatz für Kinder:</strong><br>
-					<em>„Schauen ja – Anfassen nein! Dann sind alle Meeresbewohner happy.“</em></p>`,
+                    text: `<p>Die Unterwasserwelt ist der Lebensraum von unzähligen Tieren und Pflanzen. Taucher sind dort nur zu Gast. Um diesen Lebensraum zu schützen und auch in Zukunft 
+					zu erhalten, gelten fünf grundlegende Regeln. Die Grafik zeigt diese Regeln im Überblick.</p>
+					<h4>1. Tiere nicht jagen, stressen oder anfassen</h4>
+					<p>Fische und andere Meeresbewohner müssen aus sicherer Entfernung beobachtet werden. Werden sie angefasst oder gejagt, erschrecken sie und fühlen sich bedroht. 
+					Die reine Beobachtung ist die schonendste Form der Interaktion.</p>
+					<h4>2. Immer auf den vorgeschriebenen Wegen und im Freiwasser bleiben</h4>
+					<p>Unter Wasser gibt es oft markierte Wege, ähnlich wie Wanderwege. Diese Wege müssen eingehalten werden. Am besten schwebt der Taucher frei im Wasser. 
+					So werden empfindliche Lebensräume der Tiere geschont und Pflanzen nicht zerstört.</p>
+					<h4>3. Korallen und Unterwasserlebewesen niemals berühren</h4>
+					<p>Korallen sehen zwar aus wie Steine, sind aber lebendige Tiere. Sie wachsen sehr langsam. Bereits eine winzige Berührung mit der Hand oder dem Flossenschlag kann sie dauerhaft verletzen. 
+					Korallen sollten daher nur aus der Ferne betrachtet werden.</p>
+					<h4>4. Flossenschlag kontrollieren</h4>
+					<p>Ein unkontrollierter Flossenschlag wirbelt Sand oder Schlamm vom Grund auf. Das Wasser wird dadurch trüb und die Sicht für alle Taucher und Fische verschlechtert sich. 
+					Eine ruhige, gleichmäßige Bewegung schützt den Meeresboden. Eine korrekte Tarierung ist dabei entscheidend.</p>
+					<h4>5. Keinerlei Müll hinterlassen</h4>
+					<p>Alles, was mit ins Wasser genommen wird, muss auch wieder mit an Land genommen werden. Zusätzlich sollte Plastikmüll eingesammelt werden, wenn er unterwegs gesehen wird. 
+					So wird verhindert, dass Meere verschmutzen und Tiere daran ersticken.</p>
+					<p><strong>Merksatz zum Einprägen:</strong> „Schauen ja – Anfassen nein!“</p>`,
                     image: "bilder/5_2_Umwelt.jpg"
                 },
                 {
@@ -1762,38 +1695,49 @@ const bookData = {
                     subrows: [
                         {
                             subTitle: "Die heimischen Fische und wie du sie beobachten kannst",
-                            text: `<p>In unseren heimischen Seen und Flüssen gibt es eine spannende Unterwasserwelt! Wenn du diese Tiere in der Natur beobachten möchtest, brauchst du vor allem eines: 
-							Geduld. Und du musst ihr natürliches Verhalten kennen. Schau dir die Bilder an, dort siehst du einige der wichtigsten Bewohner:</p>
-							<p>•	<strong>Flussbarsch:</strong> Erkennbar an seinen dunklen Streifen. Er lebt oft in Schwärmen in der Nähe von Pflanzen.<br>
-							•	<strong>Hecht:</strong> Ein blitzschneller Jäger mit einem langen, torpedoförmigen Körper und einem gefleckten Muster.<br>
-							•	<strong>Wels:</strong> Ein riesiger, dunkler Fisch mit langen „Schnurrhaaren“ (Barteln) am Maul, der gerne in der Nähe von Schlamm und am Grund lebt.<br>
-							•	<strong>Aal:</strong> Er sieht aus wie eine lange Schlange und versteckt sich gerne zwischen Steinen.<br>
-							•	<strong>Brasse:</strong> Ein silbrig glänzender Fisch mit einer hohen Rückenflosse, der oft am sandigen Grund nach Futter sucht.<br>
-							•	<strong>Karpfen:</strong> Ein großer, schuppiger Fisch mit einem dicken Körper und einem kleinen Maul.<br>
-							•	<strong>Edelkrebs:</strong> Kein Fisch, sondern ein Krebstier! Er versteckt sich gerne unter Steinen oder Wurzeln und hat große Scheren.</p>
-							<p><strong>Tipps zum Beobachten:</strong></p>
-							<p>•	<strong>Der getarnte Hecht:</strong> Einen Hecht entdeckst du am besten, indem du nicht direkt nach dem Fisch selbst suchst. Sein geflecktes 
-							Rückenmuster tarnt ihn perfekt im Kraut. Halte stattdessen nach unnatürlichen, geraden Linien im Wasser Ausschau – das ist oft sein Rücken!<br>
-							•	<strong>Der hektische Schwarm:</strong> Wenn du an einer Stelle viele kleine Fische hektisch umherschwimmen siehst, ist oft ein Raubfisch 
-							(wie ein Hecht) in der Nähe. Die kleinen Fische haben Angst und versuchen zu fliehen.</p>
-							<p>Wenn du dich leise und ruhig verhältst, kannst du diese faszinierenden Tiere in ihrem natürlichen Lebensraum entdecken!</p>`,
+                            text: `<p>In heimischen Seen und Flüssen leben zahlreiche Fischarten sowie Krebstiere. Für die Beobachtung dieser Tiere sind Geduld und die Kenntnis ihres natürlichen Verhaltens erforderlich. 
+							Die Grafik zeigt die wichtigsten heimischen Bewohner.</p>
+							<h4>Die heimischen Arten im Überblick</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Flussbarsch:</strong> Erkennbar an den dunklen Streifen. Er lebt oft in Schwärmen in der Nähe von Wasserpflanzen.</li>
+								<li><strong>Hecht:</strong> Ein schneller Jäger mit einem langen, torpedoförmigen Körper und einem gefleckten Muster.</li>
+								<li><strong>Wels:</strong> Ein großer, dunkler Fisch mit langen Barteln am Maul. Er hält sich bevorzugt in der Nähe von Schlamm und am Gewässergrund auf.</li>
+								<li><strong>Aal:</strong> Er hat eine schlangenähnliche Form und versteckt sich häufig zwischen Steinen.</li>
+								<li><strong>Brasse:</strong> Ein silbrig glänzender Fisch mit einer hohen Rückenflosse, der am sandigen Grund nach Nahrung sucht.</li>
+								<li><strong>Karpfen:</strong> Ein großer, schuppiger Fisch mit einem kräftigen Körper und einem kleinen Maul.</li>
+								<li><strong>Edelkrebs:</strong> Kein Fisch, sondern ein Krebstier. Er versteckt sich unter Steinen oder Wurzeln und besitzt große Scheren.</li>
+							</ul>
+							<h4>Tipps zur Beobachtung</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Der getarnte Hecht:</strong> Das gefleckte Rückenmuster des Hechts tarnt ihn optimal im Pflanzenbewuchs. Zur Entdeckung sollte nicht direkt nach dem Fisch, 
+								sondern nach unnatürlichen, geraden Linien im Wasser gesucht werden. Diese Linien sind oft der Rücken des Hechts.</li>
+								<li><strong>Der hektische Schwarm:</strong> Wenn kleine Fische an einer Stelle hektisch umherschwimmen, befindet sich oft ein Raubfisch wie ein Hecht in der Nähe. 
+								Die kleinen Fische reagieren mit Fluchtverhalten auf die Bedrohung.</li>
+							</ul>
+							<p>Eine ruhige und zurückhaltende Verhaltensweise ermöglicht die Beobachtung dieser Tiere in ihrem natürlichen Lebensraum.</p>`,
                             image: "bilder/5_3_Fische.jpg"
                         },
                         {
                             subTitle: "Die faszinierende Welt der Meeresbewohner",
-                            text: `<p>Das Meer ist voller aufregender Tiere! Jedes von ihnen hat besondere Eigenschaften, die ihm helfen, in der großen blauen Unterwasserwelt zu überleben. 
-							Schau dir die Bilder an und lerne einige der berühmtesten Meeresbewohner kennen:</p>
-							<p>•	<strong>Die Meeresschildkröte:</strong> Sie ist eine wahre Weltreisende! Mit ihren kräftigen Flossen schwimmt sie viele Kilometer durch die Ozeane. 
-							Sie legt ihre Eier aber immer am Strand ab, an dem sie selbst geboren wurde.<br>
-							•	<strong>Der Hai:</strong> Er ist ein Jäger mit einem starken Gebiss und einem unheimlich guten Geruchssinn. Haie gibt es schon seit Millionen von 
-							Jahren auf der Erde – sie sind echte Urzeitwesen!<br>
-							•	<strong>Der Delfin:</strong> Delfine sind sehr schlaue Tiere. Sie verständigen sich untereinander mit lustigen Klick- und Pfeiftönen und springen oft fröhlich aus dem Wasser.<br>
-							•	<strong>Der Papageifisch:</strong> Er hat seinen Namen von seinem bunten Aussehen und seinem schnabelartigen Maul. Mit diesem „Schnabel“ knabbert er Korallen ab und frisst sie.<br>
-							•	<strong>Der Mantarochen:</strong> Er sieht aus wie ein riesiger, fliegender Teppich im Wasser. Er ist ein sanfter Riese, der durch das Meer „gleitet“ und winzige Plankton-Tierchen frisst.<br>
-							•	<strong>Der Wal:</strong> Wale sind keine Fische, sondern Säugetiere! Sie müssen zum Atmen an die Wasseroberfläche kommen. Der Blauwal ist das größte Tier der Erde.<br>
-							•	<strong>Der Doktorfisch:</strong> Er ist wunderschön bunt und hat oft einen kleinen „Dorn“ am Schwanzansatz. Er lebt in den warmen Korallenriffen.<br>
-							•	<strong>Der Anemonenfisch:</strong> Kennst du ihn als „Nemo“? Er lebt in einer engen Freundschaft mit einer giftigen Anemone. Der Fisch ist gegen das Gift immun und findet dort Schutz.<br>
-							•	<strong>Der Igel- oder Kugelfisch:</strong> Wenn er sich bedroht fühlt, pumpt er sich mit Wasser auf und wird zur stacheligen Kugel. So kann ihn kein Raubfisch fressen!</p>`,
+                            text: `<p>Das Meer beherbergt eine Vielzahl unterschiedlicher Tierarten. Jede Art hat spezifische Eigenschaften entwickelt, die ihr das Überleben im Ozean ermöglichen. Die Grafik zeigt neun bekannte Meeresbewohner.</p>
+							<h4>Die Meeresschildkröte</h4>
+							<p>Sie legt weite Strecken im Ozean zurück. Ihre kräftigen Flossen dienen als Antrieb. Zur Eiablage kehrt sie an den Strand zurück, an dem sie selbst geschlüpft ist.</p>
+							<h4>Der Hai</h4>
+							<p>Haie sind Jäger mit einem starken Gebiss und einem ausgeprägten Geruchssinn. Sie existieren seit Millionen von Jahren auf der Erde und gelten als evolutionär sehr alte Tierarten.</p>
+							<h4>Der Delfin</h4>
+							<p>Delfine zählen zu den intelligentesten Meeresbewohnern. Sie kommunizieren über Klick- und Pfeiftöne und sind für ihre Sprünge aus dem Wasser bekannt.</p>
+							<h4>Der Papageifisch</h4>
+							<p>Seinen Namen verdankt er seinem bunten Aussehen und seinem schnabelartigen Maul. Mit diesem Maul raspelt er Korallen ab und ernährt sich von ihnen.</p>
+							<h4>Der Mantarochen</h4>
+							<p>Der Mantarochen ist ein großer, friedlicher Meeresbewohner. Er bewegt sich gleitend durch das Wasser und ernährt sich von Plankton.</p>
+							<h4>Der Wal</h4>
+							<p>Wale sind keine Fische, sondern Säugetiere. Sie müssen zum Atmen an die Wasseroberfläche kommen. Der Blauwal ist das größte Tier der Erde.</p>
+							<h4>Der Doktorfisch</h4>
+							<p>Er ist für seine auffällige Färbung bekannt und besitzt oft einen kleinen Dorn am Schwanzansatz. Sein Lebensraum sind warme Korallenriffe.</p>
+							<h4>Der Anemonenfisch</h4>
+							<p>Der Anemonenfisch lebt in enger Symbiose mit einer giftigen Anemone. Er ist gegen das Gift der Anemone immun und findet dort Schutz vor Fressfeinden.</p>
+							<h4>Der Igel- oder Kugelfisch</h4>
+							<p>Bei Bedrohung pumpt sich dieser Fisch mit Wasser auf und verwandelt sich in eine stachelige Kugel. Dieser Mechanismus schützt ihn vor Raubfischen.</p>`,
                             image: "bilder/5_3_1_Fische.jpg"
                         }
                     ]
@@ -1801,36 +1745,36 @@ const bookData = {
                 {
                     id: "kap5-4",
                     title: "Abbruch des Tauchgangs",
-                    text: `<p><strong>Wann wird der Tauchgang beendet? Die Stopp-Liste</strong></p>
-					<p>Tauchen ist ein tolles Abenteuer, aber es gibt Momente, in denen man sofort aufhören und auftauchen muss. Das ist keine Schande, sondern zeigt, 
-					dass du ein kluger und sicherer Taucher bist! <strong>Sicherheit geht immer vor!</strong></p>
-					<p>Ein Tauchgang wird sofort beendet, wenn einer dieser four Gründe zutrifft:</p>
-					<p>• <strong>Das Gruppenführer-Signal (Stopp-Zeichen):</strong> Der Tauchlehrer oder Gruppenführer gibt das Stopp-Signal (eine flache Hand, die Halt bedeutet). 
-					Dann wird sofort abgebrochen. Er hat immer den Überblick und weiß, wann es Zeit ist, nach oben zu gehen.</p>
-					<p>• <strong>Starkes Frieren:</strong> Wenn dir eiskalt wird und du am ganzen Körper zitterst, ist das ein Warnsignal deines Körpers. Dann musst du sofort raus 
-					aus dem Wasser, damit du dich nicht unterkühlst.</p>
-					<p>• <strong>Abbruchwunsch:</strong> Jeder Taucher darf jederzeit selbst entscheiden: „Ich möchte jetzt auftauchen.“ Das ist völlig in Ordnung! Auch wenn ein 
-					Buddy (Tauchpartner) das Zeichen gibt, dass er aufhören möchte, gehen beide gemeinsam nach oben. Ihr seid ein Team!</p>
-					<p>• <strong>Luftvorrat von 50 bar:</strong> Das Manometer (die Druckanzeige) zeigt, wie viel Luft noch in der Flasche ist. Wenn nur noch 50 bar übrig sind, 
-					ist das die rote Grenze. Dann wird der Tauchgang beendet und du tauchst langsam zur Oberfläche auf.</p>
-					<p><strong>Wichtig:</strong><br>
-					Wenn einer dieser Gründe eintritt, wird der Tauchgang sofort beendet. Das gilt für dich, deinen Buddy und die ganze Gruppe. Sicherheit ist das Wichtigste – 
-					ein neuer Tauchgang kann immer noch kommen, aber deine Gesundheit steht an erster Stelle!</p>`,
+                    text: `<p>Ein Tauchgang muss in bestimmten Situationen sofort beendet werden. Die Entscheidung zum Abbruch ist ein wichtiger Bestandteil der Sicherheitskultur im Tauchen und dient dem Schutz aller Beteiligten. 
+					Die Grafik zeigt eine Stopp-Liste mit vier Gründen, die einen sofortigen Abbruch erforderlich machen.</p>
+					<h4>1. Das Gruppenführer-Signal (Abbruch-Zeichen)</h4>
+					<p>Der Tauchlehrer oder Gruppenführer gibt das Abbruch-Signal. Dieses wird durch <strong>zwei gekreuzte Arme vor dem Körper</strong> (ein „X“) dargestellt. Dieses Signal führt zum sofortigen Abbruch. Der Gruppenführer behält den Überblick über die Situation und entscheidet, wann der Aufstieg eingeleitet wird.</p>
+					<h4>2. Starkes Frieren</h4>
+					<p>Wenn der Körper stark auskühlt und der Taucher am ganzen Körper zittert, ist das ein Warnsignal. Der Tauchgang muss sofort beendet werden, um eine Unterkühlung zu vermeiden.</p>
+					<h4>3. Abbruchwunsch</h4>
+					<p>Jeder Taucher hat das Recht, den Tauchgang jederzeit zu beenden. Gibt ein Buddy (Tauchpartner) das Zeichen zum Abbruch, wird der Tauchgang gemeinsam beendet. Beide Taucher steigen zusammen auf.</p>
+					<h4>4. Luftvorrat von 50 bar</h4>
+					<p>Das Manometer (die Druckanzeige) zeigt den verbleibenden Luftvorrat an. Bei einem Restdruck von 50 bar ist die Grenze erreicht. Der Tauchgang wird beendet und der Aufstieg zur Oberfläche eingeleitet.</p>
+					<h4>Wichtiger Hinweis</h4>
+					<p>Trifft einer dieser Gründe zu, wird der Tauchgang sofort beendet. Diese Regel gilt für jeden einzelnen Taucher, den Buddy und die gesamte Gruppe. Die Sicherheit und die Gesundheit haben jederzeit Vorrang vor der Fortsetzung des Tauchgangs.</p>`,
                     image: "bilder/5_4_Abbruch.jpg"
                 },
                 {
                     id: "kap5-5",
                     title: "Was ist ein Essoufflement?",
-                    text: `<p>Manchmal kann es unter Wasser passieren, dass man plötzlich keine Luft mehr bekommt, obwohl noch genug in der Flasche ist. Man fängt an, ganz schnell und hektisch zu atmen. 
-					Das nennt man <strong>Essoufflement</strong> (sprich: Ess-u-fle-mang).</p>
-					<p><strong>Wie entsteht das?</strong><br>
-					Das kann verschiedene Gründe haben: Vielleicht bist du zu schnell geschwommen, die Strömung war zu stark, es war zu kalt, oder du hast plötzlich Angst bekommen. 
-					Wenn du in Panik gerätst, atmet dein Körper ganz flach und schnell. Dann kann er die Luft nicht mehr richtig verarbeiten, und du fühlst dich, als würdest du ersticken.</p>
-					<p><strong>Was kann man tun? (So beruhigst du dich und deinen Partner)</strong></p>
-					<p><strong>1. Stoppen:</strong> Bleib sofort stehen oder halte dich an deinem Buddy fest. Bewege dich nicht weiter.</p>
-					<p><strong>2. Beruhigen:</strong> Schau deinem Partner in die Augen. Atme ganz langsam und tief aus (als würdest du durch einen Strohhalm pusten).</p>
-					<p><strong>3. Sicher auftauchen:</strong> Wenn du dich beruhigt hast, taucht ihr gemeinsam ganz langsam und ruhig auf.</p>
-					<p><strong>4. Nicht allein lassen:</strong> Lass deinen Partner niemals allein, bis ihr sicher an der Oberfläche oder am Boot seid.</p>`,
+                    text: `<p>Unter Wasser kann es vorkommen, dass ein Taucher plötzlich keine Luft mehr bekommt, obwohl die Flasche noch ausreichend gefüllt ist. Die Atmung wird schnell und hektisch. 
+					Dieses Phänomen wird als <strong>Essoufflement</strong> (Aussprache: Ess-u-fle-mang) bezeichnet. Die Grafik zeigt die Situation und die erforderlichen Maßnahmen.</p>
+					<h4>Wie entsteht ein Essoufflement?</h4>
+					<p>Ein Essoufflement kann verschiedene Ursachen haben. Häufig entsteht es durch zu schnelles Schwimmen, starke Strömung oder Kälte. Auch plötzliche Angst oder Panik können Auslöser sein. 
+					In einer Paniksituation atmet der Körper flach und schnell. Dadurch kann die eingeatmete Luft nicht mehr effizient verarbeitet werden, und der Taucher hat das Gefühl zu ersticken.</p>
+					<h4>Was ist zu tun? (Maßnahmen zur Beruhigung)</h4>
+					<p>Die Grafik zeigt die richtigen Verhaltensweisen für den betroffenen Taucher und seinen Buddy:</p>
+					<ol style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Stoppen:</strong> Die Bewegung wird sofort eingestellt. Der Taucher hält sich am Buddy fest, um Sicherheit zu geben.</li>
+						<li><strong>Beruhigen:</strong> Der Buddy hält Blickkontakt. Die Atmung wird bewusst verlangsamt und tief ausgeführt.</li>
+						<li><strong>Sicher auftauchen:</strong> Sobald sich der Taucher beruhigt hat, erfolgt der gemeinsame, langsame und kontrollierte Aufstieg.</li>
+						<li><strong>Nicht allein lassen:</strong> Der Buddy begleitet den Taucher, bis beide sicher die Wasseroberfläche oder das Boot erreicht haben.</li>
+					</ol>`,
                     image: "bilder/5_4_1_Essouflement.jpg"
                 }
             ],
@@ -1962,28 +1906,26 @@ const bookData = {
                 {
                     id: "kap6-1",
                     title: "Der perfekte Tauchgang-Abschluss",
-                    text: `<p>Ein Tauchgang endet nicht einfach damit, dass man auftaucht. Ein sicherer Abschluss ist genauso wichtig wie der Start! Schau dir die fünf Schritte im Bild an:</p>
-					<p><strong>1. Der Aufstieg – Langsamer als Luftblasen</strong><br>
-					Der Beginn des Ausstiegs erfordert höchste Konzentration. Der Aufstieg erfolgt immer langsam und kontrolliert. Eine wichtige Faustregel lautet: <strong>Niemals 
-					schneller aufsteigen als die eigenen Luftblasen!</strong> Das sind maximal 10 Meter pro Minute. Die Luftblasen zeigen dir den Weg nach oben – wenn du langsamer 
-					bist als sie, bist du auf der sicheren Seite. Viele Tauchcomputer haben dafür eine farbige Skala (grün, gelb, rot), die dir zeigt, ob du im sicheren grünen Bereich bist.</p>
-					<p><strong>2. Der Sicherheitsstopp bei 5 Metern</strong><br>
-					Bevor du das Wasser verlässt, ist ein ganz wichtiger Schritt unverzichtbar: der <strong>Sicherheitsstopp</strong>. Du bleibst genau 3 Minuten lang in 5 Metern 
-					Tiefe (am Seil oder frei im Wasser) stehen. Warum? Dein Körper hat unter Wasser Stickstoff aufgenommen. Der Sicherheitsstopp gibt ihm die Zeit, 
-					diesen überschüssigen Stickstoff sicher abzuatmen. Dein Tauchcomputer überwacht dabei genau die Tiefe (5 Meter) und die Dauer (3 Minuten).<br>
-					<strong>Warum ist der Sicherheitsstopp so wichtig?</strong><br>
-					Unter Wasser atmen wir Luft unter Druck. Dabei löst sich Stickstoff in unserem Blut. Wenn wir zu schnell auftauchen, kann der Stickstoff wie kleine 
-					Bläschen im Blut aufsteigen. Das kann sehr gefährlich werden (die Fachleute nennen das Dekompressionskrankheit). Der Sicherheitsstopp gibt dem Körper die Zeit, 
-					den Stickstoff ganz langsam und sicher abzuatmen. Deshalb ist er so wichtig wie das Atmen selbst!</p>
-					<p><strong>3. Gemeinsam auftauchen</strong><br>
-					Nach dem Sicherheitsstopp tauchen die beiden Taucher (die Buddys) gemeinsam und kontrolliert an die Wasseroberfläche auf. Oben angekommen, wird sofort 
-					das <strong>OK-Zeichen</strong> gegeben. Damit signalisierst du deinem Team oder dem Boot: <em>„Alles in Ordnung!“</em> Danach wird das Jacket (die Tarierweste) mit Luft aufgefüllt, damit du wie ein Korken sicher an der Oberfläche treibst.</p>
-					<p><strong>4. An Land: Vollständigkeits- und Befindlichkeits-Check</strong><br>
-					Zurück am Boot oder am Ufer angekommen, wird erst einmal durchgeatmet. Jetzt folgt der direkte Austausch: Wie fühlt sich jeder? Die Ausrüstung wird 
-					schrittweise abgelegt und anhand einer Checkliste überprüft, ob auch wirklich alles vollständig ist.</p>
-					<p><strong>5. Ausrüstung versorgen</strong><br>
-					Zum Schluss werden alle Ausrüstungsgegenstände in einem trockenen und sauberen Raum fachgerecht versorgt. Die Tauchflaschen werden sicher in speziellen Ecken 
-					aufgestellt, die Neoprenanzüge hängen ordentlich zum Trocknen auf, und das restliche Equipment wird sauber auf Regalen verstaut. So ist alles für den nächsten Einsatz bestens vorbereitet!</p>`,
+                    text: `<p>Ein Tauchgang endet nicht mit dem Erreichen der Wasseroberfläche. Ein sicherer Abschluss ist ebenso wichtig wie der Start. Die Grafik zeigt die fünf aufeinanderfolgenden Schritte.</p>
+					<h4>1. Der Aufstieg – Langsamer als Luftblasen</h4>
+					<p>Der Aufstieg erfordert höchste Konzentration und erfolgt langsam und kontrolliert. Die Faustregel lautet: <strong>Niemals schneller aufsteigen als die eigenen Luftblasen.
+					</strong> Das entspricht maximal <strong>10 Metern pro Minute</strong>. Die Luftblasen dienen als visuelle Orientierung für die Aufstiegsgeschwindigkeit. 
+					Moderne Tauchcomputer zeigen die Geschwindigkeit über eine farbige Skala (grün, gelb, rot) an. Der grüne Bereich markiert die sichere Aufstiegsgeschwindigkeit.</p>
+					<h4>2. Der Sicherheitsstopp bei 5 Metern</h4>
+					<p>Vor dem Verlassen des Wassers ist ein Sicherheitsstopp zwingend erforderlich. Der Taucher verbleibt genau <strong>3 Minuten</strong> in einer Tiefe von <strong>5 Metern</strong> 
+					(am Seil oder frei im Wasser). Der Grund: Der Körper hat unter Wasser Stickstoff aufgenommen. Der Sicherheitsstopp ermöglicht den sicheren Abbau dieses überschüssigen Stickstoffs. 
+					Der Tauchcomputer überwacht dabei präzise die Tiefe (5 Meter) und die Dauer (3 Minuten).</p>
+					<p><strong>Hintergrund:</strong> Unter Wasser wird Luft unter Druck geatmet. Dabei löst sich Stickstoff im Blut. Bei einem zu schnellen Aufstieg kann der Stickstoff in Form von Bläschen 
+					im Blut aufsteigen. Dies kann zu schwerwiegenden gesundheitlichen Problemen führen, die als <strong>Dekompressionskrankheit</strong> bezeichnet werden. Der Sicherheitsstopp gibt dem Körper die notwendige Zeit, 
+					den Stickstoff langsam und sicher abzuatmen.</p>
+					<h4>3. Gemeinsam auftauchen</h4>
+					<p>Nach dem Sicherheitsstopp tauchen die beiden Buddys gemeinsam und kontrolliert an die Wasseroberfläche auf. An der Oberfläche angekommen, wird sofort das <strong>OK-Zeichen</strong> gegeben. 
+					Dies signalisiert dem Team oder dem Boot: Alles ist in Ordnung. Anschließend wird das Jacket (die Tarierweste) mit Luft befüllt, um den Auftrieb an der Oberfläche zu erhöhen und sicher zu treiben.</p>
+					<h4>4. An Land: Vollständigkeits- und Befindlichkeits-Check</h4>
+					<p>Zurück am Boot oder am Ufer wird der Gesundheitszustand aller Taucher überprüft. Die Ausrüstung wird schrittweise abgelegt und anhand einer Checkliste auf Vollständigkeit kontrolliert.</p>
+					<h4>5. Ausrüstung versorgen</h4>
+					<p>Abschließend wird die gesamte Ausrüstung fachgerecht versorgt. Die Tauchflaschen werden sicher aufgestellt, die Neoprenanzüge hängen zum Trocknen, und das restliche Equipment wird sauber verstaut. 
+					Dies gewährleistet die Einsatzbereitschaft für den nächsten Tauchgang.</p>`,
                     image: "bilder/6_1_Aufstieg.jpg"
                 },
                 {
@@ -2111,42 +2053,51 @@ const bookData = {
         {
             id: "kap7",
             title: "Kapitel 7: Die Praxis",
-            intro: "Deine Prüfung für das KTSA Silber. Du hast viel gelernt und geübt! Jetzt wird es ernst: Bei der Prüfung für das KTSA Silber zeigst du, was du alles drauf hast. Die Prüfung besteht aus zwei Teilen: den Übungen im Schwimmbad und den Übungen im Freiwasser.",
+            intro: "Die Prüfung für das KTSA Silber besteht aus einem theoretischen und einem praktischen Teil. Der praktische Teil gliedert sich in Übungen im Schwimmbad und Übungen im Freiwasser.",
             subsections: [
                 {
                     id: "kap7-1",
                     title: "Die Bad-Übungen (mit der ABC-Ausrüstung)",
-                    text: `<p>Im Schwimmbad zeigst du, dass du dich ohne schwere Tauchflasche sicher im Wasser bewegen kannst.</p>
-					<p>• <strong>Zeittauchen:</strong> Du tauchst 25 Sekunden lang unter Wasser und schwimmst dabei etwa 10 Meter weit. Das zeigt, dass du dich unter Wasser 
-					orientieren kannst und nicht die Luft anhältst, sondern ruhig bleibst.</p>
-					<p>• <strong>Streckentauchen:</strong> Du tauchst 20 Meter weit mit einem Atemzug. Wenn du eine Neoprenjacke und -hose trägst (die dich etwas mehr Auftrieb geben), 
-					reichen auch 15 Meter. <em>Tipp: Atme vorher ruhig und tief ein, aber hyperventiliere nicht!</em></p>
-					<p>• <strong>Abtauchen und Schnorchel ausblasen:</strong> Du tauchst dreimal stilgerecht ab und bläst am Ende den Schnorchel an der Wasseroberfläche wieder aus. 
-					Das ist wichtig, damit kein Wasser im Schnorchel bleibt.</p>
-					<p>• <strong>Maske absetzen und wieder aufsetzen:</strong> Du nimmst unter Wasser deine Maske ab, setzt sie wieder auf und bläst sie aus. Das ist eine wichtige 
-					Sicherheitsübung für den Fall, dass dir die Maske mal verrutscht.</p>
-					<p>• <strong>Schnorcheln:</strong> Du schwimmst 300 Meter mit dem Schnorchel. Dabei wechselst du die Lagen: Brustlage (auf dem Bauch), Seitenlage (auf der Seite) 
-					und Rückenlage (auf dem Rücken).</p>
-					<p>• <strong>Partnerübung (Wechselatmung):</strong> Du schwimmst 50 Meter mit deinem Partner zusammen. Dabei atmet ihr abwechselnd durch den Schnorchel 
-					(einer taucht, der andere atmet). Das zeigt, dass ihr als Team zusammenarbeitet.</p>`,
+                    text: `<p>Im Schwimmbad wird der sichere Umgang mit der ABC-Ausrüstung ohne schwere Tauchflasche geprüft. Die Grafik zeigt drei zentrale Übungen.</p>
+					<h4>Übung A: Zeittauchen</h4>
+					<p>Der Prüfling taucht 25 Sekunden lang unter Wasser und legt dabei eine Strecke von etwa 10 Metern zurück. Die Grafik zeigt die Stoppuhr und die 10-Meter-Marke. 
+					Diese Übung prüft die Orientierung unter Wasser und die Fähigkeit, ruhig zu bleiben, ohne die Luft anzuhalten.</p>
+					<h4>Übung B: Maske absetzen und wieder aufsetzen</h4>
+					<p>Unter Wasser wird die Maske abgenommen, wieder aufgesetzt und ausgeblasen. Dies ist eine wichtige Sicherheitsübung für den Fall, dass die Maske während eines Tauchgangs verrutscht.</p>
+					<h4>Übung C: Partnerübung (Wechselatmung)</h4>
+					<p>Zwei Taucher schwimmen 50 Meter zusammen. Dabei atmen sie abwechselnd durch den Schnorchel (einer taucht, der andere atmet). Die Grafik zeigt die Übergabe des Schnorchels. 
+					Diese Übung demonstriert die Teamarbeit und die sichere Weitergabe der Atemluft.</p>
+					<h4>Weitere Prüfungsinhalte im Schwimmbad</h4>
+					<p>Neben den drei dargestellten Übungen umfasst die Prüfung weitere Aufgaben:</p>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Streckentauchen:</strong> 20 Meter mit einem Atemzug (bei Neoprenjacke und -hose 15 Meter). Vor dem Tauchen ist ruhiges Atmen erforderlich, Hyperventilation ist zu vermeiden.</li>
+						<li><strong>Abtauchen und Schnorchel ausblasen:</strong> Dreimaliges stilgerechtes Abtauchen mit anschließendem Ausblasen des Schnorchels an der Wasseroberfläche.</li>
+						<li><strong>Schnorcheln:</strong> 300 Meter mit dem Schnorchel in verschiedenen Lagen (Brustlage, Seitenlage, Rückenlage).</li>
+					</ul>`,
                     images: ["bilder/7_1_ABC.jpg"]
                 },
                 {
                     id: "kap7-2",
                     title: "Die Freiwasser-Übungen (mit dem Tauchgerät)",
-                    text: `<p>Jetzt geht es ins tiefe Wasser! Hier zeigst du, dass du mit deiner Tauchausrüstung sicher umgehen kannst.</p>
-					<p><strong>Der erste Tauchgang:</strong> Du tauchst mit deinem Ausbilder auf eine Tiefe von 5 bis 8 Metern und bleibst 15 bis 30 Minuten unter Wasser.</p>
-					<p>• <strong>Maske abnehmen in 3 Metern Tiefe:</strong> Du tauchst mit dem Gerät auf 3 Meter Tiefe, nimmst deine Tauchermaske ab, setzt sie wieder auf 
-					und bläst sie aus. Das ist eine echte Herausforderung, aber du schaffst das!</p>
-					<p>• <strong>Luft teilen (25 Meter):</strong> Du schwimmst 25 Meter unter Wasser. Dabei atmest du einmal aus dem Hauptatemregler deines Partners (du bist der Luftnehmer) 
-					und einmal gibst du deinem Partner deinen Regler (du bist der Luftgeber). <em>Erinnerst du dich an die VDST-Regel? Der Partner bekommt den Hauptregler, du wechselst auf den Reserve-Regler am Hals!</em></p>
-					<p>• <strong>Schnorcheln mit Gerät:</strong> Du schnorchelst 10 Minuten mit deiner kompletten Tauchausrüstung an der Oberfläche.</p>
-					<p><strong>Der zweite Tauchgang:</strong> Noch einmal 5 bis 8 Meter tief für 15 bis 30 Minuten.</p>
-					<p>• <strong>Abstand halten und Zeichen geben:</strong> Du tauchst 10 Minuten lang mit deutlichem Abstand über dem Grund (damit du keine Pflanzen oder Tiere verletzt). 
-					Dabei reagierst du richtig auf 5 Unterwasser-Pflichtzeichen (z.B. „Stopp“, „Kalt“, „OK“).</p>
-					<p>• <strong>Der Aufstieg:</strong> Am Ende des Tauchgangs steigst du gemeinsam mit deinem Partner langsam und kontrolliert auf. Du achtest darauf, nicht zu schnell zu sein.</p>
-					<p>• <strong>Ausrüstung versorgen:</strong> Nach dem Tauchgang baust du deine Ausrüstung ab und versorgst sie richtig (Flaschen sichern, Anzug aufhängen, etc.).</p>
-					<p><strong>Du hast es geschafft!</strong> Wenn du alle diese Übungen gemeistert hast, bist du offiziell ein KTSA-Silber-Taucher!</p>`,
+                    text: `<p>Die Freiwasser-Übungen finden im tiefen Wasser statt und prüfen den sicheren Umgang mit der vollständigen Tauchausrüstung. Die Grafik zeigt drei zentrale Übungen.</p>
+					<h4>Übung A: Maske abnehmen in 3 Metern Tiefe</h4>
+					<p>Der Taucher begibt sich auf 3 Meter Tiefe, nimmt die Tauchermaske ab, setzt sie wieder auf und bläst sie aus. Diese Übung trainiert die Orientierung und den sicheren Umgang mit der Maske unter Wasser.</p>
+					<h4>Übung B: Luft teilen (25 Meter)</h4>
+					<p>Zwei Taucher legen eine Strecke von 25 Metern unter Wasser zurück. Dabei wird die Atemluft geteilt. Der eine Taucher agiert als Luftnehmer (atmet aus dem Hauptregler des Partners), 
+					der andere als Luftgeber. Es gilt die VDST-Regel: Der Partner erhält den Hauptregler (langen grünen Schlauch), der Geber wechselt auf den Reserve-Regler am Hals. Die Grafik zeigt den Wechsel des Reglers.</p>
+					<h4>Übung C: Abstand halten (ca. 50 cm)</h4>
+					<p>Der Taucher bewegt sich mit deutlichem Abstand über dem Grund. Die Grafik zeigt einen Abstand von etwa 50 cm. Dadurch werden Pflanzen und Tiere geschützt, und es wird kein Schlamm aufgewirbelt. 
+					Während dieser Übung müssen zudem fünf Unterwasser-Pflichtzeichen (z. B. Stopp, Kalt, OK) korrekt umgesetzt werden.</p>
+					<h4>Weitere Prüfungsinhalte im Freiwasser</h4>
+					<p>Neben den drei dargestellten Übungen umfasst die Prüfung weitere Aufgaben:</p>
+					<ul style="margin-bottom: 15px; padding-left: 20px;">
+						<li><strong>Tauchgänge:</strong> Zwei Tauchgänge mit dem Ausbilder in einer Tiefe von 5 bis 8 Metern und einer Dauer von 15 bis 30 Minuten.</li>
+						<li><strong>Schnorcheln mit Gerät:</strong> 10 Minuten Schnorcheln mit kompletter Tauchausrüstung an der Wasseroberfläche.</li>
+						<li><strong>Aufstieg:</strong> Gemeinsamer, langsamer und kontrollierter Aufstieg mit dem Partner.</li>
+						<li><strong>Ausrüstung versorgen:</strong> Fachgerechter Abbau und Versorgung der Ausrüstung nach dem Tauchgang (Flaschen sichern, Anzug aufhängen etc.).</li>
+					</ul>
+					<h4>Abschluss</h4>
+					<p>Nach erfolgreicher Absolvierung aller Übungen ist die Prüfung für das KTSA Silber bestanden.</p>`,
                     images: ["bilder/7_2_Freiwasser.jpg"]
                 }
             ]
