@@ -19,6 +19,7 @@ const bookData = {
                     type: "stacked",
                     subrows: [
                         {
+							id: "luftdruck",
                             subTitle: "Luftdruck",
                             text: `<p>Luft hat ein Gewicht und drückt auf alles, was sich auf der Erde befindet. Diese Kraft wird <strong>Luftdruck</strong> genannt. Der Luftdruck ist nicht überall gleich, er ändert sich mit der Höhe.</p>
 							<p>In einer Höhe von <strong>10.000 Metern</strong>, in der Reiseflughöhe von Flugzeugen, ist die Luft sehr dünn. Der Druck liegt hier bei etwa <strong>0,2 bar</strong>. Aus diesem Grund muss die Kabine eines 
@@ -30,6 +31,7 @@ const bookData = {
                             image: "bilder/1_1_Luftdruck.jpg"
                         },
                         {
+							id: "wasserdruck",
                             subTitle: "Wasserdruck",
                             text: `<p>Wasser ist dichter und schwerer als Luft. Beim Tauchen lastet mit zunehmender Tiefe immer mehr Wasser auf dem Körper. Die physikalische Regel lautet: Pro <strong>10 Meter</strong> 
 							Wassertiefe erhöht sich der Druck um <strong>1 bar</strong>.</p>
@@ -70,7 +72,7 @@ const bookData = {
                 },
                 {
                     id: "kap1-3",
-                    title: "Licht & Farben unter Wasser",
+                    title: "Licht und Farben unter Wasser",
                     text: `<p>Wasser absorbiert Sonnenlicht. Es wirkt wie ein Filter, der Farben mit zunehmender Tiefe verschluckt. Die Farbe <strong>Rot</strong> verschwindet bereits in <strong>1 bis 5 Metern</strong> Tiefe.
 					<strong>Orange</strong> verschwindet bei etwa <strong>10 Metern</strong>, <strong>Gelb</strong> bei <strong>15 bis 20 Metern</strong>. Ab <strong>30 Metern</strong> wird auch <strong>Grün</strong> absorbiert. 
 					In <strong>40 Metern</strong> Tiefe dominiert nur noch die Farbe <strong>Blau</strong>.</p>
@@ -99,7 +101,7 @@ const bookData = {
                 },
                 {
                     id: "kap1-6",
-                    title: "Auftrieb & Tarierung",
+                    title: "Auftrieb und Tarierung",
                     text: `<p>Im Wasser wirken zwei Kräfte: Der <strong>Auftrieb</strong> (zum Beispiel durch den Neoprenanzug) zieht nach oben, das <strong>Gewicht</strong> (Blei) zieht nach unten. 
 					Das Ziel ist der <strong>neutrale Auftrieb</strong>, bei dem der Taucher schwerelos im Wasser schwebt.</p>
 					<p>Bei zu wenig Blei treibt der Taucher an der Oberfläche. Bei zu viel Blei sinkt er unkontrolliert. Die perfekte Bleimenge wird im <strong>Bleicheck</strong> ermittelt: 
@@ -108,304 +110,309 @@ const bookData = {
                 }
             ],
             quiz: {
-                questionPool: [
-                    {
-                        question: "Was ist Luftdruck?",
-                        options: ["Die Kraft, die von der Sonne kommt", "Das Gewicht der Luft, die auf uns drückt", "Die Menge an Sauerstoff in der Luft", "Der Wind, der weht", "Die Temperatur der Luft"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie hoch ist der Luftdruck auf Meeresspiegelhöhe?",
-                        options: ["0,2 bar", "0,5 bar", "1 bar", "5 bar", "10 bar"],
-                        correct: 2
-                    },
-                    {
-                        question: "Warum spüren wir den Luftdruck am Meeresspiegel nicht?",
-                        options: ["Weil er zu schwach ist", "Weil er von allen Seiten gleichmäßig kommt", "Weil wir daran gewöhnt sind", "Weil er nur nachts da ist", "Weil er nur unter Wasser wirkt"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Aussagen über den Luftdruck sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Er ist überall gleich", "Er ändert sich mit der Höhe", "Er ist im Gebirge niedriger als am Meer", "Er ist unter Wasser höher", "Er hat kein Gewicht"],
-                        correct: [1, 2, 3]
-                    },
-                    {
-                        question: "Warum brauchen Bergsteiger manchmal Sauerstoffflaschen?",
-                        options: ["Weil die Luft zu schwer ist", "Weil der Druck zu hoch ist", "Weil die Luft zu dünn ist", "Weil sie zu schnell steigen", "Weil sie keine Luft mehr haben"],
-                        correct: 2
-                    },
-                    {
-                        question: "Was ist der „Normaldruck“?",
-                        options: ["0 bar", "0,5 bar", "1 bar", "2 bar", "10 bar"],
-                        correct: 2
-                    },
-                    {
-                        question: "In welcher Höhe ist der Luftdruck am niedrigsten?",
-                        options: ["Am Meeresspiegel", "Auf einem 5.000 m hohen Berg", "Im Flugzeug in 10.000 m Höhe", "Im U-Boot", "Im Schwimmbad"],
-                        correct: 2
-                    },
-                    {
-                        question: "Wie viel Druck kommt alle 10 Meter Tiefe im Wasser hinzu?",
-                        options: ["0,5 bar", "1 bar", "2 bar", "10 bar", "100 bar"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viel Gesamtdruck herrscht in 20 Metern Tiefe?",
-                        options: ["1 bar", "2 bar", "3 bar", "4 bar", "5 bar"],
-                        correct: 2
-                    },
-                    {
-                        question: "Warum werden Luftballons beim Tieftauchen kleiner?",
-                        options: ["Weil sie platzen", "Weil das Wasser sie zusammendrückt", "Weil die Luft entweicht", "Weil sie kalt werden", "Weil sie schwerer werden"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was passiert mit dem Druck, wenn du tiefer tauchst?",
-                        options: ["Er bleibt gleich", "Er sinkt", "Er steigt", "Er verschwindet", "Er wird leichter"],
-                        correct: 2
-                    },
-                    {
-                        question: "Welche Aussagen über Wasserdruck sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Wasser ist dichter als Luft", "Alle 10 Meter kommt 1 bar dazu", "Wasserdruck ist immer gleich", "In 30 Metern Tiefe herrschen 4 bar", "Wasser lässt sich leicht zusammendrücken"],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Was machen Atemregler?",
-                        options: ["Sie filtern das Wasser", "Sie liefern Luft mit dem passenden Umgebungsdruck", "Sie machen die Luft kalt", "Sie speichern Luft", "Sie zeigen den Druck an"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viel Druck lastet in 40 Metern Tiefe auf dir?",
-                        options: ["1 bar", "2 bar", "3 bar", "4 bar", "5 bar"],
-                        correct: 4
-                    },
-                    {
-                        question: "Was ist der Unterschied zwischen Luftdruck und Wasserdruck?",
-                        options: ["Luftdruck ist stärker", "Wasserdruck steigt schneller mit der Tiefe", "Luftdruck gibt es nur im Wasser", "Wasserdruck ist immer 1 bar", "Es gibt keinen Unterschied"],
-                        correct: 1
-                    },
-                    {
-                        question: "Warum ist Wasser schwerer als Luft?",
-                        options: ["Weil es kälter ist", "Weil es dichter ist", "Weil es mehr Sauerstoff hat", "Weil es salzig ist", "Weil es blau ist"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was ist in einer Tauchflasche?",
-                        options: ["Reiner Sauerstoff", "Normale, gefilterte Atemluft", "Nur Stickstoff", "Wasser", "Helium"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viel Prozent Sauerstoff ist in der Einatemluft?",
-                        options: ["78 %", "21 %", "1 %", "16 %", "50 %"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viel Prozent Stickstoff ist in der Luft?",
-                        options: ["21 %", "78 %", "1 %", "4 %", "50 %"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was passiert mit dem Sauerstoff, wenn wir ausatmen?",
-                        options: ["Er steigt auf 78 %", "Er sinkt auf 16 %", "Er bleibt gleich", "Er verschwindet ganz", "Er wird zu Stickstoff"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Gase sind in der Atemluft? (Mehrere Antworten möglich)",
-                        options: ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Helium", "Wasserstoff"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Warum ist in der Flasche keine reine Sauerstoffmischung?",
-                        options: ["Weil sie zu teuer ist", "Weil normale Atemluft die richtige Mischung für unseren Körper ist", "Weil Sauerstoff giftig ist", "Weil sie zu schwer ist", "Weil sie nicht gefiltert werden kann"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viel Prozent Kohlendioxid atmen wir aus?",
-                        options: ["1 %", "4 %", "16 %", "21 %", "78 %"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was ist Pressluft?",
-                        options: ["Luft, die kalt ist", "Luft, die stark zusammengedrückt wurde", "Luft, die gefiltert wurde", "Luft, die aus dem Wasser kommt", "Luft, die mit Sauerstoff angereichert ist"],
-                        correct: 1
-                    },
-                    {
-                        question: "Warum muss die Luft in der Flasche trocken sein?",
-                        options: ["Damit sie leichter ist", "Damit kein Wasser in der Flasche gefriert oder rostet", "Damit sie besser schmeckt", "Damit sie schneller fließt", "Damit sie kälter ist"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Aussagen über die Atemluft sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Sie besteht zu 78 % aus Stickstoff", "Sie enthält 21 % Sauerstoff", "Sie enthält 1 % Edelgase", "Sie besteht aus reinem Sauerstoff", "Sie enthält 50 % Kohlendioxid"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Welche Farbe verschwindet zuerst im Wasser?",
-                        options: ["Blau", "Rot", "Grün", "Gelb", "Orange"],
-                        correct: 1
-                    },
-                    {
-                        question: "Ab welcher Tiefe verschwindet die Farbe Gelb?",
-                        options: ["1–5 m", "10 m", "15–20 m", "30 m", "40 m"],
-                        correct: 2
-                    },
-                    {
-                        question: "Warum brauchen Taucher eine Taschenlampe?",
-                        options: ["Um Fische zu fangen", "Um die echten Farben wieder sichtbar zu machen", "Um sich warm zu halten", "Um den Weg zu finden", "Um den Druck zu messen"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Farbe bleibt in 40 Metern Tiefe übrig?",
-                        options: ["Rot", "Gelb", "Grün", "Blau", "Orange"],
-                        correct: 3
-                    },
-                    {
-                        question: "Welche Farben verschwinden in der richtigen Reihenfolge?",
-                        options: ["Rot, Orange, Gelb, Grün", "Blau, Grün, Gelb, Rot", "Gelb, Rot, Blau, Grün", "Grün, Blau, Rot, Gelb", "Orange, Rot, Grün, Gelb"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum ist Tauchausrüstung oft bunt (Neon-Pink, Leuchtgelb)?",
-                        options: ["Weil es schön aussieht", "Damit man den Partner in der Tiefe schnell erkennt", "Weil bunte Farben länger halten", "Weil sie teurer ist", "Weil sie wärmer ist"],
-                        correct: 1
-                    },
-                    {
-                        question: "Ab welcher Tiefe verschwindet die Farbe Grün?",
-                        options: ["5 m", "10 m", "20 m", "30 m", "40 m"],
-                        correct: 3
-                    },
-                    {
-                        question: "Was passiert mit dem Sonnenlicht im Wasser?",
-                        options: ["Es wird stärker", "Es wird Stück für Stück verschluckt", "Es wird zu Wärme", "Es wird reflektiert", "Es bleibt gleich"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Aussagen über Farben unter Wasser sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Rot verschwindet zuerst", "Blau bleibt am längsten sichtbar", "Alle Farben verschwinden gleichzeitig", "Eine Taschenlampe bringt die Farben zurück", "Gelb verschwindet bei 30 m"],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Warum sieht die Welt in 40 Metern Tiefe fast wie ein Schwarz-Weiß-Film aus?",
-                        options: ["Weil das Wasser trüb ist", "Weil fast alle Farben verschluckt wurden", "Weil die Taucherbrille beschlägt", "Weil es dort dunkel ist", "Weil die Fische grau sind"],
-                        correct: 1
-                    },
-                    {
-                        question: "Warum sehen wir unter Wasser ohne Maske verschwommen?",
-                        options: ["Weil das Wasser kalt ist", "Weil das Wasser eine andere Dichte hat als Luft", "Weil unsere Augen zu klein sind", "Weil es zu dunkel ist", "Weil wir keine Luft bekommen"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was macht die Tauchmaske?",
-                        options: ["Sie vergrößert die Augen", "Sie schafft ein Luftpolster vor den Augen", "Sie filtert das Wasser", "Sie schützt vor Kälte", "Sie zeigt den Druck an"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viel größer erscheinen Gegenstände unter Wasser?",
-                        options: ["10 %", "25 %", "33 %", "50 %", "100 %"],
-                        correct: 2
-                    },
-                    {
-                        question: "Wie viel näher erscheinen Gegenstände unter Wasser?",
-                        options: ["10 %", "25 %", "33 %", "50 %", "100 %"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Aussagen über das Sehen unter Wasser sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Die Maske schafft ein Luftpolster", "Alles erscheint 33 % größer", "Alles erscheint 25 % näher", "Wasser bricht das Licht anders als Luft", "Ohne Maske sehen wir scharf"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum brauchen Taucher die Maske?",
-                        options: ["Um besser zu hören", "Um scharf zu sehen", "Um den Druck zu messen", "Um zu atmen", "Um warm zu bleiben"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie schnell breitet sich Schall im Wasser aus?",
-                        options: ["343 m/s", "1.500 m/s", "3.000 m/s", "100 m/s", "10.000 m/s"],
-                        correct: 1
-                    },
-                    {
-                        question: "Warum können wir unter Wasser die Richtung eines Geräusches nicht orten?",
-                        options: ["Weil der Schall zu langsam ist", "Weil der Schall beide Ohren gleichzeitig erreicht", "Weil Wasser zu kalt ist", "Weil wir keine Ohren haben", "Weil der Schall zu leise ist"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie schnell ist der Schall in der Luft?",
-                        options: ["343 m/s", "1.500 m/s", "100 m/s", "3.000 m/s", "10.000 m/s"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Tiere nutzen die schnelle Schallausbreitung? (Mehrere Antworten möglich)",
-                        options: ["Fische", "Wale", "Hunde", "Katzen", "Vögel"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Welche Aussagen über das Hören unter Wasser sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Schall ist im Wasser schneller als in der Luft", "Man kann die Richtung nicht orten", "Schall erreicht beide Ohren gleichzeitig", "Wale nutzen Schall für ihren Gesang", "Man hört unter Wasser besser als über Wasser"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum klingen Schiffe unter Wasser manchmal näher, als sie sind?",
-                        options: ["Weil der Schall reflektiert wird", "Weil der Schall so schnell ist und die Richtung nicht geortet werden kann", "Weil das Wasser trüb ist", "Weil die Motoren zu laut sind", "Weil die Taucher Angst haben"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie nehmen Fische Erschütterungen wahr?",
-                        options: ["Mit den Augen", "Mit den Seitenlinienorganen", "Mit der Nase", "Mit den Flossen", "Mit den Kiemen"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was ist Tarierung?",
-                        options: ["Das Aufblasen der Flasche", "Das Schweben im Wasser", "Das Atmen unter Wasser", "Das Schwimmen an der Oberfläche", "Das Tauchen mit Flossen"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was zieht dich nach oben?",
-                        options: ["Das Blei", "Der Auftrieb", "Die Schwerkraft", "Die Flasche", "Das Wasser"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was zieht dich nach unten?",
-                        options: ["Der Auftrieb", "Das Gewicht (Blei)", "Die Luft", "Die Flossen", "Das Jacket"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was ist neutraler Auftrieb?",
-                        options: ["Du sinkst", "Du steigst", "Du schwebst schwerelos", "Du schwimmst an der Oberfläche", "Du liegst am Grund"],
-                        correct: 2
-                    },
-                    {
-                        question: "Was passiert bei zu wenig Blei?",
-                        options: ["Du sinkst", "Du treibst oben", "Du schwebst", "Du erstickst", "Du frierst"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was passiert bei zu viel Blei?",
-                        options: ["Du treibst oben", "Du sinkst schnell nach unten", "Du schwebst", "Du bist schwerelos", "Du schwimmst"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was ist der Bleicheck?",
-                        options: ["Ein Test für die richtige Bleimenge", "Ein Werkzeug", "Eine Flosse", "Ein Atemregler", "Ein Messgerät"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über Tarierung sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Auftrieb zieht nach oben", "Gewicht zieht nach unten", "Neutraler Auftrieb ist perfekt", "Zu viel Blei ist ungefährlich", "Tarierung ist nur für Profis"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was passiert, wenn du die Luft aus dem Jacket lässt?",
-                        options: ["Du steigst auf", "Du sinkst", "Du schwebst", "Du bleibst oben", "Du drehst dich"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wann ist dein Blei perfekt?",
-                        options: ["Wenn du bis zur Augenhöhe im Wasser stehst und beim Ausatmen langsam absinkst", "Wenn du sofort sinkst", "Wenn du oben treibst", "Wenn du schwebst", "Wenn du gar kein Blei hast"],
-                        correct: 0
-                    }
-                ]
-            }
+				questionPool: [
+					{
+						question: "Was versteht man unter dem Begriff 'Luftdruck'?",
+						options: ["Die Kraft, die von der Sonne ausgeht.", "Das Gewicht der Luft, die auf uns und unsere Umgebung drückt.", "Die Menge an Sauerstoff, die in der Luft enthalten ist.", "Der Wind, der durch die Atmosphäre weht.", "Die Temperatur der Luft."],
+						correct: 1
+					},
+					{
+						question: "Wie hoch ist der Luftdruck auf Meeresspiegelhöhe?",
+						options: ["0,2 bar", "0,5 bar", "1 bar", "5 bar", "10 bar"],
+						correct: 2
+					},
+					{
+						question: "Warum spüren wir den Luftdruck am Meeresspiegel nicht?",
+						options: ["Weil der Druck zu schwach ist, um wahrgenommen zu werden.", "Weil der Druck von allen Seiten gleichmäßig auf uns wirkt.", "Weil er nur nachts vorhanden ist.", "Weil er ausschließlich unter Wasser wirkt.", "Weil unser Körper keinen Druck wahrnehmen kann."],
+						correct: 1
+					},
+					{
+						question: "Welche Aussagen über den Luftdruck sind richtig?",
+						options: ["Der Luftdruck ist überall auf der Erde gleich.", "Der Luftdruck ändert sich mit der Höhe.", "Im Gebirge ist der Luftdruck niedriger als am Meer.", "Unter Wasser ist der Luftdruck höher als an der Oberfläche.", "Luft hat kein Gewicht."],
+						correct: [1, 2, 3]
+					},
+					{
+						question: "Was bezeichnet man als 'Normaldruck'?",
+						options: ["0 bar", "0,5 bar", "1 bar", "2 bar", "10 bar"],
+						correct: 2
+					},
+					{
+						question: "In welcher Situation ist der Luftdruck am niedrigsten?",
+						options: ["Am Meeresspiegel.", "Auf einem 5.000 Meter hohen Berg.", "Im Flugzeug in 10.000 Metern Höhe.", "In einem U-Boot in 5.000 Metern Tiefe.", "Im Schwimmbad."],
+						correct: 2
+					},
+					{
+						question: "Wie viel Druck kommt alle 10 Meter Tiefe im Wasser hinzu?",
+						options: ["0,5 bar", "1 bar", "2 bar", "10 bar", "100 bar"],
+						correct: 1
+					},
+					{
+						question: "Wie viel Gesamtdruck herrscht in 20 Metern Tiefe?",
+						options: ["1 bar", "2 bar", "3 bar", "4 bar", "5 bar"],
+						correct: 2
+					},
+					{
+						question: "Warum werden Luftballons beim Tieftauchen kleiner?",
+						options: ["Weil sie platzen.", "Weil das Wasser sie von allen Seiten zusammendrückt.", "Weil die Luft aus ihnen entweicht.", "Weil sie kalt werden.", "Weil sie schwerer werden."],
+						correct: 1
+					},
+					{
+						question: "Was passiert mit dem Druck, wenn du tiefer tauchst?",
+						options: ["Er bleibt gleich.", "Er sinkt.", "Er steigt.", "Er verschwindet.", "Er wird leichter."],
+						correct: 2
+					},
+					{
+						question: "Welche Aussagen über den Wasserdruck sind richtig?",
+						options: ["Wasser ist dichter als Luft.", "Alle 10 Meter Tiefe kommt 1 bar Druck hinzu.", "Der Wasserdruck ist überall gleich.", "In 30 Metern Tiefe herrschen insgesamt 4 bar.", "Wasser lässt sich leicht zusammendrücken."],
+						correct: [0, 1, 3]
+					},
+					{
+						question: "Was machen Atemregler?",
+						options: ["Sie filtern das Wasser.", "Sie liefern Luft mit dem passenden Umgebungsdruck.", "Sie kühlen die Luft ab.", "Sie speichern die Luft.", "Sie zeigen den Druck an."],
+						correct: 1
+					},
+					{
+						question: "Wie viel Druck lastet in 40 Metern Tiefe auf dir?",
+						options: ["1 bar", "2 bar", "3 bar", "4 bar", "5 bar"],
+						correct: 4
+					},
+					{
+						question: "Was ist der Unterschied zwischen Luftdruck und Wasserdruck?",
+						options: ["Der Luftdruck ist stärker als der Wasserdruck.", "Der Wasserdruck steigt schneller mit der Tiefe an.", "Luftdruck gibt es nur im Wasser.", "Der Wasserdruck beträgt immer 1 bar.", "Es gibt keinen Unterschied."],
+						correct: 1
+					},
+					{
+						question: "Warum ist Wasser schwerer als Luft?",
+						options: ["Weil es kälter ist.", "Weil es dichter ist.", "Weil es mehr Sauerstoff enthält.", "Weil es salzig ist.", "Weil es blau ist."],
+						correct: 1
+					},
+					{
+						question: "Was befindet sich in einer Tauchflasche?",
+						options: ["Reiner Sauerstoff.", "Normale, hochreine und gefilterte Atemluft.", "Nur Stickstoff.", "Wasser.", "Helium."],
+						correct: 1
+					},
+					{
+						question: "Wie viel Prozent Sauerstoff ist in der Einatemluft enthalten?",
+						options: ["78 %", "21 %", "1 %", "16 %", "50 %"],
+						correct: 1
+					},
+					{
+						question: "Wie viel Prozent Stickstoff ist in der Luft enthalten?",
+						options: ["21 %", "78 %", "1 %", "4 %", "50 %"],
+						correct: 1
+					},
+					{
+						question: "Was passiert mit dem Sauerstoff, wenn wir ausatmen?",
+						options: ["Er steigt auf 78 % an.", "Er sinkt auf 16 % ab.", "Er bleibt gleich.", "Er verschwindet ganz.", "Er wird zu Stickstoff."],
+						correct: 1
+					},
+					{
+						question: "Welche Gase sind in der Atemluft enthalten?",
+						options: ["Sauerstoff", "Stickstoff", "Kohlendioxid", "Helium", "Wasserstoff"],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Warum befindet sich in der Tauchflasche keine reine Sauerstoffmischung?",
+						options: ["Weil sie zu teuer wäre.", "Weil normale Atemluft die richtige Mischung für unseren Körper ist.", "Weil Sauerstoff giftig ist.", "Weil sie zu schwer wäre.", "Weil sie nicht gefiltert werden kann."],
+						correct: 1
+					},
+					{
+						question: "Wie viel Prozent Kohlendioxid atmen wir aus?",
+						options: ["1 %", "4 %", "16 %", "21 %", "78 %"],
+						correct: 1
+					},
+					{
+						question: "Was versteht man unter Pressluft?",
+						options: ["Luft, die kalt ist.", "Luft, die stark zusammengedrückt wurde.", "Luft, die gefiltert wurde.", "Luft, die aus dem Wasser kommt.", "Luft, die mit Sauerstoff angereichert ist."],
+						correct: 1
+					},
+					{
+						question: "Warum muss die Luft in der Flasche trocken sein?",
+						options: ["Damit sie leichter ist.", "Damit kein Wasser in der Flasche gefriert oder das Metall von innen rostet.", "Damit sie besser schmeckt.", "Damit sie schneller fließt.", "Damit sie kälter ist."],
+						correct: 1
+					},
+					{
+						question: "Welche Aussagen über die Atemluft sind richtig?",
+						options: ["Sie besteht zu 78 % aus Stickstoff.", "Sie enthält 21 % Sauerstoff.", "Sie enthält 1 % Edelgase.", "Sie besteht aus reinem Sauerstoff.", "Sie enthält 50 % Kohlendioxid."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Farbe verschwindet zuerst im Wasser?",
+						options: ["Blau", "Rot", "Grün", "Gelb", "Orange"],
+						correct: 1
+					},
+					{
+						question: "Ab welcher Tiefe verschwindet die Farbe Gelb?",
+						options: ["1–5 Meter", "10 Meter", "15–20 Meter", "30 Meter", "40 Meter"],
+						correct: 2
+					},
+					{
+						question: "Warum brauchen Taucher eine Taschenlampe?",
+						options: ["Um Fische zu fangen.", "Um die echten Farben wieder sichtbar zu machen.", "Um sich warm zu halten.", "Um den Weg zu finden.", "Um den Druck zu messen."],
+						correct: 1
+					},
+					{
+						question: "Welche Farbe bleibt in 40 Metern Tiefe übrig?",
+						options: ["Rot", "Gelb", "Grün", "Blau", "Orange"],
+						correct: 3
+					},
+					{
+						question: "In welcher Reihenfolge verschwinden die Farben im Wasser?",
+						options: ["Rot, Orange, Gelb, Grün", "Blau, Grün, Gelb, Rot", "Gelb, Rot, Blau, Grün", "Grün, Blau, Rot, Gelb", "Orange, Rot, Grün, Gelb"],
+						correct: 0
+					},
+					{
+						question: "Warum ist Tauchausrüstung oft bunt (Neon-Pink, Leuchtgelb)?",
+						options: ["Weil es schön aussieht.", "Damit man den Tauchpartner in der Tiefe schnell wiedererkennt.", "Weil bunte Farben länger halten.", "Weil sie teurer ist.", "Weil sie wärmer ist."],
+						correct: 1
+					},
+					{
+						question: "Ab welcher Tiefe verschwindet die Farbe Grün?",
+						options: ["5 Meter", "10 Meter", "20 Meter", "30 Meter", "40 Meter"],
+						correct: 3
+					},
+					{
+						question: "Was passiert mit dem Sonnenlicht im Wasser?",
+						options: ["Es wird stärker.", "Es wird Stück für Stück verschluckt.", "Es wird zu Wärme.", "Es wird reflektiert.", "Es bleibt gleich."],
+						correct: 1
+					},
+					{
+						question: "Welche Aussagen über Farben unter Wasser sind richtig?",
+						options: ["Rot verschwindet zuerst.", "Blau bleibt am längsten sichtbar.", "Alle Farben verschwinden gleichzeitig.", "Eine Taschenlampe bringt die Farben zurück.", "Gelb verschwindet bei 30 Metern."],
+						correct: [0, 1, 3]
+					},
+					{
+						question: "Warum sieht die Welt in 40 Metern Tiefe fast wie ein Schwarz-Weiß-Film aus?",
+						options: ["Weil das Wasser trüb ist.", "Weil fast alle Farben verschluckt wurden.", "Weil die Taucherbrille beschlägt.", "Weil es dort dunkel ist.", "Weil die Fische grau sind."],
+						correct: 1
+					},
+					{
+						question: "Warum sehen wir unter Wasser ohne Maske verschwommen?",
+						options: ["Weil das Wasser kalt ist.", "Weil das Wasser eine andere Dichte hat als Luft.", "Weil unsere Augen zu klein sind.", "Weil es zu dunkel ist.", "Weil wir keine Luft bekommen."],
+						correct: 1
+					},
+					{
+						question: "Was bewirkt die Tauchmaske?",
+						options: ["Sie vergrößert die Augen.", "Sie schafft ein Luftpolster vor den Augen.", "Sie filtert das Wasser.", "Sie schützt vor Kälte.", "Sie zeigt den Druck an."],
+						correct: 1
+					},
+					{
+						question: "Um wie viel größer erscheinen Gegenstände unter Wasser?",
+						options: ["10 %", "25 %", "33 %", "50 %", "100 %"],
+						correct: 2
+					},
+					{
+						question: "Um wie viel näher erscheinen Gegenstände unter Wasser?",
+						options: ["10 %", "25 %", "33 %", "50 %", "100 %"],
+						correct: 1
+					},
+					{
+						question: "Welche Aussagen über das Sehen unter Wasser sind richtig?",
+						options: ["Die Maske schafft ein Luftpolster.", "Alles erscheint etwa 33 % größer.", "Alles erscheint etwa 25 % näher.", "Wasser bricht das Licht anders als Luft.", "Ohne Maske sehen wir scharf."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist der 'Brechungsindex'?",
+						options: ["Ein Werkzeug.", "Ein optischer Effekt an der Glasscheibe.", "Ein Teil der Maske.", "Ein Messgerät.", "Eine Farbe."],
+						correct: 1
+					},
+					{
+						question: "Warum brauchen Taucher die Maske?",
+						options: ["Um besser zu hören.", "Um scharf zu sehen.", "Um den Druck zu messen.", "Um zu atmen.", "Um warm zu bleiben."],
+						correct: 1
+					},
+					{
+						question: "Wie schnell breitet sich Schall im Wasser aus?",
+						options: ["343 m/s", "1.500 m/s", "3.000 m/s", "100 m/s", "10.000 m/s"],
+						correct: 1
+					},
+					{
+						question: "Warum können wir unter Wasser die Richtung eines Geräusches nicht orten?",
+						options: ["Weil der Schall zu langsam ist.", "Weil der Schall beide Ohren gleichzeitig erreicht.", "Weil Wasser zu kalt ist.", "Weil wir keine Ohren haben.", "Weil der Schall zu leise ist."],
+						correct: 1
+					},
+					{
+						question: "Wie schnell ist der Schall in der Luft?",
+						options: ["343 m/s", "1.500 m/s", "100 m/s", "3.000 m/s", "10.000 m/s"],
+						correct: 0
+					},
+					{
+						question: "Welche Tiere nutzen die schnelle Schallausbreitung im Wasser?",
+						options: ["Fische", "Wale", "Hunde", "Katzen", "Vögel"],
+						correct: [0, 1]
+					},
+					{
+						question: "Was sind Seitenlinienorgane?",
+						options: ["Augen von Fischen.", "Sinnesorgane an der Seite von Fischen.", "Flossen.", "Kiemen.", "Schuppen."],
+						correct: 1
+					},
+					{
+						question: "Welche Aussagen über das Hören unter Wasser sind richtig?",
+						options: ["Schall ist im Wasser schneller als in der Luft.", "Man kann die Richtung nicht orten.", "Schall erreicht beide Ohren gleichzeitig.", "Wale nutzen Schall für ihren Gesang.", "Man hört unter Wasser besser als über Wasser."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Warum klingen Schiffe unter Wasser manchmal näher, als sie sind?",
+						options: ["Weil der Schall reflektiert wird.", "Weil der Schall so schnell ist und die Richtung nicht geortet werden kann.", "Weil das Wasser trüb ist.", "Weil die Motoren zu laut sind.", "Weil die Taucher Angst haben."],
+						correct: 1
+					},
+					{
+						question: "Wie nehmen Fische Erschütterungen wahr?",
+						options: ["Mit den Augen.", "Mit den Seitenlinienorganen.", "Mit der Nase.", "Mit den Flossen.", "Mit den Kiemen."],
+						correct: 1
+					},
+					{
+						question: "Was versteht man unter Tarierung?",
+						options: ["Das Aufblasen der Tauchflasche.", "Das Schweben im Wasser.", "Das Atmen unter Wasser.", "Das Schwimmen an der Oberfläche.", "Das Tauchen mit Flossen."],
+						correct: 1
+					},
+					{
+						question: "Was zieht dich nach oben?",
+						options: ["Das Blei.", "Der Auftrieb.", "Die Schwerkraft.", "Die Flasche.", "Das Wasser."],
+						correct: 1
+					},
+					{
+						question: "Was zieht dich nach unten?",
+						options: ["Der Auftrieb.", "Das Gewicht (Blei).", "Die Luft.", "Die Flossen.", "Das Jacket."],
+						correct: 1
+					},
+					{
+						question: "Was ist neutraler Auftrieb?",
+						options: ["Du sinkst.", "Du steigst.", "Du schwebst schwerelos im Wasser.", "Du schwimmst an der Oberfläche.", "Du liegst am Grund."],
+						correct: 2
+					},
+					{
+						question: "Was passiert bei zu wenig Blei?",
+						options: ["Du sinkst.", "Du treibst oben.", "Du schwebst.", "Du erstickst.", "Du frierst."],
+						correct: 1
+					},
+					{
+						question: "Was passiert bei zu viel Blei?",
+						options: ["Du treibst oben.", "Du sinkst schnell nach unten.", "Du schwebst.", "Du bist schwerelos.", "Du schwimmst."],
+						correct: 1
+					},
+					{
+						question: "Was ist der Bleicheck?",
+						options: ["Ein Test für die richtige Bleimenge.", "Ein Werkzeug.", "Eine Flosse.", "Ein Atemregler.", "Ein Messgerät."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über die Tarierung sind richtig?",
+						options: ["Auftrieb zieht nach oben.", "Gewicht zieht nach unten.", "Neutraler Auftrieb ist der perfekte Zustand.", "Zu viel Blei ist ungefährlich.", "Tarierung ist nur für Profis."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was passiert, wenn du die Luft aus dem Jacket lässt?",
+						options: ["Du steigst auf.", "Du sinkst.", "Du schwebst.", "Du bleibst oben.", "Du drehst dich."],
+						correct: 1
+					},
+					{
+						question: "Wann ist dein Blei perfekt portioniert?",
+						options: ["Wenn du bis zur Augenhöhe im Wasser stehst und beim Ausatmen langsam absinkst.", "Wenn du sofort sinkst.", "Wenn du oben treibst.", "Wenn du schwebst.", "Wenn du gar kein Blei hast."],
+						correct: 0
+					}
+				]
+			}
         },
         {
             id: "kap2",
@@ -456,7 +463,7 @@ const bookData = {
                 },
                 {
                     id: "kap2-4",
-                    title: "Lunge & Druck",
+                    title: "Lunge und Druck",
                     text: `<p>Beim <strong>Apnoe-Tauchen</strong> (ohne Flasche) wird die Lunge durch den Wasserdruck komprimiert. Beim <strong>Gerätetauchen</strong> (mit Flasche) wird Luft mit dem exakten 
 					Umgebungsdruck eingeatmet, die Lunge bleibt gefüllt.</p>
 					<p>Beim Auftauchen verringert sich der Wasserdruck. Die Luft in der Lunge dehnt sich gemäß dem <strong>Boyle-Mariotte-Gesetz</strong> aus. Daraus ergeben sich zwei fundamentale Regeln:</p>
@@ -472,6 +479,7 @@ const bookData = {
 					type: "stacked",
                     subrows: [
                         {
+							id: "tg_ohne_flasche",
 							subTitle: "Tauchen ohne Flasche",					
 							text: `<p>Apnoe bezeichnet das Tauchen mit angehaltenem Atem, ohne Verwendung einer Tauchflasche. Eine bekannte Form ist das Streckentauchen im Schwimmbad, bei dem eine Bahn mit einem Atemzug zurückgelegt wird.</p>
 							<p><strong>Eine eigenständige Sportart</strong><br>
@@ -486,6 +494,7 @@ const bookData = {
 							image: "bilder/2_5_Apnoe.jpg"
 						},
 						{
+							id: "atmung_bei_apnoe",
 							subTitle: "Atmung bei Apnoe",
 							text:`<p>Bevor ein Apnoe-Taucher abtaucht, ist eine kontrollierte Atmung entscheidend. Die Atmung erfolgt ruhig und tief. Eine hilfreiche Technik zur Kontrolle ist die <strong>Bauchatmung</strong>: 
 							Der Taucher legt eine Hand auf den Bauch und atmet so, dass sich die Bauchdecke hebt und senkt. Die Schultern bleiben dabei entspannt. Diese Methode beruhigt den Körper und bereitet ihn auf den Atemstillstand vor.</p>
@@ -495,6 +504,7 @@ const bookData = {
 							image: "bilder/2_5_1_Apnoe_Atmung.jpg"
 						},
 						{
+							id: "blackout",
 							subTitle: "Schwimmbad-Blackout",
 							text: `<p>Ein <strong>Blackout</strong> tritt auf, wenn das Gehirn plötzlich keinen Sauerstoff mehr erhält. Der Taucher wird ohne Vorwarnung ohnmächtig. Der gefährliche Aspekt dabei ist: 
 							Der Taucher spürt in der Regel keine Warnzeichen. Er fühlt sich oft noch völlig normal, bevor die Ohnmacht einsetzt.</p>
@@ -508,214 +518,224 @@ const bookData = {
                 }
 			],
             quiz: {
-                questionPool: [
-                    {
-                        question: "Was ist das Außenohr?",
-                        options: ["Die Ohrmuschel", "Das Trommelfell", "Die Hörschnecke", "Das Gleichgewichtsorgan", "Die Eustachische Röhre"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was trennt das Außenohr vom Mittelohr?",
-                        options: ["Die Hörschnecke", "Das Trommelfell", "Die Gehörknöchelchen", "Das Gleichgewichtsorgan", "Die Ohrmuschel"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie heißen die drei Gehörknöchelchen?",
-                        options: ["Hammer, Amboss, Steigbügel", "Klinge, Griff, Spitze", "Rad, Achse, Speiche", "Trommel, Pfeife, Glocke", "Stein, Eisen, Glas"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was macht die Hörschnecke?",
-                        options: ["Sie fängt Schall auf", "Sie wandelt Schwingungen in elektrische Signale um", "Sie hält das Gleichgewicht", "Sie schützt das Trommelfell", "Sie verbindet Ohr und Rachen"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was macht das Gleichgewichtsorgan?",
-                        options: ["Es hört Geräusche", "Es sorgt dafür, dass wir wissen, wo oben und unten ist", "Es schützt vor Kälte", "Es leitet Schall weiter", "Es produziert Ohrenschmalz"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was ist die Eustachische Röhre?",
-                        options: ["Ein Verbindungsschlauch zwischen Mittelohr und Rachen", "Ein Knochen", "Ein Muskel", "Ein Sinnesorgan", "Ein Teil der Hörschnecke"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum knackt es beim Tauchen?",
-                        options: ["Weil die Eustachische Röhre geöffnet wird", "Weil das Trommelfell platzt", "Weil Wasser ins Ohr läuft", "Weil die Hörschnecke schwingt", "Weil der Druck zu hoch ist"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was passiert, wenn die Eustachische Röhre nicht geöffnet ist?",
-                        options: ["Es tut weh", "Man hört besser", "Nichts", "Man wird ohnmächtig", "Das Trommelfell heilt"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Hohlräume sitzen im Schädel? (Mehrere Antworten möglich)",
-                        options: ["Stirnhöhle", "Nasennebenhöhlen", "Lunge", "Luftröhre", "Tauchmaske"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was ist die Tauchmaske für ein Hohlraum?",
-                        options: ["Ein natürlicher", "Ein künstlicher Lufthohlraum", "Ein Wasserhohlraum", "Ein Knochen", "Ein Muskel"],
-                        correct: 1
-                    },
-                    {
-                        question: "Warum muss man in die Maske ausatmen?",
-                        options: ["Um den Druck auszugleichen", "Um sie zu kühlen", "Um sie zu reinigen", "Um Wasser rauszulassen", "Um besser zu hören"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was passiert, wenn der Druckausgleich nicht klappt? (Mehrere Antworten möglich)",
-                        options: ["Es tut weh", "Es entsteht ein Unterdruck", "Das Trommelfell wird verletzt", "Nichts", "Man hört besser"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist ein Barotrauma?",
-                        options: ["Eine Verletzung durch Druckunterschiede", "Eine Erkältung", "Ein Knochenbruch", "Eine Augenentzündung", "Ein Hautausschlag"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum darf man mit Erkältung nicht tauchen? (Mehrere Antworten möglich)",
-                        options: ["Weil die Verbindungsgänge blockiert sind", "Weil der Druckausgleich fehlschlägt", "Weil es wehtut", "Weil man zu müde ist", "Weil die Maske beschlägt"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was passiert mit der Luft in den Hohlräumen beim Abtauchen?",
-                        options: ["Sie wird zusammengedrückt", "Sie dehnt sich aus", "Sie bleibt gleich", "Sie entweicht", "Sie wird warm"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist die Valsalva-Methode?",
-                        options: ["Nase zuhalten und sanft Luft ausatmen", "Mund weit öffnen", "Schnell auftauchen", "Tief einatmen", "Die Maske abnehmen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was passiert beim Abtauchen mit dem Trommelfell?",
-                        options: ["Es wölbt sich nach innen", "Es bleibt entspannt", "Es wölbt sich nach außen", "Es platzt", "Es schwingt"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was macht die Eustachische Röhre beim Druckausgleich?",
-                        options: ["Sie öffnet sich", "Sie schließt sich", "Sie platzt", "Sie schwillt an", "Sie bleibt gleich"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wann sollte man den Druckausgleich machen?",
-                        options: ["Frühzeitig und regelmäßig", "Nur wenn es wehtut", "Nur am Anfang", "Nur beim Auftauchen", "Gar nicht"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über den Druckausgleich sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Er ist wichtig", "Er verhindert Schmerzen", "Er öffnet die Eustachische Röhre", "Er ist nur für Profis", "Er funktioniert auch bei Erkältung"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Warum ist der Druckausgleich bei Erkältung gefährlich? (Mehrere Antworten möglich)",
-                        options: ["Weil die Röhre verstopft ist", "Weil das Trommelfell verletzt werden kann", "Weil es zu Schmerzen kommt", "Weil die Nase läuft", "Weil man hustet"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was passiert, wenn man den Druckausgleich nicht macht? (Mehrere Antworten möglich)",
-                        options: ["Es tut weh", "Das Trommelfell kann verletzt werden", "Nichts", "Man hört besser", "Man wird ohnmächtig"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was ist das „Ploppen“ im Ohr?",
-                        options: ["Das Öffnen der Eustachischen Röhre", "Das Platzen des Trommelfells", "Das Eindringen von Wasser", "Das Schwingen der Hörschnecke", "Das Zuschlagen der Ohrmuschel"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Methode gibt es noch für den Druckausgleich? (Mehrere Antworten möglich)",
-                        options: ["Valsalva", "Schlucken", "Gähnen", "Schnell auftauchen", "Tief einatmen und Luft anhalten"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist die häufigste Ursache für Schmerzen beim Abtauchen?",
-                        options: ["Fehlender Druckausgleich", "Zu kaltes Wasser", "Zu enge Maske", "Zu schnelles Schwimmen", "Zu viel Blei"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist Apnoe?",
-                        options: ["Tauchen mit Flasche", "Tauchen ohne Flasche mit angehaltener Luft", "Schwimmen an der Oberfläche", "Schnorcheln", "Tauchen mit Blei"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was darf man vor dem Apnoe-Tauchen nicht machen?",
-                        options: ["Hyperventilieren", "Ruhig atmen", "Tief einatmen", "Ausatmen", "Entspannen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist ein Schwimmbad-Blackout?",
-                        options: ["Ohnmacht durch Sauerstoffmangel", "Ein Stromausfall", "Ein Sprung ins Wasser", "Ein Tauchrekord", "Eine Erkältung"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum ist Hyperventilieren gefährlich?",
-                        options: ["Weil das Gehirn denkt, es sei genug Sauerstoff da", "Weil man zu viel Wasser trinkt", "Weil man zu schnell schwimmt", "Weil man zu tief taucht", "Weil man zu warm wird"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist die goldene Regel beim Apnoe-Tauchen?",
-                        options: ["Niemals allein tauchen", "Immer so tief wie möglich", "Immer so lange wie möglich", "Immer ohne Maske", "Immer mit Blei"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was passiert bei einem Blackout? (Mehrere Antworten möglich)",
-                        options: ["Man wird ohnmächtig", "Man merkt es oft nicht vorher", "Man braucht sofort Hilfe", "Man schwimmt weiter", "Man atmet tief ein"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was passiert mit der Lunge beim Auftauchen mit der Flasche?",
-                        options: ["Die Luft dehnt sich aus", "Sie zieht sich zusammen", "Sie bleibt gleich", "Sie füllt sich mit Wasser", "Sie platzt"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist das Boyle-Mariotte-Gesetz?",
-                        options: ["Luft dehnt sich bei Druckabfall aus", "Wasser ist schwerer als Luft", "Schall ist schnell", "Licht wird gebrochen", "Blei zieht nach unten"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was darf man beim Auftauchen niemals tun?",
-                        options: ["Die Luft anhalten", "Ausatmen", "Langsam auftauchen", "Den Buddy ansehen", "Die Maske aufsetzen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum darf man nicht zu schnell auftauchen?",
-                        options: ["Weil die Luft nicht schnell genug entweichen kann", "Weil man sonst friert", "Weil man die Orientierung verliert", "Weil die Flasche leer wird", "Weil man zu viel Luft verbraucht"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über die Lunge sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Beim Apnoe-Tauchen wird sie zusammengedrückt", "Beim Gerätetauchen bleibt sie prall", "Beim Auftauchen dehnt sich die Luft aus", "Man darf die Luft anhalten", "Die Lunge ist der größte Hohlraum"],
-                        correct: [0, 1, 2, 4]
-                    },
-                    {
-                        question: "Was passiert, wenn man beim Auftauchen die Luft anhält?",
-                        options: ["Die Lunge kann verletzt werden", "Nichts", "Man steigt schneller auf", "Man atmet besser", "Die Lunge zieht sich zusammen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wie schnell sollte man auftauchen?",
-                        options: ["Maximal 10 m pro Minute", "So schnell wie möglich", "50 m pro Minute", "1 m pro Minute", "Egal"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist die wichtigste Regel beim Auftauchen?",
-                        options: ["Immer ausatmen", "Immer einatmen", "Luft anhalten", "Schnell auftauchen", "Die Augen zumachen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was passiert mit der Luft in der Lunge beim Abtauchen?",
-                        options: ["Sie wird zusammengedrückt", "Sie dehnt sich aus", "Sie bleibt gleich", "Sie entweicht", "Sie wird warm"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum ist die Lunge beim Tauchen so wichtig? (Mehrere Antworten möglich)",
-                        options: ["Sie ist der größte Hohlraum", "Sie muss den Druck aushalten", "Sie darf nicht verletzt werden", "Sie ist aus Stein", "Sie ist mit Wasser gefüllt"],
-                        correct: [0, 1, 2]
-                    }
-                ]
-            }
+				questionPool: [
+					{
+						question: "Was ist das Außenohr?",
+						options: ["Die Ohrmuschel.", "Das Trommelfell.", "Die Hörschnecke.", "Das Gleichgewichtsorgan.", "Die Eustachische Röhre."],
+						correct: 0
+					},
+					{
+						question: "Was trennt das Außenohr vom Mittelohr?",
+						options: ["Die Hörschnecke.", "Das Trommelfell.", "Die Gehörknöchelchen.", "Das Gleichgewichtsorgan.", "Die Ohrmuschel."],
+						correct: 1
+					},
+					{
+						question: "Wie heißen die drei Gehörknöchelchen?",
+						options: ["Hammer, Amboss und Steigbügel.", "Klinge, Griff und Spitze.", "Rad, Achse und Speiche.", "Trommel, Pfeife und Glocke.", "Stein, Eisen und Glas."],
+						correct: 0
+					},
+					{
+						question: "Was macht die Hörschnecke?",
+						options: ["Sie fängt Schall auf.", "Sie wandelt Schwingungen in elektrische Signale um.", "Sie hält das Gleichgewicht.", "Sie schützt das Trommelfell.", "Sie verbindet Ohr und Rachen."],
+						correct: 1
+					},
+					{
+						question: "Was macht das Gleichgewichtsorgan?",
+						options: ["Es hört Geräusche.", "Es sorgt dafür, dass wir wissen, wo oben und unten ist.", "Es schützt vor Kälte.", "Es leitet Schall weiter.", "Es produziert Ohrenschmalz."],
+						correct: 1
+					},
+					{
+						question: "Was ist die Eustachische Röhre?",
+						options: ["Ein Verbindungsschlauch zwischen Mittelohr und Rachen.", "Ein Knochen.", "Ein Muskel.", "Ein Sinnesorgan.", "Ein Teil der Hörschnecke."],
+						correct: 0
+					},
+					{
+						question: "Warum knackt es beim Tauchen?",
+						options: ["Weil die Eustachische Röhre geöffnet wird.", "Weil das Trommelfell platzt.", "Weil Wasser ins Ohr läuft.", "Weil die Hörschnecke schwingt.", "Weil der Druck zu hoch ist."],
+						correct: 0
+					},
+					{
+						question: "Was passiert, wenn die Eustachische Röhre nicht geöffnet ist?",
+						options: ["Es tut weh.", "Man hört besser.", "Nichts.", "Man wird ohnmächtig.", "Das Trommelfell heilt."],
+						correct: 0
+					},
+					{
+						question: "Welche Hohlräume sitzen im Schädel?",
+						options: ["Stirnhöhle", "Nasennebenhöhlen", "Lunge", "Luftröhre", "Tauchmaske"],
+						correct: [0, 1]
+					},
+					{
+						question: "Wo muss überall Druck ausgeglichen werden?",
+						options: ["Im Mittelohr", "In den Nasennebenhöhlen", "In der Lunge", "In der Tauchmaske", "In den Flossen"],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist die Tauchmaske für ein Hohlraum?",
+						options: ["Ein natürlicher Hohlraum.", "Ein künstlicher Lufthohlraum.", "Ein Wasserhohlraum.", "Ein Knochen.", "Ein Muskel."],
+						correct: 1
+					},
+					{
+						question: "Warum muss man in die Maske ausatmen?",
+						options: ["Um den Druck auszugleichen.", "Um sie zu kühlen.", "Um sie zu reinigen.", "Um Wasser rauszulassen.", "Um besser zu hören."],
+						correct: 0
+					},
+					{
+						question: "Was passiert, wenn der Druckausgleich nicht klappt?",
+						options: ["Es tut weh.", "Es entsteht ein Unterdruck.", "Das Trommelfell wird verletzt.", "Nichts.", "Man hört besser."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist ein Barotrauma?",
+						options: ["Eine Verletzung durch Druckunterschiede.", "Eine Erkältung.", "Ein Knochenbruch.", "Eine Augenentzündung.", "Ein Hautausschlag."],
+						correct: 0
+					},
+					{
+						question: "Warum darf man mit einer Erkältung nicht tauchen?",
+						options: ["Weil die Verbindungsgänge blockiert sind.", "Weil der Druckausgleich fehlschlägt.", "Weil es wehtut.", "Weil man zu müde ist.", "Weil die Maske beschlägt."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Aussagen über Hohlräume sind richtig?",
+						options: ["Die Lunge ist der größte Hohlraum.", "Die Tauchmaske ist ein künstlicher Hohlraum.", "Bei Erkältung sind die Gänge blockiert.", "Hohlräume brauchen keinen Druckausgleich.", "Die Stirnhöhle sitzt im Bauch."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was passiert mit der Luft in den Hohlräumen beim Abtauchen?",
+						options: ["Sie wird zusammengedrückt.", "Sie dehnt sich aus.", "Sie bleibt gleich.", "Sie entweicht.", "Sie wird warm."],
+						correct: 0
+					},
+					{
+						question: "Welche Hohlräume nehmen nicht am Druckausgleich teil?",
+						options: ["Kariesnester in Zähnen.", "Siebbeinzellen (wenn verschlossen).", "Die Lunge.", "Das Mittelohr.", "Die Nasennebenhöhlen."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was ist die Valsalva-Methode?",
+						options: ["Nase zuhalten und sanft Luft ausatmen.", "Mund weit öffnen.", "Schnell auftauchen.", "Tief einatmen.", "Die Maske abnehmen."],
+						correct: 0
+					},
+					{
+						question: "Was passiert beim Abtauchen mit dem Trommelfell?",
+						options: ["Es wölbt sich nach innen.", "Es bleibt entspannt.", "Es wölbt sich nach außen.", "Es platzt.", "Es schwingt."],
+						correct: 0
+					},
+					{
+						question: "Was macht die Eustachische Röhre beim Druckausgleich?",
+						options: ["Sie öffnet sich.", "Sie schließt sich.", "Sie platzt.", "Sie schwillt an.", "Sie bleibt gleich."],
+						correct: 0
+					},
+					{
+						question: "Wann sollte man den Druckausgleich machen?",
+						options: ["Frühzeitig und regelmäßig.", "Nur wenn es wehtut.", "Nur am Anfang.", "Nur beim Auftauchen.", "Gar nicht."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über den Druckausgleich sind richtig?",
+						options: ["Er ist wichtig.", "Er verhindert Schmerzen.", "Er öffnet die Eustachische Röhre.", "Er ist nur für Profis.", "Er funktioniert auch bei Erkältung."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Warum ist der Druckausgleich bei einer Erkältung gefährlich?",
+						options: ["Weil die Röhre verstopft ist.", "Weil das Trommelfell verletzt werden kann.", "Weil es zu Schmerzen kommt.", "Weil die Nase läuft.", "Weil man hustet."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was passiert, wenn man den Druckausgleich nicht macht?",
+						options: ["Es tut weh.", "Das Trommelfell kann verletzt werden.", "Nichts.", "Man hört besser.", "Man wird ohnmächtig."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was ist das 'Ploppen' im Ohr?",
+						options: ["Das Öffnen der Eustachischen Röhre.", "Das Platzen des Trommelfells.", "Das Eindringen von Wasser.", "Das Schwingen der Hörschnecke.", "Das Zuschlagen der Ohrmuschel."],
+						correct: 0
+					},
+					{
+						question: "Was ist die häufigste Ursache für Schmerzen beim Abtauchen?",
+						options: ["Fehlender Druckausgleich.", "Zu kaltes Wasser.", "Zu enge Maske.", "Zu schnelles Schwimmen.", "Zu viel Blei."],
+						correct: 0
+					},
+					{
+						question: "Was ist Apnoe?",
+						options: ["Tauchen mit Flasche.", "Tauchen ohne Flasche mit angehaltener Luft.", "Schwimmen an der Oberfläche.", "Schnorcheln.", "Tauchen mit Blei."],
+						correct: 1
+					},
+					{
+						question: "Was darf man vor dem Apnoe-Tauchen nicht machen?",
+						options: ["Hyperventilieren.", "Ruhig atmen.", "Tief einatmen.", "Ausatmen.", "Entspannen."],
+						correct: 0
+					},
+					{
+						question: "Was ist ein Schwimmbad-Blackout?",
+						options: ["Ohnmacht durch Sauerstoffmangel.", "Ein Stromausfall.", "Ein Sprung ins Wasser.", "Ein Tauchrekord.", "Eine Erkältung."],
+						correct: 0
+					},
+					{
+						question: "Warum ist Hyperventilieren gefährlich?",
+						options: ["Weil das Gehirn denkt, es sei genug Sauerstoff da.", "Weil man zu viel Wasser trinkt.", "Weil man zu schnell schwimmt.", "Weil man zu tief taucht.", "Weil man zu warm wird."],
+						correct: 0
+					},
+					{
+						question: "Was ist die goldene Regel beim Apnoe-Tauchen?",
+						options: ["Niemals allein tauchen.", "Immer so tief wie möglich.", "Immer so lange wie möglich.", "Immer ohne Maske.", "Immer mit Blei."],
+						correct: 0
+					},
+					{
+						question: "Was passiert bei einem Blackout?",
+						options: ["Man wird ohnmächtig.", "Man merkt es oft nicht vorher.", "Man braucht sofort Hilfe.", "Man schwimmt weiter.", "Man atmet tief ein."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was passiert mit der Lunge beim Auftauchen mit der Flasche?",
+						options: ["Die Luft dehnt sich aus.", "Sie zieht sich zusammen.", "Sie bleibt gleich.", "Sie füllt sich mit Wasser.", "Sie platzt."],
+						correct: 0
+					},
+					{
+						question: "Was besagt das Boyle-Mariotte-Gesetz?",
+						options: ["Luft dehnt sich bei Druckabfall aus.", "Wasser ist schwerer als Luft.", "Schall ist schnell.", "Licht wird gebrochen.", "Blei zieht nach unten."],
+						correct: 0
+					},
+					{
+						question: "Was darf man beim Auftauchen niemals tun?",
+						options: ["Die Luft anhalten.", "Ausatmen.", "Langsam auftauchen.", "Den Buddy ansehen.", "Die Maske aufsetzen."],
+						correct: 0
+					},
+					{
+						question: "Warum darf man nicht zu schnell auftauchen?",
+						options: ["Weil die Luft nicht schnell genug entweichen kann.", "Weil man sonst friert.", "Weil man die Orientierung verliert.", "Weil die Flasche leer wird.", "Weil man zu viel Luft verbraucht."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über die Lunge sind richtig?",
+						options: ["Beim Apnoe-Tauchen wird sie zusammengedrückt.", "Beim Gerätetauchen bleibt sie prall gefüllt.", "Beim Auftauchen dehnt sich die Luft aus.", "Man darf die Luft anhalten.", "Die Lunge ist der größte Hohlraum."],
+						correct: [0, 1, 2, 4]
+					},
+					{
+						question: "Was passiert, wenn man beim Auftauchen die Luft anhält?",
+						options: ["Die Lunge kann verletzt werden.", "Nichts.", "Man steigt schneller auf.", "Man atmet besser.", "Die Lunge zieht sich zusammen."],
+						correct: 0
+					},
+					{
+						question: "Wie schnell sollte man auftauchen?",
+						options: ["Maximal 10 Meter pro Minute.", "So schnell wie möglich.", "50 Meter pro Minute.", "1 Meter pro Minute.", "Das ist egal."],
+						correct: 0
+					},
+					{
+						question: "Was ist die wichtigste Regel beim Auftauchen?",
+						options: ["Immer ausatmen.", "Immer einatmen.", "Luft anhalten.", "Schnell auftauchen.", "Die Augen zumachen."],
+						correct: 0
+					},
+					{
+						question: "Was passiert mit der Luft in der Lunge beim Abtauchen?",
+						options: ["Sie wird zusammengedrückt.", "Sie dehnt sich aus.", "Sie bleibt gleich.", "Sie entweicht.", "Sie wird warm."],
+						correct: 0
+					},
+					{
+						question: "Warum ist die Lunge beim Tauchen so wichtig?",
+						options: ["Sie ist der größte Hohlraum.", "Sie muss den Druck aushalten.", "Sie darf nicht verletzt werden.", "Sie ist aus Stein.", "Sie ist mit Wasser gefüllt."],
+						correct: [0, 1, 2]
+					}
+				]
+			}
         },
         {
             id: "kap3",
@@ -728,6 +748,7 @@ const bookData = {
 					type: "stacked",
                     subrows: [
                         {
+							id: "abc",
 							subTitle: "Die ABC",
 							text: `<p>Die <strong>ABC-Ausrüstung</strong> bildet die Basis für das Tauchen. Der Name leitet sich aus den drei Hauptbestandteilen ab, die man sich leicht merken kann: 
 							<strong>A</strong> sieht aus wie eine Flosse, <strong>B</strong> steht für die Maske (ähnlich einer Brille) und <strong>C</strong> sieht aus wie ein Schnorchel.</p>
@@ -738,6 +759,7 @@ const bookData = {
 							image: "bilder/3_1_ABC.jpg"
 						},
 						{
+							id: "flossen",
 							subTitle: "Die Flossen",
 							text: `<p>Flossen sind ein zentraler Bestandteil der ABC-Ausrüstung. Sie liefern den Vortrieb im Wasser. Es gibt verschiedene Arten von Flossen, die sich in ihrer Bauweise 
 							und ihrem Einsatzgebiet unterscheiden. Ein Blick auf die Grafik zeigt den Unterschied zwischen zwei grundlegenden Typen.</p>
@@ -764,6 +786,7 @@ const bookData = {
 					type: "stacked",
                     subrows: [
                         {
+							id: "uebersicht",
 							subTitle: "Übersicht",
 							text: `<p>Für einen Tauchgang ist eine umfangreiche Ausrüstung erforderlich. Sie dient der sicheren Atmung, der Fortbewegung und dem Schutz des Tauchers. Die Grafik zeigt die wichtigsten Bestandteile im Überblick.</p>
 							<ul style="margin-bottom: 15px; padding-left: 20px;">
@@ -781,6 +804,7 @@ const bookData = {
 							image: "bilder/3_2_Ausruestung.jpg"
 						},
 						{
+							id: "tauchmaske",
 							subTitle: "Die Tauchmaske",
 							text: `<p>Die Tauchmaske ist weit mehr als eine einfache Schwimmbrille. Sie besteht aus mehreren wichtigen Bauteilen, die in der Grafik beschriftet sind:</p>
 							<ul style="margin-bottom: 15px; padding-left: 20px;">
@@ -793,6 +817,7 @@ const bookData = {
 							image: "bilder/3_2_1_Maske.jpg",
 						},
 						{
+							id: "jacket",
 							subTitle: "Das Jacket",
 							text: `<p>Das Jacket ist die aufblasbare Weste des Tauchers. Es hat zwei Hauptaufgaben: Es hält die Tauchflasche auf dem Rücken und reguliert den Auftrieb im Wasser (Tarierung). 
 							Die Grafik zeigt die wichtigsten Bestandteile:</p>
@@ -806,6 +831,7 @@ const bookData = {
 							image: "bilder/3_2_2_Jacket.jpg",
 						},
 						{
+							id: "atemregler",
 							subTitle: "Der Atemregler-Set",
 							text: `<p>Die Luft aus der Tauchflasche steht unter hohem Druck und kann nicht direkt eingeatmet werden. Deshalb ist ein Atemregler-Set erforderlich, das den Druck reguliert. 
 							Die Grafik zeigt den Aufbau dieses Systems. Zur besseren Orientierung sind die Schläuche in der Grafik farbig markiert. In der Praxis können die Farben der Schläuche abweichen.</p>
@@ -848,6 +874,7 @@ const bookData = {
 					type: "stacked",
                     subrows: [
                         {
+							id: "anzugsarten",
 							subTitle: "Anzugsarten",
 							text: `<p>Taucher benötigen spezielle Anzüge. Sie schützen den Körper vor Kälte und bieten einen gewissen Schutz vor Kratzern an Felsen oder Korallen. Da die Wassertemperaturen weltweit sehr unterschiedlich sind, 
 							gibt es verschiedene Anzugstypen. Die Grafik zeigt fünf Varianten.</p>
@@ -870,6 +897,7 @@ const bookData = {
 							image: "bilder/3_3_Anzug.jpg"
 						},
 						{
+							id: "hitze",
 							subTitle: "Achtung, Hitze an Land!",
 							text: `<p>Neopren ist ein effektives Material zur Wärmeisolierung im Wasser. An Land, bei direkter Sonneneinstrahlung, führt diese Eigenschaft jedoch zu einem Problem: 
 							Die Körperwärme kann nicht entweichen, und der Taucher überhitzt schnell. Der Körper reagiert mit starkem Schwitzen. Aus diesem Grund sollte der Tauchanzug erst unmittelbar 
@@ -885,7 +913,7 @@ const bookData = {
                 },
                 {
                     id: "kap3-4",
-                    title: "Richtiger Umgang & Pflege",
+                    title: "Richtiger Umgang und Pflege",
                     text: `<p>Die Tauchausrüstung schützt den Taucher unter Wasser. Damit sie zuverlässig funktioniert und lange hält, ist eine korrekte Behandlung und Pflege notwendig. Die beiden Grafiken zeigen die wichtigsten Regeln.</p>
 					<h4>Regeln für den Transport und die Lagerung</h4>
 					<ul style="margin-bottom: 15px; padding-left: 20px;">
@@ -909,224 +937,209 @@ const bookData = {
                 }
             ],
             quiz: {
-                questionPool: [
-                    {
-                        question: "Wofür steht das „A“ in ABC?",
-                        options: ["Atemregler", "Flosse", "Maske", "Schnorchel", "Jacket"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wofür steht das „B“ in ABC?",
-                        options: ["Flosse", "Maske (wie Brille)", "Schnorchel", "Blei", "Boot"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wofür steht das „C“ in ABC?",
-                        options: ["Flosse", "Maske", "Schnorchel", "Tauchcomputer", "Crème"],
-                        correct: 2
-                    },
-                    {
-                        question: "Was brauchst du zum Schnorcheln? (Mehrere Antworten möglich)",
-                        options: ["Maske", "Schnorchel", "Flossen", "Tauchflasche", "Jacket"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist der Unterschied zwischen Schnorcheln und Tauchen? (Mehrere Antworten möglich)",
-                        options: ["Beim Schnorcheln bleibt man an der Oberfläche", "Beim Tauchen geht man unter Wasser", "Schnorcheln braucht eine Flasche", "Tauchen braucht keine Maske", "Es gibt keinen Unterschied"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Welche Aussagen über die ABC-Ausrüstung sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Sie ist für Anfänger", "Sie besteht aus drei Teilen", "Sie ermöglicht Schnorcheln", "Sie ist schwerer als eine Tauchflasche", "Sie ist nur für Profis"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht die Maske? (Mehrere Antworten möglich)",
-                        options: ["Sie schützt die Augen", "Sie schafft ein Luftpolster", "Sie lässt uns scharf sehen", "Sie filtert Wasser", "Sie zeigt den Druck an"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht der Schnorchel?",
-                        options: ["Er lässt uns an der Oberfläche atmen", "Er filtert Wasser", "Er zeigt den Druck an", "Er wärmt die Luft", "Er schützt die Augen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was machen die Flossen?",
-                        options: ["Sie geben Vortrieb", "Sie schützen die Füße", "Sie halten warm", "Sie zeigen den Druck an", "Sie filtern Wasser"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was gehört zur Grundausrüstung? (Mehrere Antworten möglich)",
-                        options: ["Tauchflasche", "Atemregler", "Jacket", "Tauchcomputer", "Fahrrad"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist die Tauchflasche? (Mehrere Antworten möglich)",
-                        options: ["Sie enthält Pressluft", "Sie enthält Wasser", "Sie hat zwei Ventile", "Sie ist leicht", "Sie ist aus Glas"],
-                        correct: [0, 2]
-                    },
-                    {
-                        question: "Was macht der Tauchcomputer? (Mehrere Antworten möglich)",
-                        options: ["Er misst die Zeit", "Er misst die Tiefe", "Er rechnet die Tauchzeit aus", "Er filtert Wasser", "Er wärmt die Luft"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist das Jacket? (Mehrere Antworten möglich)",
-                        options: ["Eine aufblasbare Weste", "Ein Rettungsring", "Ein Atemregler", "Eine Flasche", "Ein Messgerät"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Wie füllt man das Jacket?",
-                        options: ["Mit dem Inflatorschlauch", "Mit dem Mund", "Mit dem Finimeter", "Mit der Maske", "Mit den Flossen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über die Grundausrüstung sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Die Flasche enthält bis zu 300 bar", "Der Atemregler hat zwei erste Stufen", "Das Jacket hilft beim Schweben", "Der Tauchcomputer ist eine Uhr", "Die Maske ist aus Glas"],
-                        correct: [0, 1, 2, 3, 4]
-                    },
-                    {
-                        question: "Was ist der Finimeter?",
-                        options: ["Die Druckanzeige", "Ein Messgerät für die Tiefe", "Ein Atemregler", "Eine Flosse", "Ein Ventil"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist der Inflatorschlauch?",
-                        options: ["Er füllt das Jacket mit Luft", "Er misst den Druck", "Er atmet für uns", "Er schützt die Augen", "Er wärmt die Luft"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was macht die Tauchmaske? (Mehrere Antworten möglich)",
-                        options: ["Sie schützt die Augen", "Sie schafft ein Luftpolster", "Sie lässt uns scharf sehen", "Sie zeigt den Druck an", "Sie wärmt die Luft"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist der Nasenerker? (Mehrere Antworten möglich)",
-                        options: ["Ein Teil der Maske", "Er hilft beim Druckausgleich", "Er ist unter der Nase", "Er ist aus Glas", "Er ist aus Metall"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Wie viele erste Stufen hat das Atemregler-Set?",
-                        options: ["1", "2", "3", "4", "0"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wo sitzt die primäre erste Stufe?",
-                        options: ["Rechts", "Links", "In der Mitte", "Unten", "Oben"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wo sitzt die Reserve-1. Stufe?",
-                        options: ["Rechts", "Links", "In der Mitte", "Unten", "Oben"],
-                        correct: 1
-                    },
-                    {
-                        question: "Was machst du im Notfall, wenn dein Partner keine Luft hat? (Mehrere Antworten möglich)",
-                        options: ["Du gibst ihm deinen Hauptregler", "Du wechselst auf den Reserve-Regler", "Du tauchst schnell auf", "Du hältst die Luft an", "Du gibst ihm deinen Finimeter"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Welche Aussagen über das Atemregler-Set sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Es hat zwei erste Stufen", "Es hat zwei zweite Stufen", "Der Reserve-Regler hängt am Hals", "Der Hauptregler hat einen langen Schlauch", "Der Finimeter ist ein Atemregler"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum ist der Reserve-Regler am Hals so sicher? (Mehrere Antworten möglich)",
-                        options: ["Weil man ihn blind findet", "Weil er kurz ist", "Weil er gelb ist", "Weil er am Bungee hängt", "Weil er den Druck misst"],
-                        correct: [0, 3]
-                    },
-                    {
-                        question: "Wofür ist ein Shorty?",
-                        options: ["Warmes Wasser über 24 °C", "Kaltes Wasser", "Sehr kaltes Wasser", "Eiswasser", "Immer"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wofür ist ein Nassanzug?",
-                        options: ["Mäßig warm (15–24 °C)", "Sehr kalt", "Warm", "Eiswasser", "Immer"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wofür ist ein Trockenanzug?",
-                        options: ["Sehr kalt (unter 10 °C)", "Warm", "Mäßig warm", "Immer", "Nie"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist der Trick beim Nassanzug?",
-                        options: ["Wasser dringt ein und wird vom Körper gewärmt", "Er ist wasserdicht", "Er ist aus Metall", "Er hat Heizung", "Er ist luftdicht"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist der Unterschied zwischen Halbtrocken und Trocken? (Mehrere Antworten möglich)",
-                        options: ["Halbtrocken hat Dichtungsmanschetten", "Trocken bleibt komplett trocken", "Halbtrocken ist für warmes Wasser", "Trocken ist aus Glas", "Es gibt keinen Unterschied"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Warum darf man den Anzug nicht in der prallen Sonne trocknen? (Mehrere Antworten möglich)",
-                        options: ["Weil UV-Strahlung das Material brüchig macht", "Weil er schmilzt", "Weil er ausbleicht", "Weil er zu warm wird", "Weil er dann riecht"],
-                        correct: [0, 2]
-                    },
-                    {
-                        question: "Was passiert bei Hitze an Land im Anzug? (Mehrere Antworten möglich)",
-                        options: ["Es wird superheiß", "Man schwitzt stark", "Man kühlt ab", "Man friert", "Nichts"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Welche Aussagen über Tauchanzüge sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Shorty ist für warmes Wasser", "Nassanzug lässt Wasser rein", "Trockenanzug bleibt trocken", "Halbtrocken hat Dichtungen", "Alle Anzüge sind gleich"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum trägt man Neopren? (Mehrere Antworten möglich)",
-                        options: ["Es hält warm", "Es schützt vor Kratzern", "Es ist leicht", "Es ist wasserdicht", "Es ist aus Glas"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Wie legt man Tauchflaschen ab? (Mehrere Antworten möglich)",
-                        options: ["Hinlegen", "Sichern", "Aufrecht hinstellen", "Werfen", "In die Sonne legen"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was macht man mit Flossen? (Mehrere Antworten möglich)",
-                        options: ["Nicht auf das Blatt stellen", "Nicht verbiegen", "Flach hinlegen", "Werfen", "In die Sonne legen"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht man mit Atemreglern und Masken? (Mehrere Antworten möglich)",
-                        options: ["Nicht werfen", "Nicht fallen lassen", "Vorsichtig in die Tasche legen", "In die Sonne legen", "Mit Süßwasser abspülen"],
-                        correct: [0, 1, 2, 4]
-                    },
-                    {
-                        question: "Wie spült man die Ausrüstung?",
-                        options: ["Mit Süßwasser", "Mit Salzwasser", "Mit Seife", "Mit Öl", "Gar nicht"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wo lagert man die Ausrüstung?",
-                        options: ["Im Schatten", "In der Sonne", "In der Hitze", "Im Wasser", "Im Sand"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wie lagert man Tauchanzüge? (Mehrere Antworten möglich)",
-                        options: ["Hängend", "Im Schatten", "In der Sonne", "Zusammengeknüllt", "Nass"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Warum schützt man die Ausrüstung vor Sand? (Mehrere Antworten möglich)",
-                        options: ["Weil Sand die Dichtungen kaputt macht", "Weil Sand kratzt", "Weil Sand die Farbe ändert", "Weil Sand schwer ist", "Weil Sand nass ist"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Welche Aussagen über die Pflege sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Flaschen sichern", "Flossen nicht verbiegen", "Mit Süßwasser spülen", "Im Schatten lagern", "In der Sonne trocknen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was passiert, wenn man die Ausrüstung nicht pflegt? (Mehrere Antworten möglich)",
-                        options: ["Sie geht kaputt", "Sie funktioniert nicht mehr sicher", "Sie bleibt gleich", "Sie wird besser", "Sie wird leichter"],
-                        correct: [0, 1]
-                    }
-                ]
-            }
+				questionPool: [
+					{
+						question: "Wofür steht das 'A' in der ABC-Ausrüstung?",
+						options: ["Atemregler.", "Flosse.", "Maske.", "Schnorchel.", "Jacket."],
+						correct: 1
+					},
+					{
+						question: "Wofür steht das 'B' in der ABC-Ausrüstung?",
+						options: ["Flosse.", "Maske (wie Brille).", "Schnorchel.", "Blei.", "Boot."],
+						correct: 1
+					},
+					{
+						question: "Wofür steht das 'C' in der ABC-Ausrüstung?",
+						options: ["Flosse.", "Maske.", "Schnorchel.", "Computer.", "Crème."],
+						correct: 2
+					},
+					{
+						question: "Was brauchst du zum Schnorcheln?",
+						options: ["Maske", "Schnorchel", "Flossen", "Tauchflasche", "Jacket"],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist der Unterschied zwischen Schnorcheln und Tauchen?",
+						options: ["Beim Schnorcheln bleibt man an der Wasseroberfläche.", "Beim Tauchen geht man unter Wasser.", "Schnorcheln braucht eine Flasche.", "Tauchen braucht keine Maske.", "Es gibt keinen Unterschied."],
+						correct: [0, 1]
+					},
+					{
+						question: "Welche Aussagen über die ABC-Ausrüstung sind richtig?",
+						options: ["Sie ist für Anfänger geeignet.", "Sie besteht aus drei Teilen.", "Sie ermöglicht das Schnorcheln.", "Sie ist schwerer als eine Tauchflasche.", "Sie ist nur für Profis."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was macht die Maske?",
+						options: ["Sie schützt die Augen.", "Sie schafft ein Luftpolster.", "Sie lässt uns scharf sehen.", "Sie filtert Wasser.", "Sie zeigt den Druck an."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was macht der Schnorchel?",
+						options: ["Er lässt uns an der Oberfläche atmen.", "Er filtert Wasser.", "Er zeigt den Druck an.", "Er wärmt die Luft.", "Er schützt die Augen."],
+						correct: 0
+					},
+					{
+						question: "Was machen die Flossen?",
+						options: ["Sie geben Vortrieb.", "Sie schützen die Füße.", "Sie halten warm.", "Sie zeigen den Druck an.", "Sie filtern Wasser."],
+						correct: 0
+					},
+					{
+						question: "Was gehört zur Grundausrüstung eines Tauchers?",
+						options: ["Tauchflasche", "Atemregler", "Jacket", "Tauchcomputer", "Fahrrad"],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist die Tauchflasche?",
+						options: ["Sie enthält Pressluft.", "Sie enthält Wasser.", "Sie hat zwei Ventile.", "Sie ist leicht.", "Sie ist aus Glas."],
+						correct: [0, 2]
+					},
+					{
+						question: "Was macht der Tauchcomputer?",
+						options: ["Er misst die Zeit.", "Er misst die Tiefe.", "Er rechnet aus, wie lange du noch unter Wasser bleiben darfst.", "Er filtert Wasser.", "Er wärmt die Luft."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist das Jacket?",
+						options: ["Eine aufblasbare Weste.", "Ein Rettungsring.", "Ein Atemregler.", "Eine Flasche.", "Ein Messgerät."],
+						correct: [0, 1]
+					},
+					{
+						question: "Wie füllt man das Jacket mit Luft?",
+						options: ["Mit dem Inflatorschlauch.", "Mit dem Mund.", "Mit dem Finimeter.", "Mit der Maske.", "Mit den Flossen."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über die Grundausrüstung sind richtig?",
+						options: ["Die Flasche enthält Luft bis zu 300 bar.", "Der Atemregler hat zwei erste Stufen.", "Das Jacket hilft beim Schweben.", "Der Tauchcomputer ist eine Uhr.", "Die Maske ist aus Glas."],
+						correct: [0, 1, 2, 3, 4]
+					},
+					{
+						question: "Was ist der Finimeter?",
+						options: ["Die Druckanzeige.", "Ein Messgerät für die Tiefe.", "Ein Atemregler.", "Eine Flosse.", "Ein Ventil."],
+						correct: 0
+					},
+					{
+						question: "Was ist der Inflatorschlauch?",
+						options: ["Er füllt das Jacket mit Luft.", "Er misst den Druck.", "Er atmet für uns.", "Er schützt die Augen.", "Er wärmt die Luft."],
+						correct: 0
+					},
+					{
+						question: "Was macht die Tauchmaske?",
+						options: ["Sie schützt die Augen.", "Sie schafft ein Luftpolster.", "Sie lässt uns scharf sehen.", "Sie zeigt den Druck an.", "Sie wärmt die Luft."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist der Nasenerker?",
+						options: ["Ein Teil der Maske.", "Er hilft beim Druckausgleich.", "Er ist unter der Nase.", "Er ist aus Glas.", "Er ist aus Metall."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wie viele erste Stufen hat das Atemregler-Set?",
+						options: ["1", "2", "3", "4", "0"],
+						correct: 1
+					},
+					{
+						question: "Wo sitzt die primäre erste Stufe?",
+						options: ["Rechts.", "Links.", "In der Mitte.", "Unten.", "Oben."],
+						correct: 0
+					},
+					{
+						question: "Wo sitzt die Reserve-1. Stufe?",
+						options: ["Rechts.", "Links.", "In der Mitte.", "Unten.", "Oben."],
+						correct: 1
+					},
+					{
+						question: "Was machst du im Notfall, wenn dein Partner keine Luft hat?",
+						options: ["Du gibst ihm deinen Hauptregler.", "Du wechselst auf den Reserve-Regler.", "Du tauchst schnell auf.", "Du hältst die Luft an.", "Du gibst ihm deinen Finimeter."],
+						correct: [0, 1]
+					},
+					{
+						question: "Welche Aussagen über das Atemregler-Set sind richtig?",
+						options: ["Es hat zwei erste Stufen.", "Es hat zwei zweite Stufen.", "Der Reserve-Regler hängt am Hals.", "Der Hauptregler hat einen langen Schlauch.", "Der Finimeter ist ein Atemregler."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Warum ist der Reserve-Regler am Hals so sicher?",
+						options: ["Weil man ihn blind findet.", "Weil er kurz ist.", "Weil er gelb ist.", "Weil er am Bungee hängt.", "Weil er den Druck misst."],
+						correct: [0, 1, 3]
+					},
+					{
+						question: "Wofür ist ein Shorty geeignet?",
+						options: ["Für warmes Wasser über 24 °C.", "Für kaltes Wasser.", "Für sehr kaltes Wasser.", "Für Eiswasser.", "Für alle Temperaturen."],
+						correct: 0
+					},
+					{
+						question: "Wofür ist ein Nassanzug geeignet?",
+						options: ["Für mäßig warmes Wasser (15–24 °C).", "Für sehr kaltes Wasser.", "Für warmes Wasser.", "Für Eiswasser.", "Für alle Temperaturen."],
+						correct: 0
+					},
+					{
+						question: "Wofür ist ein Trockenanzug geeignet?",
+						options: ["Für sehr kaltes Wasser (unter 10 °C).", "Für warmes Wasser.", "Für mäßig warmes Wasser.", "Für alle Temperaturen.", "Für gar kein Wasser."],
+						correct: 0
+					},
+					{
+						question: "Was ist der Trick beim Nassanzug?",
+						options: ["Wasser dringt ein und wird vom Körper gewärmt.", "Er ist wasserdicht.", "Er ist aus Metall.", "Er hat eine Heizung.", "Er ist luftdicht."],
+						correct: 0
+					},
+					{
+						question: "Warum darf man den Anzug nicht in der prallen Sonne trocknen?",
+						options: ["Weil UV-Strahlung das Material brüchig macht.", "Weil er schmilzt.", "Weil er ausbleicht.", "Weil er zu warm wird.", "Weil er dann riecht."],
+						correct: [0, 2]
+					},
+					{
+						question: "Was passiert bei Hitze an Land im Neoprenanzug?",
+						options: ["Es wird superheiß.", "Man schwitzt stark.", "Man kühlt ab.", "Man friert.", "Nichts."],
+						correct: [0, 1]
+					},
+					{
+						question: "Warum trägt man Neopren?",
+						options: ["Es hält warm.", "Es schützt vor Kratzern.", "Es ist leicht.", "Es ist wasserdicht.", "Es ist aus Glas."],
+						correct: [0, 1]
+					},
+					{
+						question: "Wie lagert man Tauchflaschen?",
+						options: ["Hinlegen.", "Sichern.", "Aufrecht hinstellen.", "Werfen.", "In die Sonne legen."],
+						correct: [0, 1]
+					},
+					{
+						question: "Wie spült man die Ausrüstung?",
+						options: ["Mit Süßwasser.", "Mit Salzwasser.", "Mit Seife.", "Mit Öl.", "Gar nicht."],
+						correct: 0
+					},
+					{
+						question: "Wo lagert man die Ausrüstung?",
+						options: ["Im Schatten.", "In der Sonne.", "In der Hitze.", "Im Wasser.", "Im Sand."],
+						correct: 0
+					},
+					{
+						question: "Wie lagert man Tauchanzüge?",
+						options: ["Hängend.", "Im Schatten.", "In der Sonne.", "Zusammengeknüllt.", "Nass."],
+						correct: [0, 1]
+					},
+					{
+						question: "Warum schützt man die Ausrüstung vor Sand?",
+						options: ["Weil Sand die Dichtungen kaputt macht.", "Weil Sand kratzt.", "Weil Sand die Farbe ändert.", "Weil Sand schwer ist.", "Weil Sand nass ist."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über die Pflege sind richtig?",
+						options: ["Flaschen sichern.", "Flossen nicht verbiegen.", "Mit Süßwasser spülen.", "Im Schatten lagern.", "In der Sonne trocknen."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Warum trägt man schwere Ausrüstung gemeinsam?",
+						options: ["Weil sie schwer ist.", "Weil sie groß ist.", "Weil sie teuer ist.", "Weil sie nass ist.", "Weil sie kalt ist."],
+						correct: 0
+					},
+					{
+						question: "Was passiert, wenn man die Ausrüstung nicht pflegt?",
+						options: ["Sie geht kaputt.", "Sie funktioniert nicht mehr sicher.", "Sie bleibt gleich.", "Sie wird besser.", "Sie wird leichter."],
+						correct: [0, 1]
+					}
+				]
+			}
         },
         {
             id: "kap4",
@@ -1135,7 +1148,7 @@ const bookData = {
             subsections: [
                 {
                     id: "kap4-1",
-                    title: "Fitness, Hitze & Wohlbefinden",
+                    title: "Fitness, Hitze und Wohlbefinden",
                     text: `<p>Tauchen ist eine körperlich anstrengende Aktivität. Vor jedem Tauchgang muss der eigene Gesundheitszustand überprüft werden. Nur wer fit und gesund ist, kann sicher tauchen. 
 					Die Grafik zeigt drei wichtige Faktoren, die vor dem Start beachtet werden müssen.</p>
 					<h4>Die Hitze: Ab in den Schatten</h4>
@@ -1163,6 +1176,7 @@ const bookData = {
 					type: "stacked",
 					subrows: [
 						{
+							id: "briefing",
 							subTitle: "Das professionelle Tauch-Briefing",
 							text: `<p>Vor jedem Tauchgang findet ein Briefing statt. Dabei handelt es sich um eine strukturierte Besprechung, in der das Tauchteam alle relevanten Sicherheitsaspekte durchgeht. 
 							Die Grafik zeigt die vier Hauptbereiche, die dabei abgedeckt werden müssen.</p>
@@ -1205,6 +1219,7 @@ const bookData = {
 							image: "bilder/4_2_Briefing.jpg"
 						},
 						{
+							id: "regeln",
 							subTitle: "KTSA-Regeln",
 							text: `<p>Für das Tauchen mit Kindern und Jugendlichen gelten spezifische Sicherheitsregeln. Die Grafik zeigt die fünf wichtigsten Grundregeln, die zwingend eingehalten werden müssen.</p>
 							<h4>Die 5 wichtigsten Grundregeln</h4>
@@ -1234,7 +1249,8 @@ const bookData = {
                     type: "stacked",
                     subrows: [
                         {
-                            subTitle: "Grundlegende Handzeichen",
+                            id: "grundzeichen",
+							subTitle: "Grundlegende Handzeichen",
                             text: `<p>Unter Wasser ist eine verbale Kommunikation nicht möglich, da sich der Atemregler im Mund befindet. Aus diesem Grund nutzen Taucher eine standardisierte Zeichensprache mit den Händen. 
 							Diese Handzeichen sind international genormt, damit sich Taucher weltweit verständigen können. Die Grafik zeigt die wichtigsten Grundzeichen.</p>
 							<h4>Status- und Befindlichkeitszeichen</h4>
@@ -1255,22 +1271,23 @@ const bookData = {
 							<ul style="margin-bottom: 15px; padding-left: 20px;">
 								<li><strong>Stopp / Anhalten:</strong> Die geöffnete Handfläche wird nach vorne gestreckt (wie ein Stoppschild). Das bedeutet: Sofort anhalten.</li>
 								<li><strong>Frage nach dem Druck:</strong> Zwei Finger tippen flach auf die geöffnete Handfläche der anderen Hand. Damit wird der Partner aufgefordert, den aktuellen Flaschendruck anzuzeigen.</li>
+								<li><strong>Abbruch (Tauchgang / Übung beenden):</strong> Du kreuzst beide Unterarme vor deiner Brust, sodass sie ein deutliches „X" bilden. Dieses Zeichen hat zwei wichtige Bedeutungen:
+								Es kann vom Gruppenführer oder Tauchlehrer gegeben werden, um den Tauchgang oder eine Übung sofort zu beenden. Und jeder einzelne Taucher darf es auch selbst zeigen, wenn
+								er den Tauchgang beenden möchte. In beiden Fällen gehen die Buddy-Partner gemeinsam und kontrolliert nach oben. Sicherheit geht immer vor – ein Abbruch ist keine Schande!</li>
+							</ul>
+							<h4>Nottfallzeichen</h4>
+							<ul style="margin-bottom: 15px; padding-left: 20px;">
+								<li><strong>Luftnot (Keine Luft / Atemnot):</strong> Bei diesem Zeichen hält der Taucher eine Hand waagerecht vor den Hals und bewegt sie von sich weg und wieder zum Hals zurück. 
+								Dieses Signal bedeutet: „Ich bekomme keine Luft“ oder „Ich habe Atemnot“. Es handelt sich um einen absoluten Notfall. Der Tauchpartner muss sofort reagieren und Hilfe leisten.</li>
+								<li><strong>Essoufflement (Panik-Atmung):</strong> Beim Essoufflement legt der Taucher beide Hände flach auf die Brust und bewegt die Arme vom Hals weg und wieder zurück. 
+								Das Zeichen zeigt an, dass der Taucher nicht mehr ein- oder ausatmen kann und in Panik gerät. 
+								Auch hier muss der Partner sofort eingreifen, den Taucher beruhigen und die Situation kontrollieren.</li>
 							</ul>`,
                             image: "bilder/4_3_Zeichen.jpg"
                         },
-						{
-							subTitle: "Notfall-Handzeichen: Luftnot und Essoufflement",
-							text: `<p>Neben den grundlegenden Handzeichen gibt es zwei spezielle Zeichen für akute Notfälle. Sie erfordern eine sofortige Reaktion des Tauchpartners. Die Grafik zeigt beide Zeichen im Vergleich.</p>
-							<h4>Luftnot (Keine Luft / Atemnot)</h4>
-							<p>Bei diesem Zeichen hält der Taucher eine Hand waagerecht vor den Hals und bewegt sie von sich weg und wieder zum Hals zurück. 
-							Dieses Signal bedeutet: „Ich bekomme keine Luft“ oder „Ich habe Atemnot“. Es handelt sich um einen absoluten Notfall. Der Tauchpartner muss sofort reagieren und Hilfe leisten.</p>
-							<h4>Essoufflement (Panik-Atmung)</h4>
-							<p>Beim Essoufflement legt der Taucher beide Hände flach auf die Brust und bewegt die Arme vom Hals weg und wieder zurück. Die Augen sind dabei oft weit aufgerissen oder fest zusammengekniffen. 
-							Das Zeichen zeigt an, dass der Taucher nicht mehr ein- oder ausatmen kann und in Panik gerät. Auch hier muss der Partner sofort eingreifen, den Taucher beruhigen und die Situation kontrollieren.</p>`,
-							image: "bilder/4_3_0_Zeichen.jpg"
-						},
                         {
-                            subTitle: "Zahlen & Druckangabe in bar",
+                            id: "zahlen",
+							subTitle: "Zahlen und Druckangabe in bar",
                             text: `<p>Um den aktuellen Druck in der Tauchflasche zu übermitteln, nutzen Taucher ihre Hände. Dabei gilt eine klare Regel: 
 							Es wird immer nur eine Hand verwendet, und jede Ziffer einer Zahl wird einzeln nacheinander angezeigt. Die Grafik zeigt die genaue Ausführung.</p>
 							<h4>Die Zahlen von 0 bis 5</h4>
@@ -1295,10 +1312,11 @@ const bookData = {
 								Das bedeutet: Es sind noch 100 bar Luft in der Flasche, also die Hälfte des Vorrats.</li>
 							</ul>
 							<p>Die genaue Übermittlung des Luftvorrats ist essenziell. Nur so kann der Tauchpartner die verbleibende Zeit einschätzen und den Aufstieg rechtzeitig einleiten.</p>`,
-                            image: "bilder/4_3_1_Zeichen.jpg"
+                            image: "bilder/4_3_2_Zeichen.jpg"
                         },
                         {
-                            subTitle: "Beispielanzeigen",
+                            id: "beispiel",
+							subTitle: "Beispielanzeigen",
                             text: `<p>Die Übermittlung des Flaschendrucks erfolgt Ziffer für Ziffer. Die Grafik zeigt drei konkrete Beispiele, wie der Druck mit den Händen angezeigt wird.</p>
 							<h4>Beispiel 180 bar</h4>
 							<ol style="margin-bottom: 15px; padding-left: 20px;">
@@ -1312,13 +1330,13 @@ const bookData = {
 							<h4>Beispiel 60 bar</h4>
 							<p>Es wird die 6 gezeigt (Drehbewegung nach rechts, Handfläche zum eigenen Körper, beginnend beim Zeigefinger) und danach die 0 (Kreis mit allen Fingern).</p>
 							<p>Durch diese standardisierte Zeichenfolge kann der Tauchpartner den verbleibenden Luftvorrat exakt ablesen und die weitere Tauchgangsplanung entsprechend anpassen.</p>`,
-                            image: "bilder/4_3_2_Zeichen.jpg"
+                            image: "bilder/4_3_3_Zeichen.jpg"
                         }
                     ]
                 },
                 {
                     id: "kap4-4",
-                    title: "Der Buddy-Check & der Start",
+                    title: "Der Buddy-Check und der Start",
                     text: `<p>Vor jedem Tauchgang führen die beiden Tauchpartner (die Buddys) eine gegenseitige Kontrolle ihrer Ausrüstung durch. Dieses Sicherheitsritual wird 
 					als <strong>Buddy-Check</strong> bezeichnet. Um die Reihenfolge der fünf Kontrollen nicht zu vergessen, dient der Merksatz:</p>
 					<p><strong>„Taucher brauchen saubere Luft, OK?“</strong></p>
@@ -1341,149 +1359,289 @@ const bookData = {
                 }
             ],
             quiz: {
-                questionPool: [
-                    {
-                        question: "Was macht man bei Hitze vor dem Tauchen? (Mehrere Antworten möglich)",
-                        options: ["Im Schatten aufhalten", "Wasser trinken", "Anzug bis zur Hüfte runterrollen", "In der Sonne stehen", "Viel schwitzen"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Wann darf man nicht tauchen? (Mehrere Antworten möglich)",
-                        options: ["Bei Fieber", "Bei Schmerzen", "Bei Schnupfen", "Bei guter Laune", "Bei Hunger"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist Gruppenzwang?",
-                        options: ["Man macht mit, weil alle es tun", "Man entscheidet selbst", "Man bleibt zu Hause", "Man trinkt Wasser", "Man zieht den Anzug an"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was soll man tun, wenn man sich nicht gut fühlt?",
-                        options: ["Tauchgang verschieben", "Trotzdem tauchen", "Mehr trinken", "Schneller tauchen", "Die Gruppe fragen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Aussagen über Fitness sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Tauchen ist anstrengend", "Man muss fit sein", "Man darf bei Krankheit nicht tauchen", "Man muss immer mitmachen", "Man darf Nein sagen"],
-                        correct: [0, 1, 2, 4]
-                    },
-                    {
-                        question: "Warum ist Trinken wichtig? (Mehrere Antworten möglich)",
-                        options: ["Weil man schwitzt", "Weil man Flüssigkeit verliert", "Weil es schmeckt", "Weil es kühlt", "Weil es die Ausrüstung reinigt"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was macht man, wenn alle anderen tauchen wollen, du aber nicht? (Mehrere Antworten möglich)",
-                        options: ["Nein sagen", "An Land bleiben", "Trotzdem mitgehen", "Die Gruppe fragen", "Schnell tauchen"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Warum ist der Neoprenanzug an Land heiß?",
-                        options: ["Weil die Körperwärme nicht entweichen kann", "Weil er aus Metall ist", "Weil er schwarz ist", "Weil er zu eng ist", "Weil er nass ist"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist ein Briefing?",
-                        options: ["Ein Team-Meeting vor dem Tauchen", "Ein Tauchgang", "Eine Übung", "Ein Test", "Ein Buch"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche vier Bereiche werden besprochen? (Mehrere Antworten möglich)",
-                        options: ["Mensch", "Tauchgang", "Gewässer", "Ausrüstung", "Wetter"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was bespricht man im Bereich „Mensch“? (Mehrere Antworten möglich)",
-                        options: ["Tagesform", "Buddy-Teams", "Handzeichen", "Tiefe", "Strömung"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was bespricht man im Bereich „Tauchgang“? (Mehrere Antworten möglich)",
-                        options: ["Maximale Tiefe", "Maximale Zeit", "Route", "Handzeichen", "Strömung"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was bespricht man im Bereich „Gewässer“? (Mehrere Antworten möglich)",
-                        options: ["Strömungen", "Wellen", "Sichtweite", "Temperatur", "Handzeichen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was bespricht man im Bereich „Ausrüstung“? (Mehrere Antworten möglich)",
-                        options: ["Flaschendruck", "Atemregler", "Jacket", "Maske", "Wetter"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Welche Aussagen über das Briefing sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Es ist wichtig", "Es hat vier Bereiche", "Es dient der Sicherheit", "Es ist optional", "Es wird vor dem Tauchen gemacht"],
-                        correct: [0, 1, 2, 4]
-                    },
-                    {
-                        question: "Warum bespricht man die Handzeichen? (Mehrere Antworten möglich)",
-                        options: ["Damit man sich verständigen kann", "Weil man unter Wasser nicht sprechen kann", "Weil es Spaß macht", "Weil es Pflicht ist", "Weil es die Ausrüstung schont"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Wer macht das Briefing? (Mehrere Antworten möglich)",
-                        options: ["Die Buddys", "Der Tauchlehrer", "Die Gruppe", "Nur der Kapitän", "Niemand"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist das Ziel des Briefings? (Mehrere Antworten möglich)",
-                        options: ["Sicherheit", "Spaß", "Planung", "Kommunikation", "Essen"],
-                        correct: [0, 2, 3]
-                    },
-                    {
-                        question: "Ab welchem Alter darf man tauchen?",
-                        options: ["6", "8", "10", "12", "18"],
-                        correct: 1
-                    },
-                    {
-                        question: "Wie viele Tauchgänge pro Tag darfst du mit KTSA Silber machen?",
-                        options: ["1", "2", "3", "4", "So viele wie möglich"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wie tief darf man mit KTSA Silber tauchen?",
-                        options: ["5 m", "8 m", "12 m", "15 m", "20 m"],
-                        correct: 1
-                    },
-                    {
-                        question: "Welche Regeln gelten für Kinder? (Mehrere Antworten möglich)",
-                        options: ["Tiefengrenzen einhalten", "Maximal 1 Tauchgang am Tag", "Langsam auftauchen", "Nur mit Buddy", "Allein tauchen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist KTSA?",
-                        options: ["Kinder-Tauchsport-Abzeichen", "Ein Tauchcomputer", "Ein Atemregler", "Ein Boot", "Eine Flosse"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum dürfen Kinder nicht so tief tauchen? (Mehrere Antworten möglich)",
-                        options: ["Weil ihr Körper noch wächst", "Weil sie weniger Erfahrung haben", "Weil sie kleiner sind", "Weil sie mehr Luft brauchen", "Weil sie schneller frieren"],
-                        correct: [0, 1, 4]
-                    },
-                    {
-                        question: "Was zeigt die KTSA-Stufe? (Mehrere Antworten möglich)",
-                        options: ["Dass man geübt hat", "Dass man die Regeln beherrscht", "Dass man ein Profi ist", "Dass man tauchen darf", "Dass man schwimmen kann"],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Warum nutzt man Handzeichen? (Mehrere Antworten möglich)",
-                        options: ["Weil man nicht sprechen kann", "Weil der Atemregler im Mund ist", "Weil es Spaß macht", "Weil es international ist", "Weil es leise ist"],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Was bedeutet das OK-Zeichen? (Mehrere Antworten möglich)",
-                        options: ["Alles gut", "Ich bin bereit", "Ich habe keine Luft", "Ich friere", "Ich möchte auftauchen"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was bedeutet „Nicht OK“?",
-                        options: ["Etwas stimmt nicht", "Alles gut", "Ich tauche auf", "Ich friere", "Ich habe keine Luft"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welches Zeichen bedeutet „Nach oben“?",
+				questionPool: [
+					{
+						question: "Was sollte man bei Hitze vor dem Tauchen beachten?",
+						options: ["Man sollte sich im Schatten aufhalten.", "Man sollte ausreichend Wasser trinken.", "Man sollte den Anzug bis zur Hüfte herunterrollen.", "Man sollte in der prallen Sonne stehen.", "Man sollte möglichst viel schwitzen."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wann darf man nicht tauchen?",
+						options: ["Bei Fieber.", "Bei Schmerzen.", "Bei Schnupfen.", "Bei guter Laune.", "Bei Hunger."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was versteht man unter Gruppenzwang?",
+						options: ["Man macht mit, nur weil alle anderen es tun.", "Man entscheidet selbst.", "Man bleibt zu Hause.", "Man trinkt Wasser.", "Man zieht den Anzug an."],
+						correct: 0
+					},
+					{
+						question: "Was sollte man tun, wenn man sich nicht gut fühlt?",
+						options: ["Den Tauchgang verschieben.", "Trotzdem tauchen.", "Mehr trinken.", "Schneller tauchen.", "Die Gruppe fragen."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über Fitness und Tauchen sind richtig?",
+						options: ["Tauchen ist anstrengend für den Körper.", "Man muss fit und gesund sein, um zu tauchen.", "Man darf bei Krankheit nicht tauchen.", "Man muss immer mitmachen, wenn alle anderen tauchen.", "Man darf 'Nein' sagen, wenn man sich nicht wohlfühlt."],
+						correct: [0, 1, 2, 4]
+					},
+					{
+						question: "Warum ist Trinken vor dem Tauchen wichtig?",
+						options: ["Weil man schwitzt.", "Weil der Körper Flüssigkeit verliert.", "Weil es schmeckt.", "Weil es kühlt.", "Weil es die Ausrüstung reinigt."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was ist ein Zeichen dafür, dass man nicht tauchen sollte?",
+						options: ["Frieren.", "Fieber.", "Schmerzen.", "Lachen.", "Müdigkeit."],
+						correct: [0, 1, 2, 4]
+					},
+					{
+						question: "Was macht man, wenn alle anderen tauchen wollen, man selbst aber nicht?",
+						options: ["Man sagt 'Nein'.", "Man bleibt an Land.", "Man geht trotzdem mit.", "Man fragt die Gruppe.", "Man taucht schnell."],
+						correct: [0, 1]
+					},
+					{
+						question: "Warum ist der Neoprenanzug an Land so heiß?",
+						options: ["Weil die Körperwärme nicht entweichen kann.", "Weil er aus Metall ist.", "Weil er schwarz ist.", "Weil er zu eng ist.", "Weil er nass ist."],
+						correct: 0
+					},
+					{
+						question: "Was ist ein Briefing?",
+						options: ["Ein Team-Meeting vor dem Tauchen.", "Ein Tauchgang.", "Eine Übung.", "Ein Test.", "Ein Buch."],
+						correct: 0
+					},
+					{
+						question: "Welche vier Bereiche werden beim Briefing besprochen?",
+						options: ["Mensch", "Tauchgang", "Gewässer", "Ausrüstung", "Wetter"],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was bespricht man im Bereich 'Mensch'?",
+						options: ["Die Tagesform und Fitness.", "Die Buddy-Teams.", "Die Handzeichen.", "Die maximale Tiefe.", "Die Strömung."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was bespricht man im Bereich 'Tauchgang'?",
+						options: ["Die maximale Tiefe.", "Die maximale Tauchzeit.", "Die Route und Orientierung.", "Die Handzeichen.", "Die Strömung."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was bespricht man im Bereich 'Gewässer'?",
+						options: ["Strömungen.", "Wellen.", "Sichtweite.", "Temperatur.", "Handzeichen."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was bespricht man im Bereich 'Ausrüstung'?",
+						options: ["Den Flaschendruck.", "Den Atemregler.", "Das Jacket.", "Die Maske.", "Das Wetter."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Welche Aussagen über das Briefing sind richtig?",
+						options: ["Es ist wichtig für die Sicherheit.", "Es hat vier Bereiche.", "Es dient der Sicherheit.", "Es ist optional.", "Es wird vor dem Tauchen gemacht."],
+						correct: [0, 1, 2, 4]
+					},
+					{
+						question: "Warum bespricht man die Handzeichen?",
+						options: ["Damit man sich unter Wasser verständigen kann.", "Weil man unter Wasser nicht sprechen kann.", "Weil es Spaß macht.", "Weil es Pflicht ist.", "Weil es die Ausrüstung schont."],
+						correct: [0, 1]
+					},
+					{
+						question: "Wer macht das Briefing?",
+						options: ["Die Buddys.", "Der Tauchlehrer.", "Die Gruppe.", "Nur der Kapitän.", "Niemand."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist das Ziel des Briefings?",
+						options: ["Sicherheit.", "Spaß.", "Planung.", "Kommunikation.", "Essen."],
+						correct: [0, 2, 3]
+					},
+					{
+						question: "Ab welchem Alter darf man tauchen?",
+						options: ["6 Jahre", "8 Jahre", "10 Jahre", "12 Jahre", "18 Jahre"],
+						correct: 1
+					},
+					{
+						question: "Wie viele Tauchgänge pro Tag sind für Kinder mit KSTA Silber erlaubt?",
+						options: ["1", "2", "3", "4", "So viele wie möglich."],
+						correct: 0
+					},
+					{
+						question: "Wie tief darf man mit KTSA Silber tauchen?",
+						options: ["5 Meter", "8 Meter", "12 Meter", "15 Meter", "20 Meter"],
+						correct: 1
+					},
+					{
+						question: "Welche Regeln gelten für Kinder beim Tauchen?",
+						options: ["Tiefengrenzen einhalten.", "Maximal 1 Tauchgang am Tag.", "Langsam auftauchen.", "Nur mit einem erfahrenen Buddy tauchen.", "Allein tauchen."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist KTSA?",
+						options: ["Das Kinder-Tauchsport-Abzeichen.", "Ein Tauchcomputer.", "Ein Atemregler.", "Ein Boot.", "Eine Flosse."],
+						correct: 0
+					},
+					{
+						question: "Welche Aussagen über die KTSA-Stufen sind richtig?",
+						options: ["Bronze ist die erste Stufe.", "Silber ist die zweite Stufe.", "Gold ist die dritte Stufe.", "Gold ist die erste Stufe.", "Es gibt nur eine Stufe."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Warum dürfen Kinder nicht so tief tauchen wie Erwachsene?",
+						options: ["Weil ihr Körper noch wächst.", "Weil sie weniger Erfahrung haben.", "Weil sie kleiner sind.", "Weil sie mehr Luft brauchen.", "Weil sie schneller frieren."],
+						correct: [0, 1, 4]
+					},
+					{
+						question: "Warum nutzt man unter Wasser Handzeichen?",
+						options: ["Weil man nicht sprechen kann.", "Weil der Atemregler im Mund ist.", "Weil es Spaß macht.", "Weil sie international gleich sind.", "Weil es leise ist."],
+						correct: [0, 1, 3]
+					},
+					{
+						question: "Was bedeutet das OK-Zeichen?",
+						options: ["'Alles gut bei mir!'", "'Ich bin bereit!'", "'Ich habe keine Luft!'", "'Mir ist kalt!'", "'Ich möchte auftauchen!'"],
+						correct: [0, 1]
+					},
+					{
+						question: "Was bedeutet das Zeichen 'Nicht OK'?",
+						options: ["'Irgendetwas stimmt nicht!'", "'Alles gut!'", "'Ich tauche auf!'", "'Mir ist kalt!'", "'Ich habe keine Luft!'"],
+						correct: 0
+					},
+					{
+						question: "Wie zeigt man das Zeichen für 'Mir ist kalt'?",
+						options: ["Man kreuzt die Arme vor der Brust.", "Man reibt die Hände an den Schultern.", "Man streckt den Daumen nach oben.", "Man hält die Hand vor den Hals.", "Man ballt die Faust."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was bedeutet das Zeichen 'Nach oben / Auftauchen'?",
+						options: ["Eine Faust mit steil nach oben gestrecktem Daumen.", "Eine Faust mit nach unten gestrecktem Daumen.", "Eine flache Hand.", "Eine geballte Faust.", "Ein ausgestreckter Zeigefinger."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das Zeichen 'Nach unten / Abtauchen'?",
+						options: ["Eine Faust mit nach unten gerichtetem Daumen.", "Eine Faust mit nach oben gestrecktem Daumen.", "Eine flache Hand.", "Eine geballte Faust.", "Ein ausgestreckter Zeigefinger."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das Zeichen 'Stopp / Anhalten'?",
+						options: ["Eine flache Hand, die wie ein Stoppschild nach vorne zeigt.", "Ein Daumen nach oben.", "Eine geballte Faust.", "Eine Hand vor dem Hals.", "Ein ausgestreckter Zeigefinger."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das Zeichen 'Frage nach dem Druck'?",
+						options: ["Man tippt mit zwei flachen Fingern in die offene Handfläche der anderen Hand.", "Man streckt den Daumen nach oben.", "Man hält die Hand vor den Hals.", "Man ballt die Faust.", "Man streckt den Zeigefinger aus."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das Zeichen für 'Luftnot'?",
+						options: ["Man hält eine Hand waagerecht vor den Hals.", "Man bewegt die Hand vom Hals weg und wieder zurück.", "Man streckt den Daumen nach oben.", "Man ballt die Faust.", "Man kreuzt die Arme."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was bedeutet das Zeichen für 'Essoufflement' (Panik-Atmung)?",
+						options: ["Man legt beide Hände flach auf die Brust.", "Man bewegt die Arme vom Hals weg und wieder zurück.", "Die Augen sind weit aufgerissen oder fest zusammengekniffen.", "Man streckt den Daumen nach oben.", "Man ballt die Faust."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wie viele Hände benutzt man für die Zahlenzeichen?",
+						options: ["Eine Hand.", "Zwei Hände.", "Drei Hände.", "Vier Hände.", "Das ist egal."],
+						correct: 0
+					},
+					{
+						question: "Wohin zeigt die Handfläche bei den Zahlen 1 bis 5?",
+						options: ["Zum Tauchpartner.", "Zu sich selbst.", "Nach oben.", "Nach unten.", "Das ist egal."],
+						correct: 0
+					},
+					{
+						question: "Wohin zeigt die Handfläche bei den Zahlen 6 bis 9?",
+						options: ["Zu sich selbst.", "Zum Tauchpartner.", "Nach oben.", "Nach unten.", "Das ist egal."],
+						correct: 0
+					},
+					{
+						question: "Wie zeigt man die Null (0)?",
+						options: ["Man formt mit allen Fingern einen Kreis oder eine kleine Faust.", "Man zeigt nur Daumen und Zeigefinger als Kreis.", "Man ballt nur die Faust.", "Man streckt einen Finger aus.", "Man streckt zwei Finger aus."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das Zeichen für 50 bar?",
+						options: ["Druckwarnung – die Luft wird knapp.", "Halbzeit – die Flasche ist halb voll.", "Alles gut.", "Keine Luft mehr.", "Auftauchen."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das Zeichen für 100 bar?",
+						options: ["Halbzeit – die Flasche ist halb voll.", "Druckwarnung.", "Alles gut.", "Keine Luft mehr.", "Auftauchen."],
+						correct: 0
+					},
+					{
+						question: "Wie zeigt man die Zahl 6?",
+						options: ["Mit dem Zeigefinger und einer Drehbewegung nach rechts.", "Mit einer Drehbewegung der flachen Hand.", "Mit der Handfläche zu sich selbst.", "Mit der Handfläche zum Partner.", "Mit allen Fingern."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wie zeigt man die Zahl 8?",
+						options: ["Mit Zeige-, Mittel- und Ringfinger.", "Mit einer Drehbewegung.", "Mit der Handfläche zu sich selbst.", "Mit der Handfläche zum Partner.", "Mit allen Fingern."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Aussagen über die Zahlenzeichen sind richtig?",
+						options: ["Es wird nur eine Hand benutzt.", "Jede Ziffer wird einzeln gezeigt.", "Bei 1–5 zeigt die Handfläche zum Partner.", "Bei 6–9 zeigt die Handfläche zu sich selbst.", "Die Null wird wie das OK-Zeichen gezeigt."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Wie zeigt man 180 bar?",
+						options: ["Zuerst die 1.", "Dann die 8.", "Zum Schluss die 0.", "Zuerst die 2.", "Zuerst die 5."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist der Buddy-Check?",
+						options: ["Die gegenseitige Prüfung der Ausrüstung vor dem Tauchen.", "Ein Tauchgang.", "Ein Test.", "Ein Spiel.", "Ein Werkzeug."],
+						correct: 0
+					},
+					{
+						question: "Wie lautet der Merksatz für den Buddy-Check?",
+						options: ["'Taucher brauchen saubere Luft, OK?'", "'Erst tauchen, dann prüfen.'", "'Allein tauchen ist besser.'", "'Schnell tauchen, tief tauchen.'", "'Tauchen ohne Check.'"],
+						correct: 0
+					},
+					{
+						question: "Wofür steht das 'T' im Merksatz des Buddy-Checks?",
+						options: ["Taucher (Tarierweste / Jacket).", "Tiefe.", "Tauchgang.", "Taschenlampe.", "Taucherbrille."],
+						correct: 0
+					},
+					{
+						question: "Wofür steht das 'B' im Merksatz des Buddy-Checks?",
+						options: ["Brauchen (Blei).", "Boot.", "Buddy.", "Brille.", "Bauchgurt."],
+						correct: 0
+					},
+					{
+						question: "Wofür steht das 'S' im Merksatz des Buddy-Checks?",
+						options: ["Saubere (Schnallen & Gurte).", "Sicherheit.", "Sauerstoff.", "Schnorchel.", "Seil."],
+						correct: 0
+					},
+					{
+						question: "Wofür steht das 'L' im Merksatz des Buddy-Checks?",
+						options: ["Luft (Hauptregler, Reserve-Regler, Manometer).", "Lampe.", "Leine.", "Lunge.", "Luftdruck."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet das 'OK' im Merksatz des Buddy-Checks?",
+						options: ["Gesamt-Check.", "Alles gut.", "Freigabe.", "Ende.", "Start."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Aussagen über den Buddy-Check sind richtig?",
+						options: ["Er ist wichtig für die Sicherheit.", "Er wird vor dem Tauchen gemacht.", "Er prüft die Ausrüstung.", "Er prüft die Luft.", "Er ist optional."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was prüft man beim 'T' (Taucher / Jacket)?",
+						options: ["Ob sich die Weste aufbläst.", "Ob die Ventile funktionieren.", "Ob die Weste dicht ist.", "Das Blei.", "Die Maske."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was prüft man beim 'L' (Luft)?",
+						options: ["Den Hauptregler.", "Den Reserve-Regler.", "Das Manometer.", "Den Flaschendruck.", "Das Jacket."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+                        question: "Welches Zeichen bedeutet 'Nach oben'?",
                         options: [
 							"<img src='bilder/zeichen/0.jpg' alt='Option A' style='max-width:100px;'>",
 							"<img src='bilder/zeichen/1.jpg' alt='Option B' style='max-width:100px;'>",
@@ -1494,7 +1652,7 @@ const bookData = {
                         correct: 2
                     },
                     {
-                        question: "Welches Zeichen bedeutet „Nach unten“?",
+                        question: "Welches Zeichen bedeutet 'Nach unten'?",
                         options: [
 							"<img src='bilder/zeichen/0.jpg' alt='Option A' style='max-width:100px;'>",
 							"<img src='bilder/zeichen/1.jpg' alt='Option B' style='max-width:100px;'>",
@@ -1505,7 +1663,7 @@ const bookData = {
                         correct: 3
                     },
                     {
-                        question: "Welches Zeichen bedeutet „Stopp“?",
+                        question: "Welches Zeichen bedeutet 'Stopp'?",
                         options: [
 							"<img src='bilder/zeichen/druckabfrage.jpg' alt='Option A' style='max-width:100px;'>",
 							"<img src='bilder/zeichen/0.jpg' alt='Option B' style='max-width:100px;'>",
@@ -1516,7 +1674,7 @@ const bookData = {
                         correct: 3
                     },
                     {
-                        question: "Welches Zeichen bedeutet „Frage nach dem Druck“?",
+                        question: "Welches Zeichen bedeutet 'Frage nach dem Druck'?",
                         options: [
 							"<img src='bilder/zeichen/druckabfrage.jpg' alt='Option A' style='max-width:100px;'>",
 							"<img src='bilder/zeichen/0.jpg' alt='Option B' style='max-width:100px;'>",
@@ -1527,7 +1685,7 @@ const bookData = {
                         correct: 0
                     },
                     {
-                        question: "Welches Zeichen bedeutet „Luftnot“?",
+                        question: "Welches Zeichen bedeutet 'Luftnot'?",
                         options: [
 							"<img src='bilder/zeichen/ich_friere.jpg' alt='Option A' style='max-width:100px;'>",
 							"<img src='bilder/zeichen/du.jpg' alt='Option B' style='max-width:100px;'>",
@@ -1538,7 +1696,7 @@ const bookData = {
                         correct: 3
                     },
                     {
-                        question: "Welches Zeichen bedeutet „Essoufflement“?",
+                        question: "Welches Zeichen bedeutet 'Essoufflement'?",
                         options: [
 							"<img src='bilder/zeichen/ich_friere.jpg' alt='Option A' style='max-width:100px;'>",
 							"<img src='bilder/zeichen/du.jpg' alt='Option B' style='max-width:100px;'>",
@@ -1547,21 +1705,6 @@ const bookData = {
 							"<img src='bilder/zeichen/essouflement.jpg' alt='Option D' style='max-width:100px;'>"
 							],
                         correct: 4
-                    },
-                    {
-                        question: "Wie zeigt man die 0? (Mehrere Antworten möglich)",
-                        options: ["Alle Finger", "Nur Daumen und Zeigefinger", "Faust", "Ein Finger", "Zwei Finger"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was bedeutet 50 bar?",
-                        options: ["Druckwarnung", "Halbzeit", "Alles gut", "Keine Luft", "Auftauchen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet 100 bar?",
-                        options: ["Halbzeit", "Druckwarnung", "Alles gut", "Keine Luft", "Auftauchen"],
-                        correct: 0
                     },
                     {
                         question: "Welches Zeichen bedeutet 6?",
@@ -1584,64 +1727,9 @@ const bookData = {
 							"<img src='bilder/zeichen/0.jpg' alt='Option D' style='max-width:100px;'>"
 							],
                         correct: 3
-                    },
-                    {
-                        question: "Wie zeigt man 180 bar? (Mehrere Antworten möglich)",
-                        options: ["1", "8", "0", "2", "5"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist der Buddy-Check?",
-                        options: ["Gegenseitige Prüfung vor dem Tauchen", "Ein Tauchgang", "Ein Test", "Ein Spiel", "Ein Werkzeug"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist der Merksatz?",
-                        options: ["Taucher brauchen saubere Luft, OK?", "Erst tauchen, dann prüfen", "Allein tauchen", "Schnell tauchen", "Tief tauchen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet das „T“ im Merksatz: Taucher brauchen saubere Luft, OK?",
-                        options: ["Taucher (Tarierweste/Jacket)", "Tiefe", "Tauchgang", "Taschenlampe", "Taucherbrille"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet das „B“ im Merksatz: Taucher brauchen saubere Luft, OK??",
-                        options: ["Brauchen (Blei)", "Boot", "Buddy", "Brille", "Bauchgurt"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet das „S“ im Merksatz: Taucher brauchen saubere Luft, OK??",
-                        options: ["Saubere (Schnallen & Gurte)", "Sicherheit", "Sauerstoff", "Schnorchel", "Seil"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet das „L“ im Merksatz: Taucher brauchen saubere Luft, OK??",
-                        options: ["Luft (Hauptregler, Reserve-Regler, Manometer)", "Lampe", "Leine", "Lunge", "Luftdruck"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet das „OK“ im Merksatz: Taucher brauchen saubere Luft, OK?? (Mehrere Antworten möglich)",
-                        options: ["Gesamt-Check", "Alles gut", "Freigabe", "Ende", "Start"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Welche Aussagen über den Buddy-Check sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Er ist wichtig", "Er wird vor dem Tauchen gemacht", "Er prüft die Ausrüstung", "Er prüft die Luft", "Er ist optional"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was prüft man beim „T“ im Merksatz: Taucher brauchen saubere Luft, OK?? (Mehrere Antworten möglich)",
-                        options: ["Jacket aufblasen", "Ventile", "Dichtigkeit", "Blei", "Maske"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was prüft man beim „L“ im Merksatz: Taucher brauchen saubere Luft, OK?? (Mehrere Antworten möglich)",
-                        options: ["Hauptregler", "Reserve-Regler", "Manometer", "Flaschendruck", "Jacket"],
-                        correct: [0, 1, 2, 3]
                     }
-                ]
-            }
+				]
+			}
         },
         {
             id: "kap5",
@@ -1694,7 +1782,8 @@ const bookData = {
                     type: "stacked",
                     subrows: [
                         {
-                            subTitle: "Die heimischen Fische und wie du sie beobachten kannst",
+                            id: "fische_heim",
+							subTitle: "Die heimischen Fische",
                             text: `<p>In heimischen Seen und Flüssen leben zahlreiche Fischarten sowie Krebstiere. Für die Beobachtung dieser Tiere sind Geduld und die Kenntnis ihres natürlichen Verhaltens erforderlich. 
 							Die Grafik zeigt die wichtigsten heimischen Bewohner.</p>
 							<h4>Die heimischen Arten im Überblick</h4>
@@ -1718,7 +1807,8 @@ const bookData = {
                             image: "bilder/5_3_Fische.jpg"
                         },
                         {
-                            subTitle: "Die faszinierende Welt der Meeresbewohner",
+                            id: "fische_meer",
+							subTitle: "Die faszinierende Welt der Meeresbewohner",
                             text: `<p>Das Meer beherbergt eine Vielzahl unterschiedlicher Tierarten. Jede Art hat spezifische Eigenschaften entwickelt, die ihr das Überleben im Ozean ermöglichen. Die Grafik zeigt neun bekannte Meeresbewohner.</p>
 							<h4>Die Meeresschildkröte</h4>
 							<p>Sie legt weite Strecken im Ozean zurück. Ihre kräftigen Flossen dienen als Antrieb. Zur Eiablage kehrt sie an den Strand zurück, an dem sie selbst geschlüpft ist.</p>
@@ -1779,128 +1869,153 @@ const bookData = {
                 }
             ],
             quiz: {
-                questionPool: [
-                    {
-                        question: "Wie steigt man vom Steg ins Wasser?",
-                        options: ["Riesen-Schritt", "Rückwärts-Rolle", "Kopfsprung", "Leine", "Arschbombe"],
-                        correct: 0
-                    },
-                    {
-                        question: "Wie steigt man vom Boot ins Wasser?",
-                        options: ["Rückwärts-Rolle", "Riesen-Schritt", "Kopfsprung", "Leine", "Arschbombe"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was hält man beim Riesen-Schritt fest?",
-                        options: ["Maske", "Atemregler", "Flossen", "Jacket", "Blei"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Welche Aussagen über den Einstieg sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Riesen-Schritt vom Steg", "Rückwärts-Rolle vom Boot", "Leine zum Abtauchen", "Immer Kopfsprung", "Immer Arschbombe"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht man nach dem Auftauchen?",
-                        options: ["OK-Zeichen geben", "Sofort weiter tauchen", "Die Maske abnehmen", "Die Flossen ausziehen", "Nichts"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum watet man vorsichtig ins Wasser?",
-                        options: ["Um den Boden nicht aufzuwirbeln", "Um nicht zu frieren", "Um schneller zu sein", "Um die Fische zu erschrecken", "Um die Flossen zu testen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist eine Rückwärts-Rolle?",
-                        options: ["Man rollt sich rückwärts ins Wasser", "Man springt vorwärts", "Man taucht kopfüber", "Man schwimmt rückwärts", "Man dreht sich im Kreis"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum ist die Rückwärts-Rolle sicher? (Mehrere Antworten möglich)",
-                        options: ["Man verletzt sich nicht an der Flasche", "Man stürzt nicht kopfüber", "Sie ist bequem", "Sie ist schnell", "Sie ist laut"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht man mit Tieren? (Mehrere Antworten möglich)",
-                        options: ["Nicht jagen", "Nicht stressen", "Nicht anfassen", "Beobachten", "Fangen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was macht man mit Korallen? (Mehrere Antworten möglich)",
-                        options: ["Nicht berühren", "Sie sind empfindlich", "Sie sind Steine", "Sie sind Tiere", "Man kann sie anfassen"],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Was macht man mit dem Flossenschlag? (Mehrere Antworten möglich)",
-                        options: ["Kontrollieren", "Keinen Schlamm aufwirbeln", "Wild schlagen", "Langsam bewegen", "Schnell bewegen"],
-                        correct: [0, 1, 3]
-                    },
-                    {
-                        question: "Was macht man mit Müll? (Mehrere Antworten möglich)",
-                        options: ["Keinen hinterlassen", "Plastikmüll einsammeln", "Ins Wasser werfen", "Am Strand liegen lassen", "Mitnehmen"],
-                        correct: [0, 1, 4]
-                    },
-                    {
-                        question: "Warum soll man keine Korallen berühren? (Mehrere Antworten möglich)",
-                        options: ["Sie sind lebendig", "Sie wachsen langsam", "Sie können verletzt werden", "Sie sind aus Stein", "Sie sind giftig"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Warum soll man keinen Müll hinterlassen? (Mehrere Antworten möglich)",
-                        options: ["Tiere ersticken daran", "Es sieht hässlich aus", "Es schadet der Natur", "Es ist verboten", "Es ist egal"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Wann bricht man den Tauchgang ab? (Mehrere Antworten möglich)",
-                        options: ["Gruppenführer-Signal", "Starkes Frieren", "Abbruchwunsch", "50 bar", "Bei guter Laune"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was macht man bei starkem Frieren?",
-                        options: ["Abbruch", "Weiter tauchen", "Schneller tauchen", "Tiefe halten", "Nichts"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was bedeutet 50 bar? (Mehrere Antworten möglich)",
-                        options: ["Druckwarnung", "Abbruch", "Rote Grenze", "Halbzeit", "Alles gut"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was ist ein Essoufflement? (Mehrere Antworten möglich)",
-                        options: ["Atemnot", "Panik", "Hektisches Atmen", "Keine Luft in der Flasche", "Alles gut"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Wie entsteht ein Essoufflement? (Mehrere Antworten möglich)",
-                        options: ["Zu schnell geschwommen", "Strömung", "Kälte", "Angst", "Zu viel Luft"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was macht man bei Essoufflement? (Mehrere Antworten möglich)",
-                        options: ["Stoppen", "Beruhigen", "Langsam auftauchen", "Nicht allein lassen", "Schnell auftauchen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Welche Aussagen über den Abbruch sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Sicherheit geht vor", "Abbruch ist keine Schande", "Jeder darf abbrechen", "Bei 50 bar abbrechen", "Abbruch ist verboten"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum ist der Abbruch wichtig? (Mehrere Antworten möglich)",
-                        options: ["Sicherheit", "Gesundheit", "Kein Zwang", "Team", "Spaß"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist die eiserne Regel beim Essoufflement? (Mehrere Antworten möglich)",
-                        options: ["Ruhig bleiben", "Partner festhalten", "Langsam auftauchen", "Nicht allein lassen", "Schnell auftauchen"],
-                        correct: [0, 1, 2, 3]
-                    }
-                ]
-            }
+				questionPool: [
+					{
+						question: "Wie steigt man von einem Steg ins Wasser?",
+						options: ["Mit dem Riesen-Schritt.", "Mit der Rückwärts-Rolle.", "Mit einem Kopfsprung.", "An der Leine.", "Mit einer Arschbombe."],
+						correct: 0
+					},
+					{
+						question: "Wie steigt man von einem kleinen Boot ins Wasser?",
+						options: ["Mit der Rückwärts-Rolle.", "Mit dem Riesen-Schritt.", "Mit einem Kopfsprung.", "An der Leine.", "Mit einer Arschbombe."],
+						correct: 0
+					},
+					{
+						question: "Was hält man beim Riesen-Schritt fest?",
+						options: ["Die Maske.", "Den Atemregler.", "Die Flossen.", "Das Jacket.", "Das Blei."],
+						correct: [0, 1]
+					},
+					{
+						question: "Welche Aussagen über den Einstieg ins Wasser sind richtig?",
+						options: ["Vom Steg macht man den Riesen-Schritt.", "Vom einem kleinen Boot macht man die Rückwärts-Rolle.", "Die Leine hilft beim Abtauchen.", "Man springt immer kopfüber.", "Man macht immer eine Arschbombe."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was macht man nach dem Auftauchen?",
+						options: ["Man gibt sofort das OK-Zeichen.", "Man taucht sofort weiter.", "Man nimmt die Maske ab.", "Man zieht die Flossen aus.", "Nichts."],
+						correct: 0
+					},
+					{
+						question: "Warum watet man vorsichtig ins Wasser?",
+						options: ["Um den empfindlichen Boden nicht aufzuwirbeln.", "Um nicht zu frieren.", "Um schneller zu sein.", "Um die Fische zu erschrecken.", "Um die Flossen zu testen."],
+						correct: 0
+					},
+					{
+						question: "Was ist eine Rückwärts-Rolle?",
+						options: ["Man rollt sich rückwärts vom Boot ins Wasser.", "Man springt vorwärts ins Wasser.", "Man taucht kopfüber.", "Man schwimmt rückwärts.", "Man dreht sich im Kreis."],
+						correct: 0
+					},
+					{
+						question: "Warum ist die Rückwärts-Rolle sicher?",
+						options: ["Man verletzt sich nicht an der schweren Flasche auf dem Rücken.", "Man stürzt nicht kopfüber ins Wasser.", "Sie ist bequem.", "Sie ist schnell.", "Sie ist laut."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wie verhält man sich gegenüber Tieren unter Wasser?",
+						options: ["Man jagt sie nicht.", "Man stresst sie nicht.", "Man fasst sie nicht an.", "Man beobachtet sie aus sicherer Entfernung.", "Man fängt sie."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Wie verhält man sich gegenüber Korallen?",
+						options: ["Man berührt sie nicht.", "Man weiß, dass sie sehr empfindlich sind.", "Man weiß, dass sie lebendige Tiere sind.", "Man kann sie anfassen, weil sie aus Stein sind.", "Man schaut sie nur aus der Ferne an."],
+						correct: [0, 1, 2, 4]
+					},
+					{
+						question: "Was macht man mit dem Flossenschlag?",
+						options: ["Man kontrolliert ihn.", "Man wirbelt keinen Schlamm auf.", "Man bewegt die Flossen ruhig und gleichmäßig.", "Man schlägt wild mit den Flossen.", "Man bewegt sie so schnell wie möglich."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wie verhält man sich gegenüber Müll unter Wasser?",
+						options: ["Man hinterlässt keinen Müll.", "Man sammelt Plastikmüll ein.", "Man nimmt den eigenen Müll wieder mit an Land.", "Man wirft Müll ins Wasser.", "Man lässt Müll am Strand liegen."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Aussagen über den Unterwasser-Ehrenkodex sind richtig?",
+						options: ["Tiere werden beobachtet, nicht angefasst.", "Korallen werden geschützt.", "Müll wird eingesammelt.", "Man bleibt auf den vorgeschriebenen Wegen.", "Tiere dürfen angefasst werden."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Wie lautet der Merksatz für Kinder zum Ehrenkodex?",
+						options: ["'Schauen ja – Anfassen nein!'", "'Anfassen ja – Schauen nein!'", "'Alles anfassen!'", "'Nichts anschauen!'", "'Müll ins Wasser!'"],
+						correct: 0
+					},
+					{
+						question: "Warum soll man keine Korallen berühren?",
+						options: ["Sie sind lebendige Tiere.", "Sie wachsen ganz langsam.", "Schon eine winzige Berührung kann sie für immer verletzen.", "Sie sind aus Stein.", "Sie sind giftig."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Warum soll man keinen Müll hinterlassen?",
+						options: ["Tiere können daran ersticken.", "Es schadet der Natur.", "Die Meere sollen sauber bleiben.", "Es ist egal.", "Es sieht hässlich aus."],
+						correct: [0, 1, 2, 4]
+					},
+					{
+						question: "Wie entdeckt man einen getarnten Hecht am besten?",
+						options: ["Man sucht nach unnatürlichen, geraden Linien im Wasser.", "Man sucht direkt nach dem Fisch selbst.", "Man sucht nach seinem gefleckten Muster.", "Man sucht nach Bewegung.", "Man sucht nach seiner Farbe."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet es, wenn viele kleine Fische hektisch umherschwimmen?",
+						options: ["Ein Raubfisch ist in der Nähe.", "Die Fische spielen.", "Die Fische fressen.", "Die Fische schlafen.", "Die Fische laichen."],
+						correct: 0
+					},
+					{
+						question: "Wann wird ein Tauchgang sofort beendet?",
+						options: ["Wenn der Gruppenführer das Abbruch-Zeichen gibt.", "Bei starkem Frieren.", "Wenn ein Taucher den Abbruch wünscht.", "Wenn nur noch 50 bar Luft in der Flasche sind.", "Bei guter Laune."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist das Gruppenführer-Abbruch-Signal?",
+						options: ["Das Abbruch-Zeichen.", "Gekreuzte Arme.", "Ein Daumen nach oben.", "Eine geballte Faust.", "Ein ausgestreckter Zeigefinger."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was macht man bei starkem Frieren?",
+						options: ["Man bricht den Tauchgang ab.", "Man taucht weiter.", "Man taucht schneller.", "Man hält die Tiefe.", "Man macht nichts."],
+						correct: 0
+					},
+					{
+						question: "Was bedeutet die 50-bar-Grenze?",
+						options: ["Sie ist die Druckwarnung.", "Sie ist die rote Grenze, bei der man den Tauchgang beendet.", "Sie bedeutet, dass man langsam zur Oberfläche auftauchen soll.", "Sie bedeutet Halbzeit.", "Sie bedeutet, dass alles gut ist."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was ist ein Essoufflement?",
+						options: ["Atemnot.", "Panik-Atmung.", "Hektisches Atmen, obwohl noch genug Luft in der Flasche ist.", "Keine Luft mehr in der Flasche.", "Alles gut."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Wie entsteht ein Essoufflement?",
+						options: ["Durch zu schnelles Schwimmen.", "Durch zu starke Strömung.", "Durch Kälte.", "Durch plötzliche Angst.", "Durch zu viel Luft in der Flasche."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was macht man bei einem Essoufflement?",
+						options: ["Man stoppt sofort.", "Man beruhigt sich und atmet langsam und tief aus.", "Man taucht gemeinsam langsam und ruhig auf.", "Man lässt den Partner nicht allein.", "Man taucht schnell auf."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Welche Aussagen über den Abbruch eines Tauchgangs sind richtig?",
+						options: ["Sicherheit geht immer vor.", "Ein Abbruch ist keine Schande.", "Jeder Taucher darf jederzeit selbst entscheiden abzubrechen.", "Bei 50 bar wird der Tauchgang beendet.", "Ein Abbruch ist verboten."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Warum ist der Abbruch eines Tauchgangs wichtig?",
+						options: ["Für die Sicherheit.", "Für die Gesundheit.", "Es gibt keinen Zwang weiterzutauchen.", "Man ist ein Team und geht gemeinsam nach oben.", "Aus Spaß."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist die eiserne Regel bei einem Essoufflement?",
+						options: ["Ruhig bleiben.", "Den Partner festhalten.", "Langsam auftauchen.", "Den Partner nicht allein lassen.", "Schnell auftauchen."],
+						correct: [0, 1, 2, 3]
+					}
+				]
+			}
         },
         {
             id: "kap6",
-            title: "Kapitel 6: Aufstieg & Notfall",
+            title: "Kapitel 6: Aufstieg und Notfall",
             intro: "Detaillierte Rettungskette und sichere Ausstiegsprozeduren.",
             subsections: [
                 {
@@ -1951,104 +2066,109 @@ const bookData = {
                 }
             ],
             quiz: {
-                questionPool: [
-                    {
-                        question: "Wie schnell darf man aufsteigen? (Mehrere Antworten möglich)",
-                        options: ["Langsamer als die Luftblasen", "Maximal 10 m pro Minute", "So schnell wie möglich", "20 m pro Minute", "50 m pro Minute"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was ist der Sicherheitsstopp?",
-                        options: ["3 Minuten bei 5 Metern", "5 Minuten bei 3 Metern", "10 Minuten bei 5 Metern", "1 Minute bei 3 Metern", "3 Minuten bei 10 Metern"],
-                        correct: 0
-                    },
-                    {
-                        question: "Warum macht man den Sicherheitsstopp?",
-                        options: ["Um Stickstoff abzuatmen", "Um zu entspannen", "Um zu warten", "Um zu fotografieren", "Um zu essen"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was passiert, wenn man zu schnell auftaucht? (Mehrere Antworten möglich)",
-                        options: ["Stickstoffbläschen", "Dekompressionskrankheit", "Gefahr", "Nichts", "Man wird ohnmächtig"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht man nach dem Auftauchen? (Mehrere Antworten möglich)",
-                        options: ["OK-Zeichen", "Jacket aufblasen", "Sofort weiter tauchen", "Maske abnehmen", "Flossen ausziehen"],
-                        correct: [0, 1]
-                    },
-                    {
-                        question: "Was macht man an Land? (Mehrere Antworten möglich)",
-                        options: ["Befindlichkeits-Check", "Vollständigkeits-Check", "Ausrüstung ablegen", "Sofort gehen", "Nichts"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Was macht man mit der Ausrüstung? (Mehrere Antworten möglich)",
-                        options: ["Versorgen", "Trocknen", "Verstauen", "Wegwerfen", "In die Sonne legen"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Welche Aussagen über den Abschluss sind richtig? (Mehrere Antworten möglich)",
-                        options: ["Langsam auftauchen", "Sicherheitsstopp", "Gemeinsam auftauchen", "OK-Zeichen", "Schnell auftauchen"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum ist der Sicherheitsstopp so wichtig? (Mehrere Antworten möglich)",
-                        options: ["Stickstoff abatmen", "Gesundheit", "Sicherheit", "Keine Bläschen", "Zeitvertreib"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist die Faustregel für den Aufstieg?",
-                        options: ["Langsamer als die Luftblasen", "Schneller als die Luftblasen", "Gleich schnell", "Egal", "Immer 20 m/min"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist die Rettungskette?",
-                        options: ["Fünf Schritte im Notfall", "Ein Tauchgang", "Ein Test", "Ein Spiel", "Ein Werkzeug"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was ist der erste Schritt in Rettungskette?",
-                        options: ["Erkennen und Bergen", "Notruf", "Erste Hilfe", "Rettungsdienst", "Druckkammer"],
-                        correct: 0
-                    },
-                    {
-                        question: "Welche Notfall-Nummer ruft man?",
-                        options: ["112", "110", "911", "115", "0800"],
-                        correct: 0
-                    },
-                    {
-                        question: "Was macht man bei der Ersten Hilfe? (Mehrere Antworten möglich)",
-                        options: ["Stabile Seitenlage", "Sauerstoff", "Vitalfunktionen prüfen", "Wiederbelebung", "Wasser geben"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist die Druckkammer? (Mehrere Antworten möglich)",
-                        options: ["Spezialbehandlung", "Sauerstofftherapie", "Für schwere Tauchunfälle", "Ein Raum", "Ein Boot"],
-                        correct: [0, 1, 2]
-                    },
-                    {
-                        question: "Welche Aussagen über die Rettungskette sind richtig? (Mehrere Antworten möglich)",
-                        options: ["5 Schritte", "112", "Sauerstoff", "Druckkammer", "Man ruft 110"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Warum ist die Rettungskette wichtig? (Mehrere Antworten möglich)",
-                        options: ["Leben retten", "Sicherheit", "Struktur", "Schnelligkeit", "Spaß"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was macht der Rettungsdienst? (Mehrere Antworten möglich)",
-                        options: ["Versorgung", "Stabilisierung", "Transport", "Erste Hilfe", "Nichts"],
-                        correct: [0, 1, 2, 3]
-                    },
-                    {
-                        question: "Was ist die wichtigste Regel im Notfall? (Mehrere Antworten möglich)",
-                        options: ["Ruhe bewahren", "Laut sprechen", "Keine Panik", "Schnell handeln", "Weglaufen"],
-                        correct: [0, 2, 3]
-                    }
-                ]
-            }
+				questionPool: [
+					{
+						question: "Wie schnell darf man beim Tauchen aufsteigen?",
+						options: ["Langsamer als die eigenen Luftblasen.", "Maximal 10 Meter pro Minute.", "So schnell wie möglich.", "20 Meter pro Minute.", "50 Meter pro Minute."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was ist der Sicherheitsstopp?",
+						options: ["3 Minuten bei 5 Metern Tiefe.", "5 Minuten bei 3 Metern Tiefe.", "10 Minuten bei 5 Metern Tiefe.", "1 Minute bei 3 Metern Tiefe.", "3 Minuten bei 10 Metern Tiefe."],
+						correct: 0
+					},
+					{
+						question: "Warum macht man den Sicherheitsstopp?",
+						options: ["Um den überschüssigen Stickstoff sicher abzuatmen.", "Um sich zu entspannen.", "Um zu warten.", "Um zu fotografieren.", "Um zu essen."],
+						correct: 0
+					},
+					{
+						question: "Was passiert, wenn man zu schnell auftaucht?",
+						options: ["Stickstoff kann wie kleine Bläschen im Blut aufsteigen.", "Es kann zur Dekompressionskrankheit kommen.", "Es kann sehr gefährlich werden.", "Nichts.", "Man wird ohnmächtig."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was macht man nach dem Auftauchen an der Oberfläche?",
+						options: ["Man gibt sofort das OK-Zeichen.", "Man füllt das Jacket mit Luft auf.", "Man taucht sofort weiter.", "Man nimmt die Maske ab.", "Man zieht die Flossen aus."],
+						correct: [0, 1]
+					},
+					{
+						question: "Was macht man an Land nach dem Tauchgang?",
+						options: ["Man macht einen Befindlichkeits-Check.", "Man macht einen Vollständigkeits-Check der Ausrüstung.", "Man legt die Ausrüstung schrittweise ab.", "Man geht sofort nach Hause.", "Man macht nichts."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Was macht man mit der Ausrüstung nach dem Tauchgang?",
+						options: ["Man versorgt sie fachgerecht.", "Man trocknet sie.", "Man verstaut sie sauber.", "Man wirft sie weg.", "Man legt sie in die pralle Sonne."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Aussagen über den Tauchgang-Abschluss sind richtig?",
+						options: ["Man taucht langsam auf.", "Man macht einen Sicherheitsstopp.", "Man taucht gemeinsam mit dem Buddy auf.", "Man gibt das OK-Zeichen.", "Man taucht so schnell wie möglich auf."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Warum ist der Sicherheitsstopp so wichtig?",
+						options: ["Er gibt dem Körper Zeit, den Stickstoff abzuatmen.", "Er schützt die Gesundheit.", "Er verhindert gefährliche Stickstoffbläschen.", "Er dient der Sicherheit.", "Er ist nur Zeitvertreib."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Wie lautet die Faustregel für den Aufstieg?",
+						options: ["Niemals schneller aufsteigen als die eigenen Luftblasen.", "Schneller als die Luftblasen aufsteigen.", "Genauso schnell wie die Luftblasen.", "Das ist egal.", "Immer 20 Meter pro Minute."],
+						correct: 0
+					},
+					{
+						question: "Was ist die Rettungskette?",
+						options: ["Fünf Schritte, die im Notfall nacheinander ablaufen.", "Ein Tauchgang.", "Ein Test.", "Ein Spiel.", "Ein Werkzeug."],
+						correct: 0
+					},
+					{
+						question: "Was ist der erste Schritt der Rettungskette?",
+						options: ["Erkennen und Bergen.", "Notruf absetzen.", "Erste Hilfe.", "Rettungsdienst.", "Druckkammer."],
+						correct: 0
+					},
+					{
+						question: "Welche Notrufnummer ruft man in Europa?",
+						options: ["112.", "110.", "911.", "115.", "0800."],
+						correct: 0
+					},
+					{
+						question: "Welche Angaben macht man beim Notruf?",
+						options: ["WO ist es passiert?", "WAS ist passiert?", "WER ist betroffen?", "WIE VIEL Verletzte gibt es?", "WIE ALT ist der Betroffene?"],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was macht man bei der Ersten Hilfe?",
+						options: ["Man bringt den Betroffenen in die stabile Seitenlage (falls er atmet).", "Man gibt 100 % medizinischen Sauerstoff.", "Man überprüft die Vitalfunktionen (Atmung und Puls).", "Man leitet bei Bedarf Wiederbelebungsmaßnahmen ein.", "Man gibt dem Betroffenen Wasser zu trinken."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist die Druckkammer?",
+						options: ["Eine spezialisierte Einrichtung für schwere Tauchunfälle.", "Dort wird eine hyperbare Sauerstofftherapie durchgeführt.", "Sie hilft dem Körper, sich von den Folgen des Tauchunfalls zu erholen.", "Ein normaler Raum.", "Ein Boot."],
+						correct: [0, 1, 2]
+					},
+					{
+						question: "Welche Aussagen über die Rettungskette sind richtig?",
+						options: ["Sie besteht aus fünf Schritten.", "Man ruft die 112.", "Man gibt Sauerstoff.", "Bei schweren Unfällen geht es in die Druckkammer.", "Man ruft die 110."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Warum ist die Rettungskette wichtig?",
+						options: ["Um Leben zu retten.", "Für die Sicherheit.", "Sie gibt eine klare Struktur im Notfall.", "Schnelligkeit ist entscheidend.", "Aus Spaß."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was macht der Rettungsdienst?",
+						options: ["Die Versorgung des Betroffenen.", "Die Stabilisierung vor Ort.", "Den Transport in die Druckkammer.", "Die Erste Hilfe.", "Nichts."],
+						correct: [0, 1, 2, 3]
+					},
+					{
+						question: "Was ist die wichtigste Regel im Notfall?",
+						options: ["Ruhe bewahren.", "Laut und deutlich sprechen.", "Keine Panik machen.", "Schnell handeln.", "Weglaufen."],
+						correct: [0, 1, 2, 3]
+					}
+				]
+			}
         },
         {
             id: "kap7",

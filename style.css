@@ -561,3 +561,44 @@ section h2 {
     background-color: #cbd5e1; /* Ein helleres Grau, damit sie sich von den Hauptkapiteln abhebt */
     margin: 40px 0;
 }
+
+/* Hauptmenü-Liste */
+.nav-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hauptkapitel-Eintrag */
+.nav-item {
+  margin-bottom: 8px;
+}
+
+.nav-item > a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Die Unter-Navigation (sub-nav) */
+.sub-nav {
+  list-style: none;
+  padding-left: 20px; /* Rückt die Subtitel nach rechts ein */
+  margin-top: 4px;
+  border-left: 2px solid #ddd7cb; /* Dezente Trennlinie passend zum Farbschema */
+}
+
+.sub-nav li {
+  margin: 4px 0;
+}
+
+.sub-nav a {
+  font-size: 0.95em;
+  color: #555;
+  text-decoration: none;
+}
+
+.sub-nav a:hover {
+  color: #000;
+  text-decoration: none;
+}

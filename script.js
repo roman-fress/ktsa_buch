@@ -58,34 +58,27 @@ function renderBookContent() {
                     if (sub.type === "stacked") {
                         const rows = sub.rows || sub.subrows || [];
                         rows.forEach((row, rowIndex) => {
+                            const altText = row.title || row.subTitle || sub.title || 'Bild';
                             html += `
-                                <div class="content-row">
+                                <div class="content-row" ${row.id ? `id="${row.id}"` : ''}>
                                     <div class="text-col">
                                         ${row.title ? `<h3>${row.title}</h3>` : ""}
                                         ${row.subTitle ? `<h4 class="sub-title">${row.subTitle}</h4>` : ""}
                                         ${row.text}
                                     </div>
-                                    ${row.image ? `
-                                        <div class="image-col">
-                                            <img src="${row.image}" alt="${row.title || row.subTitle || 'Bild'}" onclick="openImageModal('${row.image}')">
-                                        </div>
-                                    ` : ""}
+                                    ${renderImages(row, altText)}
                                 </div>
                                 ${rowIndex < rows.length - 1 ? '<hr class="sub-divider">' : ''}
                             `;
                         });
                     } else {
+                        const altText = sub.title || 'Bild';
                         html += `
                             <div class="content-row">
                                 <div class="text-col">
                                     ${sub.text || ""}
                                 </div>
-                                ${sub.image || (sub.images && Array.isArray(sub.images)) ? `
-                                    <div class="image-col">
-                                        ${sub.image ? `<img src="${sub.image}" alt="${sub.title}" onclick="openImageModal('${sub.image}')">` : ""}
-                                        ${sub.images && Array.isArray(sub.images) ? sub.images.map(img => `<img src="${img}" alt="${sub.title}" onclick="openImageModal('${img}')" style="margin-top: 15px;">`).join("") : ""}
-                                    </div>
-                                ` : ""}
+                                ${renderImages(sub, altText)}
                             </div>
                         `;
                     }
@@ -115,10 +108,20 @@ function generateQuizHtml(quizData, containerId, chapterId) {
     if (!quizData) return '';
 
     let questionsList = quizData.questions;
+	
+	// Prüfen, ob der Redakteur-Modus per URL-Parameter aktiv ist (z. B. ?editor=true oder ?all=true)
+    const urlParams = new URLSearchParams(window.location.search);
+    const isEditorMode = urlParams.has('editor') || urlParams.has('all');
 
     if (!questionsList && quizData.questionPool && Array.isArray(quizData.questionPool)) {
-        let shuffled = [...quizData.questionPool].sort(() => 0.5 - Math.random());
-        questionsList = shuffled.slice(0, 3);
+        if (isEditorMode) {
+            // Redakteur-Modus: Alle Fragen aus dem Pool ungefiltert anzeigen
+            questionsList = [...quizData.questionPool];
+        } else {
+            // Produktionsmodus: Nur 3 zufällige Fragen auswählen
+            let shuffled = [...quizData.questionPool].sort(() => 0.5 - Math.random());
+            questionsList = shuffled.slice(0, 3);
+        }
     }
 
     if (!questionsList && quizData.question) {
@@ -306,4 +309,25 @@ function openImageModal(imgSrc) {
 function closeImageModal() {
     const modal = document.getElementById("imageModal");
     if (modal) modal.style.display = "none";
+}
+
+// Hilfsfunktion zum flexiblen Rendern von Einzelbildern oder Bild-Arrays
+function renderImages(item, altText) {
+    const hasSingle = typeof item.image === "string" && item.image.trim() !== "";
+    const hasMultiple = Array.isArray(item.images) && item.images.length > 0;
+
+    if (!hasSingle && !hasMultiple) return "";
+
+    let html = `<div class="image-col">`;
+    if (hasSingle) {
+        html += `<img src="${item.image}" alt="${altText}" onclick="openImageModal('${item.image}')">`;
+    }
+    if (hasMultiple) {
+        item.images.forEach((img, idx) => {
+            const style = (hasSingle || idx > 0) ? ' style="margin-top: 15px;"' : '';
+            html += `<img src="${img}" alt="${altText}" onclick="openImageModal('${img}')"${style}>`;
+        });
+    }
+    html += `</div>`;
+    return html;
 }
