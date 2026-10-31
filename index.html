@@ -33,12 +33,17 @@
                     <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap1')"></span>
                 </summary>
                 <ul class="sub-links">
-                    <li><a href="#kap1-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist eigentlich Druck?</a></li>
+                    <li><a href="#kap1-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist eigentlich Druck?</a>
+						<ul class="sub-nav">
+						  <li><a href="#luftdruck">Luftdruck</a></li>
+						  <li><a href="#wasserdruck">Wasserdruck</a></li>
+						</ul>
+					</li>
                     <li><a href="#kap1-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was haben wir in der Flasche?</a></li>
-                    <li><a href="#kap1-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Licht & Farben unter Wasser</a></li>
+                    <li><a href="#kap1-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Licht und Farben unter Wasser</a></li>
                     <li><a href="#kap1-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Sehen unter Wasser</a></li>
                     <li><a href="#kap1-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Hören unter Wasser</a></li>
-                    <li><a href="#kap1-6" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Auftrieb & Tarierung</a></li>
+                    <li><a href="#kap1-6" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Auftrieb und Tarierung</a></li>
                     <li><a href="#quiz-kap1" onclick="jumpToQuiz('kap1'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 1</a></li>
                 </ul>
             </details>
@@ -52,8 +57,14 @@
                     <li><a href="#kap2-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Anatomie des Ohrs</a></li>
                     <li><a href="#kap2-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Hohlräume im Körper</a></li>
                     <li><a href="#kap2-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Druckausgleich</a></li>
-                    <li><a href="#kap2-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Lunge & Druck</a></li>
-					<li><a href="#kap2-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist Apnoe?</a></li>
+                    <li><a href="#kap2-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Lunge und Druck</a></li>
+					<li><a href="#kap2-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist Apnoe?</a>
+						<ul class="sub-nav">
+						  <li><a href="#tg_ohne_flasche">Tauchen ohne Flasche</a></li>
+						  <li><a href="#atmung_bei_apnoe">Atmung bei Apnoe</a></li>
+						  <li><a href="#blackout">Schwimmbad-Blackout</a></li>
+						</ul>
+					</li>
                     <li><a href="#quiz-kap2" onclick="jumpToQuiz('kap2'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 2</a></li>
                 </ul>
             </details>
@@ -64,9 +75,26 @@
                     <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap3')"></span>
                 </summary>
                 <ul class="sub-links">
-                    <li><a href="#kap3-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Grundausrüstung</a></li>
-                    <li><a href="#kap3-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Tauchausrüstung</a></li>
-                    <li><a href="#kap3-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Tauchanzüge</a></li>
+                    <li><a href="#kap3-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Grundausrüstung</a>
+						<ul class="sub-nav">
+						  <li><a href="#abc">ABC</a></li>
+						  <li><a href="#flossen">Die Flossen</a></li>
+						</ul>
+					</li>
+                    <li><a href="#kap3-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Tauchausrüstung</a>
+						<ul class="sub-nav">
+						  <li><a href="#uebersicht">Übersicht</a></li>
+						  <li><a href="#tauchmaske">Die Tauchmaske</a></li>
+						  <li><a href="#jacket">Das Jacket</a></li>
+						  <li><a href="#atemregler">Der Atemregler-Set</a></li>
+						</ul>
+					</li>
+                    <li><a href="#kap3-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Tauchanzüge</a>
+						<ul class="sub-nav">
+						  <li><a href="#anzugsarten">Anzugsarten</a></li>
+						  <li><a href="#hitze">Achtung, Hitze an Land!</a></li>
+						</ul>
+					</li>
                     <li><a href="#kap3-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Richtiger Umgang & Pflege</a></li>
                     <li><a href="#quiz-kap3" onclick="jumpToQuiz('kap3'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 3</a></li>
                 </ul>
@@ -78,9 +106,20 @@
                     <span class="accordion-arrow" onclick="toggleChapter(event, 'details-kap4')"></span>
                 </summary>
                 <ul class="sub-links">
-                    <li><a href="#kap4-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Fitness, Hitze & Wohlbefinden</a></li>
-                    <li><a href="#kap4-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Vor dem Start: Regeln und Briefing</a></li>
-                    <li><a href="#kap4-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Kommunikation unter Wasser</a></li>
+                    <li><a href="#kap4-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Fitness, Hitze und Wohlbefinden</a></li>
+                    <li><a href="#kap4-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Vor dem Start: Regeln und Briefing</a>
+						<ul class="sub-nav">
+						  <li><a href="#briefing">Das professionelle Tauch-Briefing</a></li>
+						  <li><a href="#regeln">KTSA-Regeln</a></li>
+						</ul>
+					</li>
+                    <li><a href="#kap4-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Kommunikation unter Wasser</a>
+						<ul class="sub-nav">
+						  <li><a href="#grundzeichen">Grundlegende Handzeichen</a></li>
+						  <li><a href="#zahlen">Zahlen und Druckangabe in bar</a></li>
+						  <li><a href="#beispiel">Beispielanzeigen</a></li>
+						</ul>
+					</li>
                     <li><a href="#kap4-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Der Buddy-Check</a></li>
                     <li><a href="#quiz-kap4" onclick="jumpToQuiz('kap4'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 4</a></li>
                 </ul>
@@ -94,7 +133,12 @@
                 <ul class="sub-links">
                     <li><a href="#kap5-1" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Der Weg nach unten</a></li>
                     <li><a href="#kap5-2" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Der Unterwasser-Ehrenkodex</a></li>
-                    <li><a href="#kap5-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Unterwasser-Welt</a></li>
+                    <li><a href="#kap5-3" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Die Unterwasser-Welt</a>
+						<ul class="sub-nav">
+						  <li><a href="#fische_heim">Die heimischen Fische</a></li>
+						  <li><a href="#fische_meer">Die faszinierende Welt der Meeresbewohner</a></li>
+						</ul>
+					</li>
                     <li><a href="#kap5-4" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Abbruch des Tauchgangs</a></li>
 					<li><a href="#kap5-5" onclick="if(window.innerWidth <= 820) toggleMobileMenu();">Was ist ein Essoufflement?</a></li>
                     <li><a href="#quiz-kap5" onclick="jumpToQuiz('kap5'); if(window.innerWidth <= 820) toggleMobileMenu();" style="font-weight: bold; color: #0369a1;">🧠 Kapiteltest 5</a></li>
