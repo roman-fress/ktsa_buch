@@ -53,37 +53,91 @@ function renderBookContent() {
             if (chapter.subsections && Array.isArray(chapter.subsections)) {
                 chapter.subsections.forEach((sub, subIndex) => {
                     html += `<div id="${sub.id}" class="subsection">`;
-                    html += `<h3 class="subsection-title">${sub.title}</h3>`;
 
-                    if (sub.type === "stacked") {
-                        const rows = sub.rows || sub.subrows || [];
-                        rows.forEach((row, rowIndex) => {
-                            const altText = row.title || row.subTitle || sub.title || 'Bild';
-                            html += `
-                                <div class="content-row" ${row.id ? `id="${row.id}"` : ''}>
+                    const isSelfStudySection = sub.type === "self-study" || sub.isSelfStudy === true;
+
+                    // Hilfsfunktion zum Rendern des Inhalts (egal ob stacked oder einzeln)
+                    const renderSubsectionInnerContent = (subItem) => {
+                        let innerHtml = "";
+                        if (subItem.type === "stacked") {
+                            const rows = subItem.rows || subItem.subrows || [];
+                            rows.forEach((row, rowIndex) => {
+                                const altText = row.title || row.subTitle || subItem.title || 'Bild';
+
+                                if (row.type === "self-study" || row.isSelfStudy === true) {
+                                    const displayTitle = row.summaryTitle || row.subTitle || row.title || "Selbststudium";
+                                    const badgeText = row.badge || "Nicht prüfungsrelevant (Selbststudium)";
+
+                                    innerHtml += `
+                                        <details ${row.id ? `id="${row.id}"` : ''} class="self-study-section" style="margin-top: 20px; margin-bottom: 20px;">
+                                            <summary class="self-study-summary">
+                                                <span class="self-study-title"><strong>${displayTitle}</strong></span>
+                                                <span class="self-study-badge">${badgeText}</span>
+                                            </summary>
+                                            <div class="self-study-content">
+                                                <div class="content-row">
+                                                    <div class="text-col">
+                                                        ${row.text}
+                                                    </div>
+                                                    ${renderImages(row, altText)}
+                                                </div>
+                                            </div>
+                                        </details>
+                                    `;
+                                } else {
+                                    innerHtml += `
+                                        <div class="content-row" ${row.id ? `id="${row.id}"` : ''}>
+                                            <div class="text-col">
+                                                ${row.subTitle ? `<h4 class="sub-title">${row.subTitle}</h4>` : ""}
+                                                ${row.text}
+                                            </div>
+                                            ${renderImages(row, altText)}
+                                        </div>
+                                    `;
+                                }
+
+                                if (rowIndex < rows.length - 1) {
+                                    innerHtml += '<hr class="sub-divider">';
+                                }
+                            });
+                        } else {
+                            const altText = subItem.title || 'Bild';
+                            innerHtml += `
+                                <div class="content-row">
                                     <div class="text-col">
-                                        ${row.title ? `<h3>${row.title}</h3>` : ""}
-                                        ${row.subTitle ? `<h4 class="sub-title">${row.subTitle}</h4>` : ""}
-                                        ${row.text}
+                                        ${subItem.text || ""}
                                     </div>
-                                    ${renderImages(row, altText)}
+                                    ${renderImages(subItem, altText)}
                                 </div>
-                                ${rowIndex < rows.length - 1 ? '<hr class="sub-divider">' : ''}
                             `;
-                        });
-                    } else {
-                        const altText = sub.title || 'Bild';
+                        }
+                        return innerHtml;
+                    };
+
+                    // 1. Wenn die gesamte Subsection ein Selbststudium ist
+                    if (isSelfStudySection) {
+                        const displayTitle = sub.summaryTitle || sub.title;
+                        const badgeText = sub.badge || "Nicht prüfungsrelevant (Selbststudium)";
+                        
                         html += `
-                            <div class="content-row">
-                                <div class="text-col">
-                                    ${sub.text || ""}
+                            <details id="details-${sub.id}" class="self-study-section">
+                                <summary class="self-study-summary">
+                                    <span class="self-study-title"><strong>${displayTitle}</strong></span>
+                                    <span class="self-study-badge">${badgeText}</span>
+                                </summary>
+                                <div class="self-study-content">
+                                    ${renderSubsectionInnerContent(sub)}
                                 </div>
-                                ${renderImages(sub, altText)}
-                            </div>
+                            </details>
                         `;
+                    } 
+                    // 2. Standard-Subsection (nicht eingeklappt)
+                    else {
+                        html += `<h3 class="subsection-title">${sub.title}</h3>`;
+                        html += renderSubsectionInnerContent(sub);
                     }
 
-                    html += `</div>`; // End subsection
+                    html += `</div>`; // Ende Subsection
 
                     if (subIndex < chapter.subsections.length - 1) {
                         html += `<hr class="subsection-divider">`;

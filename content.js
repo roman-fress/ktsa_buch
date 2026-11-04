@@ -212,8 +212,8 @@ const bookData = {
 						correct: [0, 1, 2]
 					},
 					{
-						question: "Warum befindet sich in der Tauchflasche keine reine Sauerstoffmischung?",
-						options: ["Weil sie zu teuer wäre.", "Weil normale Atemluft die richtige Mischung für unseren Körper ist.", "Weil Sauerstoff giftig ist.", "Weil sie zu schwer wäre.", "Weil sie nicht gefiltert werden kann."],
+						question: "Warum befindet sich in der Tauchflasche kein reiner Sauerstoff?",
+						options: ["Weil der zu teuer wäre.", "Weil normale Atemluft die richtige Mischung für unseren Körper ist.", "Weil Sauerstoff giftig ist.", "Weil sie zu schwer wäre.", "Weil sie nicht gefiltert werden kann."],
 						correct: 1
 					},
 					{
@@ -577,7 +577,7 @@ const bookData = {
 					{
 						question: "Warum muss man in die Maske ausatmen?",
 						options: ["Um den Druck auszugleichen.", "Um sie zu kühlen.", "Um sie zu reinigen.", "Um Wasser rauszulassen.", "Um besser zu hören."],
-						correct: 0
+						correct: [0, 3]
 					},
 					{
 						question: "Was passiert, wenn der Druckausgleich nicht klappt?",
@@ -728,11 +728,6 @@ const bookData = {
 						question: "Was passiert mit der Luft in der Lunge beim Abtauchen?",
 						options: ["Sie wird zusammengedrückt.", "Sie dehnt sich aus.", "Sie bleibt gleich.", "Sie entweicht.", "Sie wird warm."],
 						correct: 0
-					},
-					{
-						question: "Warum ist die Lunge beim Tauchen so wichtig?",
-						options: ["Sie ist der größte Hohlraum.", "Sie muss den Druck aushalten.", "Sie darf nicht verletzt werden.", "Sie ist aus Stein.", "Sie ist mit Wasser gefüllt."],
-						correct: [0, 1, 2]
 					}
 				]
 			}
@@ -1009,11 +1004,6 @@ const bookData = {
 						correct: 0
 					},
 					{
-						question: "Welche Aussagen über die Grundausrüstung sind richtig?",
-						options: ["Die Flasche enthält Luft bis zu 300 bar.", "Der Atemregler hat zwei erste Stufen.", "Das Jacket hilft beim Schweben.", "Der Tauchcomputer ist eine Uhr.", "Die Maske ist aus Glas."],
-						correct: [0, 1, 2, 3, 4]
-					},
-					{
 						question: "Was ist der Finimeter?",
 						options: ["Die Druckanzeige.", "Ein Messgerät für die Tiefe.", "Ein Atemregler.", "Eine Flosse.", "Ein Ventil."],
 						correct: 0
@@ -1050,7 +1040,7 @@ const bookData = {
 					},
 					{
 						question: "Was machst du im Notfall, wenn dein Partner keine Luft hat?",
-						options: ["Du gibst ihm deinen Hauptregler.", "Du wechselst auf den Reserve-Regler.", "Du tauchst schnell auf.", "Du hältst die Luft an.", "Du gibst ihm deinen Finimeter."],
+						options: ["Ich gebe ihm meinen Hauptregler.", "Ich wechsle auf den Reserve-Regler.", "Ich tauche schnell auf.", "Ich halte die Luft an.", "Ich gebe ihm meinen Finimeter."],
 						correct: [0, 1]
 					},
 					{
@@ -1062,21 +1052,6 @@ const bookData = {
 						question: "Warum ist der Reserve-Regler am Hals so sicher?",
 						options: ["Weil man ihn blind findet.", "Weil er kurz ist.", "Weil er gelb ist.", "Weil er am Bungee hängt.", "Weil er den Druck misst."],
 						correct: [0, 1, 3]
-					},
-					{
-						question: "Wofür ist ein Shorty geeignet?",
-						options: ["Für warmes Wasser über 24 °C.", "Für kaltes Wasser.", "Für sehr kaltes Wasser.", "Für Eiswasser.", "Für alle Temperaturen."],
-						correct: 0
-					},
-					{
-						question: "Wofür ist ein Nassanzug geeignet?",
-						options: ["Für mäßig warmes Wasser (15–24 °C).", "Für sehr kaltes Wasser.", "Für warmes Wasser.", "Für Eiswasser.", "Für alle Temperaturen."],
-						correct: 0
-					},
-					{
-						question: "Wofür ist ein Trockenanzug geeignet?",
-						options: ["Für sehr kaltes Wasser (unter 10 °C).", "Für warmes Wasser.", "Für mäßig warmes Wasser.", "Für alle Temperaturen.", "Für gar kein Wasser."],
-						correct: 0
 					},
 					{
 						question: "Was ist der Trick beim Nassanzug?",
@@ -1095,7 +1070,7 @@ const bookData = {
 					},
 					{
 						question: "Warum trägt man Neopren?",
-						options: ["Es hält warm.", "Es schützt vor Kratzern.", "Es ist leicht.", "Es ist wasserdicht.", "Es ist aus Glas."],
+						options: ["Es hält warm.", "Es schützt vor Kratzern.", "Es ist leicht.", "Es ist nicht wasserdicht.", "Es ist aus Glas."],
 						correct: [0, 1]
 					},
 					{
@@ -1446,16 +1421,6 @@ const bookData = {
 						correct: [0, 1]
 					},
 					{
-						question: "Wer macht das Briefing?",
-						options: ["Die Buddys.", "Der Tauchlehrer.", "Die Gruppe.", "Nur der Kapitän.", "Niemand."],
-						correct: [0, 1, 2]
-					},
-					{
-						question: "Was ist das Ziel des Briefings?",
-						options: ["Sicherheit.", "Spaß.", "Planung.", "Kommunikation.", "Essen."],
-						correct: [0, 2, 3]
-					},
-					{
 						question: "Ab welchem Alter darf man tauchen?",
 						options: ["6 Jahre", "8 Jahre", "10 Jahre", "12 Jahre", "18 Jahre"],
 						correct: 1
@@ -1566,7 +1531,7 @@ const bookData = {
 						correct: 0
 					},
 					{
-						question: "Was bedeutet das Zeichen für 100 bar?",
+						question: "Was bedeutet wenn dein Buddy 100 bar anzeigt?",
 						options: ["Halbzeit – die Flasche ist halb voll.", "Druckwarnung.", "Alles gut.", "Keine Luft mehr.", "Auftauchen."],
 						correct: 0
 					},
@@ -1779,7 +1744,10 @@ const bookData = {
                 {
                     id: "kap5-3",
                     title: "Die Unterwasser-Welt",
-                    type: "stacked",
+					type: "stacked",
+					isSelfStudy: true,
+					badge: "Nicht prüfungsrelevant (Selbststudium)",
+					summaryTitle: "Die Unterwasser-Welt...",
                     subrows: [
                         {
                             id: "fische_heim",
@@ -1887,7 +1855,7 @@ const bookData = {
 					},
 					{
 						question: "Welche Aussagen über den Einstieg ins Wasser sind richtig?",
-						options: ["Vom Steg macht man den Riesen-Schritt.", "Vom einem kleinen Boot macht man die Rückwärts-Rolle.", "Die Leine hilft beim Abtauchen.", "Man springt immer kopfüber.", "Man macht immer eine Arschbombe."],
+						options: ["Vom Steg macht man den Riesen-Schritt.", "Von einem kleinen Boot macht man die Rückwärts-Rolle.", "Die Leine hilft beim Abtauchen.", "Man springt immer kopfüber.", "Man macht immer eine Arschbombe."],
 						correct: [0, 1, 2]
 					},
 					{
@@ -1916,17 +1884,7 @@ const bookData = {
 						correct: [0, 1, 2, 3]
 					},
 					{
-						question: "Wie verhält man sich gegenüber Korallen?",
-						options: ["Man berührt sie nicht.", "Man weiß, dass sie sehr empfindlich sind.", "Man weiß, dass sie lebendige Tiere sind.", "Man kann sie anfassen, weil sie aus Stein sind.", "Man schaut sie nur aus der Ferne an."],
-						correct: [0, 1, 2, 4]
-					},
-					{
-						question: "Was macht man mit dem Flossenschlag?",
-						options: ["Man kontrolliert ihn.", "Man wirbelt keinen Schlamm auf.", "Man bewegt die Flossen ruhig und gleichmäßig.", "Man schlägt wild mit den Flossen.", "Man bewegt sie so schnell wie möglich."],
-						correct: [0, 1, 2]
-					},
-					{
-						question: "Wie verhält man sich gegenüber Müll unter Wasser?",
+						question: "Wie verhält man sich gegenüber Müll am Wasser?",
 						options: ["Man hinterlässt keinen Müll.", "Man sammelt Plastikmüll ein.", "Man nimmt den eigenen Müll wieder mit an Land.", "Man wirft Müll ins Wasser.", "Man lässt Müll am Strand liegen."],
 						correct: [0, 1, 2]
 					},
@@ -1949,16 +1907,6 @@ const bookData = {
 						question: "Warum soll man keinen Müll hinterlassen?",
 						options: ["Tiere können daran ersticken.", "Es schadet der Natur.", "Die Meere sollen sauber bleiben.", "Es ist egal.", "Es sieht hässlich aus."],
 						correct: [0, 1, 2, 4]
-					},
-					{
-						question: "Wie entdeckt man einen getarnten Hecht am besten?",
-						options: ["Man sucht nach unnatürlichen, geraden Linien im Wasser.", "Man sucht direkt nach dem Fisch selbst.", "Man sucht nach seinem gefleckten Muster.", "Man sucht nach Bewegung.", "Man sucht nach seiner Farbe."],
-						correct: 0
-					},
-					{
-						question: "Was bedeutet es, wenn viele kleine Fische hektisch umherschwimmen?",
-						options: ["Ein Raubfisch ist in der Nähe.", "Die Fische spielen.", "Die Fische fressen.", "Die Fische schlafen.", "Die Fische laichen."],
-						correct: 0
 					},
 					{
 						question: "Wann wird ein Tauchgang sofort beendet?",
@@ -2001,12 +1949,7 @@ const bookData = {
 						correct: [0, 1, 2, 3]
 					},
 					{
-						question: "Warum ist der Abbruch eines Tauchgangs wichtig?",
-						options: ["Für die Sicherheit.", "Für die Gesundheit.", "Es gibt keinen Zwang weiterzutauchen.", "Man ist ein Team und geht gemeinsam nach oben.", "Aus Spaß."],
-						correct: [0, 1, 2, 3]
-					},
-					{
-						question: "Was ist die eiserne Regel bei einem Essoufflement?",
+						question: "Welche Regeln befolgt man bei einem Essoufflement?",
 						options: ["Ruhig bleiben.", "Den Partner festhalten.", "Langsam auftauchen.", "Den Partner nicht allein lassen.", "Schnell auftauchen."],
 						correct: [0, 1, 2, 3]
 					}
@@ -2134,7 +2077,7 @@ const bookData = {
 					},
 					{
 						question: "Welche Angaben macht man beim Notruf?",
-						options: ["WO ist es passiert?", "WAS ist passiert?", "WER ist betroffen?", "WIE VIEL Verletzte gibt es?", "WIE ALT ist der Betroffene?"],
+						options: ["WO ist es passiert?", "WAS ist passiert?", "WER ist betroffen?", "WIE VIELE Verletzte gibt es?", "WIE ALT ist der Betroffene?"],
 						correct: [0, 1, 2, 3]
 					},
 					{
@@ -2154,16 +2097,11 @@ const bookData = {
 					},
 					{
 						question: "Warum ist die Rettungskette wichtig?",
-						options: ["Um Leben zu retten.", "Für die Sicherheit.", "Sie gibt eine klare Struktur im Notfall.", "Schnelligkeit ist entscheidend.", "Aus Spaß."],
+						options: ["Um Leben zu retten.", "Für die Sicherheit.", "Sie gibt eine klare Struktur im Notfall.", "Um schnell Hilfe zu holen", "Aus Spaß."],
 						correct: [0, 1, 2, 3]
 					},
 					{
-						question: "Was macht der Rettungsdienst?",
-						options: ["Die Versorgung des Betroffenen.", "Die Stabilisierung vor Ort.", "Den Transport in die Druckkammer.", "Die Erste Hilfe.", "Nichts."],
-						correct: [0, 1, 2, 3]
-					},
-					{
-						question: "Was ist die wichtigste Regel im Notfall?",
+						question: "Was sind die wichtigsten Regeln im Notfall?",
 						options: ["Ruhe bewahren.", "Laut und deutlich sprechen.", "Keine Panik machen.", "Schnell handeln.", "Weglaufen."],
 						correct: [0, 1, 2, 3]
 					}
